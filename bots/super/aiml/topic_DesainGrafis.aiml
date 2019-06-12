@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+<!-- File: topic_DesainGrafis.aiml -->
+<!-- Author: Dr. Richard S. Wallace -->
+<!-- Last modified: Juni 08, 2019 -->
+<!--  -->
+<!-- This AIML file is part of the SUPER 0.0.4 chat bot knowledge base. -->
+<!--  -->
+<!-- The SUPER brain is Copyright &copy; 2019 by ALICE AI Foundation. -->
+<!--  -->
+<!-- The SUPER brain is released under the terms of the GNU Lesser General -->
+<!-- Public License, as published by the Free Software Foundation. -->
+<!--  -->
+<!-- This file is distributed WITHOUT ANY WARRANTY; without even the  -->
+<!-- implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   -->
+<!--  -->
+<!-- For more information see http://www.alicebot.org -->
+<topic name="DESAIN">
+<category><pattern>DESAIN GRAFIS</pattern><that>JENIS DESAIN COLON DESAIN GRAFIS SEMICOLON 3D DESAIN</that>
+<template>Apakah anda menginginkan komponen dengan fitur Low Voltage? Semua; Sebagian; Tidak</template>
+</category></topic>
+
+<topic name="DESAIN">
+<category><pattern>SEMUA</pattern><that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR LOW VOLTAGE QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
+<template>Apakah anda menginginkan komponen dengan fitur Low Noise? Semua; Sebagian; Tidak
+<think>
+    <set name="LowVoltage">SEMUA</set>
+    <set name="PROCESSOR_LV">PROCESSOR-LOWVOLTAGE</set>
+    <set name="HARDDRIVE_LV">HARDDRIVE-LOWVOLTAGE</set>
+</think></template>
+</category></topic>
+
+<topic name="DESAIN">
+<category><pattern>SEBAGIAN</pattern><that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR LOW VOLTAGE QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
+<template>Apakah anda menginginkan Processor dengan fitur Low Voltage? Ya; Tidak</template>
+</category></topic>
+
+<topic name="DESAIN">
+<category><pattern>YA</pattern><that>APAKAH ANDA MENGINGINKAN PROCESSOR DENGAN FITUR LOW VOLTAGE QUESTION MARK YA SEMICOLON TIDAK</that>
+<template>Apakah anda menginginkan Hard Drive dengan fitur Low Voltage? Ya; Tidak
+<think>
+    <set name="PROCESSOR_LV">PROCESSOR-LOWVOLTAGE</set>
+</think></template>
+</category></topic>
+
+<topic name="DESAIN">
+<category><pattern>TIDAK</pattern><that>APAKAH ANDA MENGINGINKAN PROCESSOR DENGAN FITUR LOW VOLTAGE QUESTION MARK YA SEMICOLON TIDAK</that>
+<template>Apakah anda menginginkan Hard Drive dengan fitur Low Voltage? Ya; Tidak</template>
+</category></topic>
+
+<topic name="DESAIN">
+<category><pattern>TIDAK</pattern><that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR LOW VOLTAGE QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
+<template>Apakah anda menginginkan komponen dengan fitur Low Noise? Semua; Sebagian; Tidak</template>
+</category></topic>
+
+<topic name="DESAIN">
+<category><pattern>YA</pattern><that>APAKAH ANDA MENGINGINKAN HARD DRIVE DENGAN FITUR LOW VOLTAGE QUESTION MARK YA SEMICOLON TIDAK</that>
+<template>Apakah anda menginginkan komponen dengan fitur Low Noise? Semua; Sebagian; Tidak
+<think>
+    <set name="HARDDRIVE_LV">HARDDRIVE-LOWVOLTAGE</set>
+</think></template>
+</category></topic>
+
+<topic name="DESAIN">
+<category><pattern>TIDAK</pattern><that>APAKAH ANDA MENGINGINKAN HARD DRIVE DENGAN FITUR LOW VOLTAGE QUESTION MARK YA SEMICOLON TIDAK</that>
+<template>Apakah anda menginginkan komponen dengan fitur Low Noise? Semua; Sebagian; Tidak</template>
+</category></topic>
+
+<topic name="DESAIN">
+<category><pattern>TIDAK</pattern><that>APAKAH ANDA MENGIGINKAN KOMPONEN DENGAN FITUR LOW VOLTAGE QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
+<template>Apakah anda menginginkan komponen dengan fitur Low Noise? Semua; Sebagian; Tidak</template>
+</category></topic>
+
+<topic name="DESAIN">
+<category><pattern>SEMUA</pattern><that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR LOW NOISE QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
+<template>OFFICE BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil
+<think>
+    <set name="LowNoise">SEMUA</set>
+    <set name="HARDDRIVE_LN">HARDDRIVE-LOWNOISE</set>
+    <set name="COOLER_LN">COOLER-LOWNOISE</set>
+    <set name="VIDEOCARD_LN">VIDEOCARD-LOWNOISE</set>
+</think></template>
+</category></topic>
+
+<topic name="DESAIN">
+<category><pattern>SEBAGIAN</pattern><that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR LOW NOISE QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
+<template>Apakah anda menginginkan Hard Drive dengan fitur Low Noise? Ya; Tidak</template>
+</category></topic>
+
+<topic name="DESAIN">
+<category><pattern>YA</pattern><that>APAKAH ANDA MENGINGINKAN HARD DRIVE DENGAN FITUR LOW NOISE QUESTION MARK YA SEMICOLON TIDAK</that>
+<template>Apakah anda menginginkan Cooler dengan fitur Low Noise? Ya; Tidak
+<think>
+    <set name="HARDDRIVE_LN">HARDDRIVE-LOWNOISE</set>
+</think></template>
+</category></topic>
+
+<topic name="DESAIN">
+<category><pattern>TIDAK</pattern><that>APAKAH ANDA MENGINGINKAN HARD DRIVE DENGAN FITUR LOW NOISE QUESTION MARK YA SEMICOLON TIDAK</that>
+<template>Apakah anda menginginkan Cooler dengan fitur Low Noise? Ya; Tidak</template>
+</category></topic>
+
+<topic name="DESAIN">
+<category><pattern>YA</pattern><that>APAKAH ANDA MENGINGINKAN COOLER DENGAN FITUR LOW NOISE QUESTION MARK YA SEMICOLON TIDAK</that>
+<template>Apakah anda menginginkan Video Card dengan fitur Low Noise? Ya; Tidak
+<think>
+    <set name="COOLER_LN">COOLER-LOWNOISE</set>
+</think></template>
+</category></topic>
+
+<topic name="DESAIN">
+<category><pattern>TIDAK</pattern><that>APAKAH ANDA MENGINGINKAN COOLER DENGAN FITUR LOW NOISE QUESTION MARK YA SEMICOLON TIDAK</that>
+<template>Apakah anda menginginkan Video Card dengan fitur Low Noise? Ya; Tidak</template>
+</category></topic>
+
+<topic name="DESAIN">
+<category><pattern>YA</pattern><that>APAKAH ANDA MENGINGINKAN VIDEO CARD DENGAN FITUR LOW NOISE QUESTION MARK YA SEMICOLON TIDAK</that>
+<template>OFFICE BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil
+<think>
+    <set name="VIDEOCARD_LN">VIDEOCARD-LOWNOISE</set>
+</think></template>
+</category></topic>
+
+<topic name="DESAIN">
+<category><pattern>TIDAK</pattern><that>APAKAH ANDA MENGINGINKAN VIDEO CARD DENGAN FITUR LOW NOISE QUESTION MARK YA SEMICOLON TIDAK</that>
+<template>DESAIN BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil</template>
+</category></topic>
+
+<topic name="DESAIN">
+<category><pattern>TIDAK</pattern><that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR LOW NOISE QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
+<template>DESAIN BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil</template>
+</category></topic>
+
+<topic name="DESAIN">
+<category><pattern>COMPUTER SPECIFICATIONS</pattern>
+<template>INI COMPUTER <get name="usability"/> MU
+    <get name="PROCESSOR_LV"/>
+    <get name="HARDDRIVE_LV"/> and <get name="HARDDRIVE_LN"/>
+    <get name="MOTHERBOARD"/>
+    <get name="RAM"/>
+    <get name="COOLER_LN"/>
+    <get name="VIDEOCARD_LN"/>
+    <get name="SOUNDCARD"/></template>
+</category></topic>
+
+</aiml>
