@@ -5,13 +5,9 @@
  */
 package cobabot;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.HashMap;
+import java.util.Map;
 
 import org.alicebot.ab.AB;
 import org.alicebot.ab.AIMLProcessor;
@@ -59,8 +55,9 @@ public class CobaBOT {
         String botName = "super";
         MagicBooleans.jp_tokenize = false;
         MagicBooleans.trace_mode = true;
-        String action = "chat";
-        //String action = "webservice";
+        //String action = "chat";
+        String action = "webservice";
+        //String action = "aiml2csv";
         System.out.println(MagicStrings.program_name_version);
         for (final String s : args) {
             // System.out.println(s);
@@ -161,9 +158,69 @@ public class CobaBOT {
 
         @Override
         public Response serve(final IHTTPSession session) {
+
+            Response response = null;
+            NanoHTTPD.Method method = session.getMethod();
+            String uri = session.getUri();
+            System.out.println("Uri : "+uri);
+            try {
+                switch (uri) {
+                    case "/":
+                        if(Method.GET.equals(method)) {
+                            //response = newFixedLengthResponse(readFile("web/index.html"));
+                            response = newFixedLengthResponse(readFile("web/index.html"));
+                            System.out.println("running /");
+                        }
+                        break;
+                    case "/Bot":
+                        if(Method.GET.equals(method)) {
+                            final String q = session.getParms().get("q").replaceAll("[^a-zA-Z0-9 ?.!]", "");
+                            System.out.println("query: " + q);
+                            response = newFixedLengthResponse(chatSession.multisentenceRespond(q));
+                            System.out.println("running /Bot");
+                        }else if (Method.POST.equals(method)){
+                            Map<String, String> data = new HashMap<String, String>();
+                            session.parseBody(data);
+                            String message = session.getParms().get("message");
+                            //System.out.println("AHHA : "+data +"ad: "+anno);
+                            response = newFixedLengthResponse(chatSession.multisentenceRespond(message));
+                            System.out.println("running /Bot");
+                        }
+                        break;
+                    case "/Load":
+                        System.out.println("running /Load");
+
+                        break;
+                    //default:
+                        //throw new IllegalStateException("Unexpected value: " + uri);
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            return response;
+            /*
+
             final String q = session.getParms().get("q").replaceAll("[^a-zA-Z0-9 ?.!]", "");
             System.out.println("query: " + q);
             return newFixedLengthResponse(chatSession.multisentenceRespond(q));
+            */
+        }
+        private static String readFile(String path) throws IOException {
+            BufferedReader br = new BufferedReader(new FileReader(path));
+            try {
+                StringBuilder sb = new StringBuilder();
+                String line = br.readLine();
+
+                while (line != null) {
+                    sb.append(line);
+                    sb.append("\n");
+                    line = br.readLine();
+                }
+                return sb.toString();
+            } finally {
+                br.close();
+            }
         }
     }
     

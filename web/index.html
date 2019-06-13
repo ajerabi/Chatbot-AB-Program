@@ -1,0 +1,132 @@
+<!--
+  Created by IntelliJ IDEA.
+  User: Delvin V
+  Date: 31/05/2019
+  Time: 13.37
+  To change this template use File | Settings | File Templates.
+-->
+<html>
+<head>
+    <title>Hello Servlet</title>
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+
+    <!-- Milligram CSS minified -->
+    <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <style>
+        .message {
+            border-radius: 50px;
+            margin: 0 15px 10px ;
+            padding: 15px 20px;
+            position: relative;
+            font-weight: bold;
+        }
+        .message.to {
+            background-color: #2095FE;
+            color: #fff;
+            margin-left: 100px;
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .message.from {
+            background-color: #E5E4E9;
+            color: #363636;
+            margin-right: 100px;
+        }
+        .message.to + .message.to,
+        .message.from + .message.from {
+            margin-top: -10px;
+        }
+    </style>
+    <script>
+
+        function longPoll_feed () {
+            //make another request
+            $.ajax({
+                //cache: false,
+                //dataType: 'json',
+                type: "GET",
+                url: "/status",
+                error: function () {
+                },
+                success: function (data) {
+                }
+            });
+        }
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#chat_message').html(localStorage.getItem("chatHistory"));
+            var delay = 2000;
+            $('#btn-default').click(function(e){
+                e.preventDefault();
+                var message = $('#message').val();
+                if(message == ''){
+                    $('.message_box').html(
+                        '<span style="color:red;">Enter Message!</span>'
+                    );
+                    $('#message').focus();
+                    return false;
+                }else {
+                    $('#chat_message').append(
+                        '<div class="message to">'+message+'</div>'
+                    );
+                    //var chatHistory = document.getElementById("chat_message").innerHTML
+                    //localStorage.setItem("chatHistory",chatHistory);
+                }
+
+                $.ajax
+                ({
+                    type: "POST",
+                    url: "/Bot",
+                    data: "message="+message,
+                    success: function(data)
+                    {
+                        $('#chat_message').append(
+                            '<div class="message from">'+data+'</div>'
+                        );
+                        var chatHistory = $('#chat_message').html();
+                        localStorage.setItem("chatHistory",chatHistory);
+                        /*
+                        setTimeout(function() {
+                            $('.message_box').html(data);
+                        }, delay);
+                        */
+                    }
+                });
+            });
+
+        });
+        $(window).unload(function(){
+            localStorage.removeItem("chatHistory");
+        });
+    </script>
+</head>
+<body>
+    <main class="wrapper">
+        <section class="container" style="width: 70%">
+            <div class="message" id="chat_message">
+                <!--
+                <div class="message from">
+                    Halo Saya Com BOT
+                </div>
+                <div class="message to">
+                    Hai Com BOT
+                </div>
+                -->
+            </div>
+            <form action = "Bot" method = "POST">
+                <fieldset>
+                    <label for="message">Your Message</label>
+                    <input type="text" placeholder="Message.." name="message" id="message">
+                    <div class="message_box"></div>
+                    <input class="button-primary" type="submit" value="Send" id="btn-default">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

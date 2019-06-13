@@ -17,6 +17,6 @@
     <orderEntry type="library" name="joda-time-2.1" level="project" />
     <orderEntry type="library" name="json-20090211" level="project" />
     <orderEntry type="library" name="junit-4.11" level="project" />
-    <orderEntry type="library" name="nanohttpd-2.2.0" level="project" />
+    <orderEntry type="library" name="nanohttpd-2.3.1" level="project" />
   </component>
 </module>
