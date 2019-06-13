@@ -88,6 +88,7 @@
                         $('#chat_message').append(
                             '<div class="message from">'+data+'</div>'
                         );
+                        $('#message').val("");
                         var chatHistory = $('#chat_message').html();
                         localStorage.setItem("chatHistory",chatHistory);
                         /*
