@@ -74,6 +74,7 @@
                     $('#chat_message').append(
                         '<div class="message to">'+message+'</div>'
                     );
+                    $('#message').focus();
                     //var chatHistory = document.getElementById("chat_message").innerHTML
                     //localStorage.setItem("chatHistory",chatHistory);
                 }
@@ -91,6 +92,7 @@
                         $('#message').val("");
                         var chatHistory = $('#chat_message').html();
                         localStorage.setItem("chatHistory",chatHistory);
+                        $('#message').focus();
                         /*
                         setTimeout(function() {
                             $('.message_box').html(data);
@@ -100,7 +102,14 @@
                 });
             });
 
+            $('#btn-clrHistory').click(function(e) {
+                e.preventDefault();
+                localStorage.removeItem("chatHistory");
+                $('#chat_message').html("");
+            });
+
         });
+
         $(window).unload(function(){
             localStorage.removeItem("chatHistory");
         });
@@ -125,6 +134,8 @@
                     <input type="text" placeholder="Message.." name="message" id="message">
                     <div class="message_box"></div>
                     <input class="button-primary" type="submit" value="Send" id="btn-default">
+                    <input class="button" type="button" value="Clear History" id="btn-clrHistory">
+
                 </fieldset>
             </form>
         </section>
