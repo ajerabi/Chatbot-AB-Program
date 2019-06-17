@@ -52,15 +52,15 @@ public class CobaBOT {
     
     public static void mainFunction(final String[] args) {
         //String botName = "alice2";
-        //String botName = "super";
+        String botName = "super";
         //String botName = "JJ";
-        String botName = "roboto";
+        //String botName = "roboto";
         MagicBooleans.jp_tokenize = false;
         MagicBooleans.trace_mode = true;
         //String action = "chat";
-        //String action = "webservice";
+        String action = "webservice";
         //String action = "aiml2csv";
-        String action = "jojo";
+        //String action = "jojo";
         System.out.println(MagicStrings.program_name_version);
         for (final String s : args) {
             // System.out.println(s);
@@ -150,7 +150,8 @@ public class CobaBOT {
     }
    
     static class WebService extends NanoHTTPD {
-        String botName = "super";
+        String botName = "roboto";
+        //String botName = "super";
         Bot bot = new Bot(botName, ".");
         //Bot bot = new Bot("alice2", ".");
         Chat chatSession = new Chat(bot);
@@ -191,9 +192,12 @@ public class CobaBOT {
                             Map<String, String> data = new HashMap<String, String>();
                             session.parseBody(data);
                             String message = session.getParms().get("message");
+                            System.out.println("Pesan Manusia: "+message);
                             //System.out.println("AHHA : "+data +"ad: "+anno);
-                            response = newFixedLengthResponse(chatSession.multisentenceRespond(message));
-                            System.out.println("running /Bot");
+                            String responseBot = chatSession.multisentenceRespond(message);
+                            System.out.println("Pesan BOT: "+responseBot);
+                            response = newFixedLengthResponse(responseBot);
+                            //System.out.println("running /Bot");
                         }
                         break;
                     case "/Load":
