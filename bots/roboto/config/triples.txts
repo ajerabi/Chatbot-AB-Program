@@ -5513,7 +5513,7 @@ dog:femaleName:bitch
 dog:youngName:puppy or  pup
 dog:collective:a pack of dogs
 dog:legs:4
-dog:sound:woof woof
+dog:sound:woof
 dolphin:hasPlural:dolphins
 dolphin:maleName:bull
 dolphin:femaleName:cow
@@ -5676,4 +5676,3 @@ zebra:collective:a cohort of zebra or  a herd of zebra
 zebra:legs:4
 zebra:sound:nyeaah
 cow:hasPlural:cows
-delvin:isa:Predesesor of vilano

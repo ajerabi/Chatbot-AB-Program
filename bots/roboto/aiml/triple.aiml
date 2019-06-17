@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <!-- File: triple.aiml -->
+    <!-- Author: Dr. Richard S. Wallace -->
+    <!-- Last modified: July 19, 2014 -->
+    <!--  -->
+    <!-- This AIML file is part of the ALICE2 0.0.5 chat bot knowledge base. -->
+    <!--  -->
+    <!-- The ALICE2 brain is Copyright &copy; 2014 by ALICE AI Foundation. -->
+    <!--  -->
+    <!-- The ALICE2 brain is released under the terms of the GNU Lesser General -->
+    <!-- Public License, as published by the Free Software Foundation. -->
+    <!--  -->
+    <!-- This file is distributed WITHOUT ANY WARRANTY; without even the  -->
+    <!-- implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   -->
+    <!--  -->
+    <!-- For more information see http://www.alicebot.org -->
+	<!--
+	     Modified by Keith Sterling oct 2017
+	-->
+    <!--  -->
+
+
+
+    <category><pattern>APA ITU <set>component</set></pattern>
+        <template><star/> adalah <uniq><subj><star/></subj><pred>isa</pred><obj>?isa</obj></uniq>.</template>
+    </category>
+
+    <category><pattern>FITUR <set>component</set></pattern>
+        <template><star/> memiliki fitur <uniq><subj><star/></subj><pred>hasFeature</pred><obj>?hasFeature</obj></uniq>.</template>
+    </category>
+
+
+
+    <category><pattern>SOUND <set>animal</set></pattern>
+        <template><star/> says <uniq><subj><star/></subj><pred>sound</pred><obj>?sound</obj></uniq>.</template>
+    </category>
+
+    <category><pattern>THE <set>animal</set></pattern>
+        <template><star/> is <select><q><subj><star/></subj><pred>isa</pred><obj>?isa</obj></q></select>.</template>
+    </category>
+
+    <category>
+        <pattern>I LIKE <set>color</set></pattern>
+        <template><star/> is a nice color.</template>
+    </category>
+    <category>
+        <pattern><set>name</set></pattern>
+        <template><star/> is a name.</template>
+    </category>
+</aiml>

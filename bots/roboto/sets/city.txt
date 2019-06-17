@@ -1,0 +1,8 @@
+arlington
+belfast
+berlin
+boston
+capital
+chelsea
+chicago
+city

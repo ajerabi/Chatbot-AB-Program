@@ -52,12 +52,15 @@ public class CobaBOT {
     
     public static void mainFunction(final String[] args) {
         //String botName = "alice2";
-        String botName = "super";
+        //String botName = "super";
+        //String botName = "JJ";
+        String botName = "roboto";
         MagicBooleans.jp_tokenize = false;
         MagicBooleans.trace_mode = true;
         //String action = "chat";
-        String action = "webservice";
+        //String action = "webservice";
         //String action = "aiml2csv";
+        String action = "jojo";
         System.out.println(MagicStrings.program_name_version);
         for (final String s : args) {
             // System.out.println(s);
@@ -93,6 +96,7 @@ public class CobaBOT {
         }
         Graphmaster.enableShortCuts = true;
         final Bot bot = new Bot(botName, MagicStrings.root_path, action); //
+        //inisialisasi objek bot dari class bot dengan konstrakor ber parameter
         if (MagicBooleans.make_verbs_sets_maps) {
             Verbs.makeVerbSetsMaps(bot);
         }
@@ -108,7 +112,12 @@ public class CobaBOT {
         }
         else if (action.equals("webservice")) {
             new WebService();
-        } else if (action.equals("ab")) {
+        }else if (action.equals("jojo")) {
+            bot.writeAIMLIFFiles();
+            //tambahkan method writeAIMLIFFiles(); pada object bot
+            final boolean doWrites = false;
+            TestAB.testChat(bot, doWrites, MagicBooleans.trace_mode);
+        }  else if (action.equals("ab")) {
             TestAB.testAB(bot, TestAB.sample_file);
         } else if (action.equals("aiml2csv") || action.equals("csv2aiml")) {
             convert(bot, action);
