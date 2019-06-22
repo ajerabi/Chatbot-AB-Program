@@ -148,10 +148,10 @@ public class CobaBOT {
             bot.writeAIMLFiles();
         }
     }
-   
+
     static class WebService extends NanoHTTPD {
-        String botName = "roboto";
-        //String botName = "super";
+        //String botName = "roboto";
+        String botName = "super";
         Bot bot = new Bot(botName, ".");
         //Bot bot = new Bot("alice2", ".");
         Chat chatSession = new Chat(bot);
@@ -198,6 +198,18 @@ public class CobaBOT {
                             System.out.println("Pesan BOT: "+responseBot);
                             response = newFixedLengthResponse(responseBot);
                             //System.out.println("running /Bot");
+                            //SPLIT STRING//
+                            System.out.println("---------------Human Response------------------");
+                            String[] splitMessageHuman = message.split("\\s");
+                            for (String w:splitMessageHuman) {
+                                System.out.println(w);
+                            }
+                            /*
+                            System.out.println("---------------Bot Response-------------");
+                            String[] splitMessageBot = responseBot.split("\\s");
+                            for (String w:splitMessageBot) {
+                                System.out.println(w);
+                            }*/
                         }
                         break;
                     case "/Load":
