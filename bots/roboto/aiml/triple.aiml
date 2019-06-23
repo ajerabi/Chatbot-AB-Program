@@ -15,19 +15,48 @@
     <!-- implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   -->
     <!--  -->
     <!-- For more information see http://www.alicebot.org -->
-	<!--
-	     Modified by Keith Sterling oct 2017
-	-->
+    <!--
+         Modified by Keith Sterling oct 2017
+    -->
     <!--  -->
 
 
 
     <category><pattern>APA ITU <set>component</set></pattern>
-        <template><star/> adalah <uniq><subj><star/></subj><pred>isa</pred><obj>?isa</obj></uniq>.</template>
+        <template><star/> adalah
+            <select>
+                <q><subj><star/></subj><pred>isa</pred><obj>?isa</obj></q>
+            </select>
+<!--            <uniq><subj><star/></subj><pred>isa</pred><obj>?isa</obj></uniq>.-->
+        </template>
     </category>
 
-    <category><pattern>FITUR <set>component</set></pattern>
-        <template><star/> memiliki fitur <uniq><subj><star/></subj><pred>hasFeature</pred><obj>?hasFeature</obj></uniq>.</template>
+    <category><pattern>APA FITUR <set>component</set></pattern>
+        <template><star/> memiliki fitur
+            <set var="tuples">
+                <select>
+                    <vars>?y</vars>
+                    <q><subj><star/></subj><pred>hasFeature</pred><obj>?y</obj></q>
+                </select>
+            </set>
+            <get var="?x">
+                <tuple>
+                    <first><get var="tuples" /></first>
+                </tuple>
+            </get>
+            <!--
+            <tuple>
+            <select>
+                <vars>?hasFeature</vars>
+                <q><subj><star/></subj><pred>hasFeature</pred><obj>?hasFeature</obj></q>
+            </select>
+            </tuple>
+
+            <uniq>
+                <subj><star/></subj><pred>hasFeature</pred><obj>?hasFeature</obj>
+            </uniq>
+            -->
+            .</template>
     </category>
 
 
@@ -45,7 +74,78 @@
         <template><star/> is a nice color.</template>
     </category>
     <category>
-        <pattern><set>name</set></pattern>
-        <template><star/> is a name.</template>
+        <pattern><set>name</set> mimpi tentang *</pattern>
+        <template>
+            <addtriple>
+                <subj>
+                    <star/>
+                </subj>
+                <pred>mimpi</pred>
+                <obj>
+                    <star index="2"/>
+                </obj>
+            </addtriple>
+            Saved triple:<star/>, dreams about,<star index="2"/>.
+        </template>
     </category>
+
+    <category><pattern><set>name</set> DREAMS ABOUT *</pattern>
+        <template><addtriple><subj><star/></subj><pred>dreams about</pred><obj><star index="2"/></obj></addtriple>
+            Saved triple: <star/>, dreams about, <star index="2"/>.</template>
+    </category>
+    <category><pattern>WHO DREAMS</pattern>
+        <template><think>
+            <set var="tuples">
+                <select><vars>?x</vars><q><subj>?x</subj><pred>dreams about</pred><obj>?y</obj></q></select>
+            </set>
+        </think>
+            <condition value="NIL" var="tuples">I don't know who.</condition>
+            <condition var="tuples">
+                <li value="NIL"/>
+                <li><think>
+                    <set var="head"><first><get var="tuples"/></first></set>
+                    <set var="tuples"><rest><get var="tuples"/></rest></set>
+                </think>
+                    <get var="?x"><tuple><get var="head"/></tuple></get><condition var="tuples"><li value="NIL"/><li>,</li></condition>
+                    <loop/>
+                </li>
+            </condition></template>
+    </category>
+
+<category><pattern>WHAT DOES * DREAM ABOUT</pattern>
+<template><think><set var="tuples">
+    <select>
+        <vars>?x</vars><q><subj><star/></subj><pred>dreams about</pred><obj>?x</obj></q>
+    </select>
+</set>
+</think>
+    <condition value="NIL" var="tuples">I don't what <star/> dreams about.</condition>
+    <condition var="tuples">
+        <li value="NIL"/>
+        <li>
+            <think><set var="head"><first><get var="tuples"/></first></set>
+                <set var="tuples"><rest><get var="tuples"/></rest></set>
+            </think>
+            <get var="?x"><tuple><get var="head"/></tuple></get><condition var="tuples"><li value="NIL"/><li>,</li></condition> <loop/>
+        </li>
+    </condition></template>
+</category>
+<category><pattern>WHO DREAMS ABOUT *</pattern>
+<template><think><set var="tuples">
+    <select>
+        <vars>?x</vars><q><subj>?x</subj><pred>dreams about</pred><obj><star/></obj></q>
+    </select>
+</set>
+</think>
+    <condition value="NIL" var="tuples">I don't who dreams about <star/>.</condition>
+    <condition var="tuples">
+        <li value="NIL"/>
+        <li>
+            <think><set var="head"><first><get var="tuples"/></first></set>
+                <set var="tuples"><rest><get var="tuples"/></rest></set>
+            </think>
+            <get var="?x"><tuple><get var="head"/></tuple></get><condition var="tuples"><li value="NIL"/><li>,</li></condition> <loop/>
+        </li>
+    </condition></template>
+</category>
 </aiml>

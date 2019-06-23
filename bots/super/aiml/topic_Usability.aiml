@@ -15,37 +15,68 @@
 <!-- implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   -->
 <!--  -->
 <!-- For more information see http://www.alicebot.org -->
-<category><pattern>AKU INGIN MEMBUAT SEBUAH KOMPUTER</pattern>
-<template>Comp-Bot <set name="topic">Komputer</set> akan membantu
-<think>
-    <set name="PROCESSOR">DEFAULT</set>
-    <set name="HARDDRIVE">DEFAULT</set>
-    <set name="MOTHERBOARD">DEFAULT</set>
-    <set name="RAM">DEFAULT</set>
-    <set name="COOLER">DEFAULT</set>
-    <set name="VIDEOCARD">DEFAULT</set>
-    <set name="SOUNDCARD">DEFAULT</set>
-    <set name="CHASSIS">DEFAULT</set>
-</think></template>
+<category>
+    <pattern>AKU INGIN MEMBUAT SEBUAH KOMPUTER</pattern>
+    <!--
+    <template>Comp-Bot <set name="topic">Komputer</set> akan membantu
+     -->
+    <template>Komputer yang disediakan : GAMING; DESAIN; OFFICE
+    <think>
+            <set name="PROCESSOR">DEFAULT</set>
+            <set name="HARDDRIVE">DEFAULT</set>
+            <set name="MOTHERBOARD">DEFAULT</set>
+            <set name="RAM">DEFAULT</set>
+            <set name="COOLER">DEFAULT</set>
+            <set name="VIDEOCARD">DEFAULT</set>
+            <set name="SOUNDCARD">DEFAULT</set>
+            <set name="CHASSIS">DEFAULT</set>
+        </think>
+    </template>
 </category>
-<topic name="KOMPUTER">
-<category><pattern>*</pattern>
-<template>Komputer yang disediakan : GAMING; DESAIN; OFFICE</template>
-</category></topic>
 
-<category><pattern>AKU MAU KOMPUTER</pattern>
-<template><srai>AKU INGIN MEMBUAT SEBUAH KOMPUTER</srai></template>
+<topic name="KOMPUTER">
+<category>
+    <pattern>*</pattern>
+    <template>Komputer yang disediakan : GAMING; DESAIN; OFFICE</template>
 </category>
-<category><pattern>GAMING</pattern><that>KOMPUTER YANG DISEDIAKAN COLON GAMING SEMICOLON DESAIN SEMICOLON OFFICE</that>
-<template>Jenis Game : AAA Gaming; Casual Gaming<think><set name="usability">GAMING</set><set name="topic">GAMING</set></think></template>
+</topic>
+
+<category>
+    <pattern>AKU MAU KOMPUTER</pattern>
+    <template><srai>AKU INGIN MEMBUAT SEBUAH KOMPUTER</srai></template>
 </category>
-<category><pattern>DESAIN</pattern><that>KOMPUTER YANG DISEDIAKAN COLON GAMING SEMICOLON DESAIN SEMICOLON OFFICE</that>
-<template>Jenis Desain : Desain Grafis; 3D Desain<think><set name="usability">DESAIN</set><set name="topic">DESAIN</set></think></template>
+<category>
+    <pattern>GAMING</pattern>
+    <that>KOMPUTER YANG DISEDIAKAN COLON GAMING SEMICOLON DESAIN SEMICOLON OFFICE</that>
+    <template>Jenis Game : AAA Gaming; Casual Gaming
+        <think>
+            <set name="usability">GAMING</set>
+            <set name="topic">GAMING</set>
+        </think>
+    </template>
 </category>
-<category><pattern>OFFICE</pattern><that>KOMPUTER YANG DISEDIAKAN COLON GAMING SEMICOLON DESAIN SEMICOLON OFFICE</that>
-<template>Apakah anda menginginkan komponen dengan fitur Low Voltage? Semua; Sebagian; Tidak <think><set name="usability">OFFICE</set><set name="topic">OFFICE</set></think></template>
+<category>
+    <pattern>DESAIN</pattern>
+    <that>KOMPUTER YANG DISEDIAKAN COLON GAMING SEMICOLON DESAIN SEMICOLON OFFICE</that>
+    <template>Jenis Desain : Desain Grafis; 3D Desain
+        <think>
+            <set name="usability">DESAIN</set>
+            <set name="topic">DESAIN</set>
+        </think>
+    </template>
 </category>
-<category><pattern>KOMPUTER USER</pattern>
-<template>Usability <get name="usability"/></template>
+<category>
+    <pattern>OFFICE</pattern>
+    <that>KOMPUTER YANG DISEDIAKAN COLON GAMING SEMICOLON DESAIN SEMICOLON OFFICE</that>
+    <template>Apakah anda menginginkan komponen dengan fitur Low Voltage? Semua; Sebagian; Tidak
+        <think>
+            <set name="usability">OFFICE</set>
+            <set name="topic">OFFICE</set>
+        </think>
+    </template>
+</category>
+<category>
+    <pattern>KOMPUTER USER</pattern>
+    <template>Usability <get name="usability"/></template>
 </category>
 </aiml>

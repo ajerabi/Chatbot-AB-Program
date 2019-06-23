@@ -54,13 +54,13 @@ public class CobaBOT {
         //String botName = "alice2";
         String botName = "super";
         //String botName = "JJ";
-        //String botName = "roboto";
+       // String botName = "roboto";
         MagicBooleans.jp_tokenize = false;
         MagicBooleans.trace_mode = true;
         //String action = "chat";
         String action = "webservice";
         //String action = "aiml2csv";
-        //String action = "jojo";
+        //  String action = "jojo";
         System.out.println(MagicStrings.program_name_version);
         for (final String s : args) {
             // System.out.println(s);
@@ -111,6 +111,7 @@ public class CobaBOT {
             TestAB.testChat(bot, doWrites, MagicBooleans.trace_mode);
         }
         else if (action.equals("webservice")) {
+            bot.writeAIMLIFFiles();
             new WebService();
         }else if (action.equals("jojo")) {
             bot.writeAIMLIFFiles();
@@ -150,8 +151,9 @@ public class CobaBOT {
     }
    
     static class WebService extends NanoHTTPD {
-        String botName = "roboto";
-        //String botName = "super";
+        //String botName = "roboto";
+        String botName = "super";
+        //String botName = "alice2";
         Bot bot = new Bot(botName, ".");
         //Bot bot = new Bot("alice2", ".");
         Chat chatSession = new Chat(bot);

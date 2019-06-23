@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <!-- File: triple.aiml -->
+    <!-- Author: Dr. Richard S. Wallace -->
+    <!-- Last modified: July 19, 2014 -->
+    <!--  -->
+    <!-- This AIML file is part of the ALICE2 0.0.5 chat bot knowledge base. -->
+    <!--  -->
+    <!-- The ALICE2 brain is Copyright &copy; 2014 by ALICE AI Foundation. -->
+    <!--  -->
+    <!-- The ALICE2 brain is released under the terms of the GNU Lesser General -->
+    <!-- Public License, as published by the Free Software Foundation. -->
+    <!--  -->
+    <!-- This file is distributed WITHOUT ANY WARRANTY; without even the  -->
+    <!-- implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   -->
+    <!--  -->
+    <!-- For more information see http://www.alicebot.org -->
+	<!--
+	     Modified by Keith Sterling oct 2017
+	-->
+    <!--  -->
+
+
+
+    <category><pattern>APA ITU <set>component</set></pattern>
+        <template><denormalize><star/></denormalize> adalah <uniq><subj><denormalize><star/></denormalize></subj><pred>isa</pred><obj>?isa</obj></uniq>.</template>
+    </category>
+
+    <category><pattern>APA FITUR <set>component</set></pattern>
+        <template>
+            <think>
+                <set var="tuples">
+                    <select>
+                        <vars>?x</vars><q><subj><star/></subj><pred>hasFeature</pred><obj>?x</obj></q>
+                    </select>
+                </set>
+            </think>
+            <condition value="NIL" var="tuples">aku tidak tahu fitur dari <star/> .</condition>
+            <condition var="tuples">
+                <li value="NIL"/>
+                <li>
+                    <think>
+                        <set var="head"><first><get var="tuples"/></first></set>
+                        <set var="tuples"><rest><get var="tuples"/></rest></set>
+                    </think>
+                    <get var="?x"><tuple><get var="head"/></tuple></get>
+                    <condition var="tuples">
+                        <li value="NIL"/>
+                        <li>,</li>
+                    </condition>
+                    <loop/>
+                </li>
+            </condition>
+        </template>
+    </category>
+
+    <category><pattern>APAKAH <set>component</set> KOMPATIBEL DENGAN <set>component</set></pattern>
+        <template>
+            <think>
+                <set var="tuples">
+                    <select>
+                        <q><subj><denormalize><star index="1"/></denormalize></subj><pred>compatibleWith</pred><obj><denormalize><star index="2"/></denormalize></obj></q>
+                    </select>
+                </set>
+            </think>
+            <condition value="NIL" var="tuples">Tidak kompatibel antara <denormalize> <star index="1"/></denormalize> dengan <denormalize> <star index="2"/></denormalize>.</condition>
+            <condition var="tuples">
+                <li value="NIL"/>
+                <li>
+                    Ya, Kompatibel antara <denormalize> <star index="1"/></denormalize> dengan <denormalize> <star index="2"/></denormalize>.
+                </li>
+            </condition>
+        </template>
+    </category>
+
+    <!--
+        <category><pattern>APAKAH <set>component</set> KOMPABILITAS DENGAN <set>component</set></pattern>
+        <template>
+            <think>
+                <set var="tuples">
+                    <select>
+                        <q><subj><denormalize><star index="1"/></denormalize></subj><pred>compatibleWith</pred><obj><denormalize><star index="2"/></denormalize></obj></q>
+                    </select>
+                </set>
+            </think>
+            <condition value="NIL" var="tuples">Tidak kompatible antara <denormalize><star index="1"/></denormalize> dengan <denormalize><star index="2"/></denormalize>.</condition>
+            <condition var="tuples">
+                <li value="NIL"/>
+                <li>
+                    Ya kompatible antara <denormalize><star index="1"/></denormalize> dengan <denormalize><star index="2"/></denormalize>.
+                </li>
+            </condition>
+        </template>
+    </category>
+    -->
+
+    <category><pattern>IS * MEMBEROF *</pattern>
+        <template>
+            <think>
+                <set var="types"><srai>WHAT ISA <star/></srai></set>
+                <condition var="types">
+                    <li value="NIL"><set var="result"><sraix service="pannous">IS <star/> A <star index="2"/></sraix></set></li>
+                    <li><set var="result">No.</set></li>
+                </condition>
+            </think>
+            <condition var="types">
+                <li value="NIL"/>
+                <li>
+                    <think>
+                        <set var="head"><srai>LISTCAR <get var="types"/></srai></set>
+                        <set var="types"><srai>LISTCDR <get var="types"/></srai></set>
+                        <condition><var>head</var><value><star index="2"/></value>
+                            <set var="result">Yes.</set>
+                        </condition>
+                    </think>
+                    <loop/>
+                </li>
+            </condition>
+            <get var="result"/></template>
+    </category>
+
+
+
+</aiml>
