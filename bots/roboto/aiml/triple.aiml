@@ -20,7 +20,16 @@
     -->
     <!--  -->
 
-
+    <category>
+      <pattern>POSTBACK</pattern>
+      <template>
+        Here's an example of what a few postback buttons look like in the widget.
+        <button>
+          <text>Postback Button</text>
+          <postback>POSTBACK BUTTON</postback>
+        </button>
+      </template>
+    </category>
 
     <category><pattern>APA ITU <set>component</set></pattern>
         <template><star/> adalah

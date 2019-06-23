@@ -129,13 +129,16 @@
 <topic name="OFFICE">
 <category><pattern>COMPUTER SPECIFICATIONS</pattern>
 <template>INI COMPUTER <get name="usability"/> MU
-    <get name="PROCESSOR_LV"/> <br/>
-    <get name="HARDDRIVE_LV"/> and <get name="HARDDRIVE_LN"/> <br/>
-    <get name="MOTHERBOARD"/> <br/>
-    <get name="RAM"/> <br/>
-    <get name="COOLER_LN"/> <br/>
-    <get name="VIDEOCARD_LN"/> <br/>
-    <get name="SOUNDCARD"/></template>
+<list>
+    <item><get name="PROCESSOR_LV"/></item> <br/>
+    <item><get name="HARDDRIVE_LV"/> and <get name="HARDDRIVE_LN"/></item> <br/>
+    <item><get name="MOTHERBOARD"/></item> <br/>
+    <item><get name="RAM"/></item> <br/>
+    <item><get name="COOLER_LN"/></item> <br/>
+    <item><get name="VIDEOCARD_LN"/></item> <br/>
+    <item><get name="SOUNDCARD"/></item>
+</list>
+</template>
 </category></topic>
 
 </aiml>
