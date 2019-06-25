@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ce6bd93-7721-457f-a381-9fdd3452df1a" name="Default Changelist" comment="Add sparql-dl maven dependency, combine sparql-dl program">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cobabot/Example_Local.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cobabot/StringParserForSPARQL_DL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CobaBOT/META-INF/CobaBOT.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CobaBOT/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CobaBOT/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CobaBOT/cobabot/CobaBOT$SRAQL_DL.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CobaBOT/cobabot/CobaBOT$WebService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CobaBOT/cobabot/CobaBOT$WebService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CobaBOT/cobabot/CobaBOT.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CobaBOT/cobabot/CobaBOT.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CobaBOT/cobabot/ExampleSPARQLDL.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CobaBOT/cobabot/ExampleSPARQLDL.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cobabot/ExampleSPARQLDL.java" beforeDir="false" />
+    <list default="true" id="4ce6bd93-7721-457f-a381-9fdd3452df1a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/out/production/CobaBOT/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CobaBOT/cobabot/CobaBOT$WebService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CobaBOT/cobabot/CobaBOT.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CobaBOT/cobabot/ExampleSPARQLDL.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cobabot/CobaBOT.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="201">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -45,8 +37,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cobabot/StringParserForSPARQL_DL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="16" selection-start-column="16" selection-end-column="16" />
+            <state relative-caret-position="304">
+              <caret line="43" column="34" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -54,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cobabot/Example_Local.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="122" column="1" lean-forward="true" selection-start-line="122" selection-start-column="1" selection-end-line="122" selection-end-column="1" />
+            <state relative-caret-position="100">
+              <caret line="29" column="57" lean-forward="true" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -210,12 +202,6 @@
               <item name="Chatbot-AB-Program" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Chatbot-AB-Program" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chatbot-AB-Program" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cobabot" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -341,7 +327,7 @@
       <workItem from="1561348744057" duration="4693000" />
       <workItem from="1561462070994" duration="1695000" />
       <workItem from="1561466412441" duration="33000" />
-      <workItem from="1561466479890" duration="563000" />
+      <workItem from="1561466479890" duration="824000" />
     </task>
     <task id="LOCAL-00001" summary="Menampilkan message dari User dan Bot">
       <created>1560778695973</created>
@@ -350,11 +336,18 @@
       <option name="project" value="LOCAL" />
       <updated>1560778695974</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add sparql-dl maven dependency, combine sparql-dl program">
+      <created>1561467056941</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1561467056942</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81821000" />
+    <option name="totallyTimeSpent" value="82082000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -367,9 +360,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Learn" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49885583" visible="true" weight="0.18154311" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49885583" visible="true" weight="0.18154311" />
       <window_info id="Structure" order="1" sideWeight="0.5011442" side_tool="true" weight="0.15873016" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -378,7 +372,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.50076807" side_tool="true" weight="0.15873016" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49920633" weight="0.23440135" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49920633" visible="true" weight="0.23440135" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -388,7 +382,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50079364" side_tool="true" weight="0.32565284" />
-      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.32715008" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32715008" />
       <window_info anchor="right" id="Codota" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -597,26 +591,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cobabot/StringParserForSPARQL_DL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cobabot/Example_Local.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="122" column="1" lean-forward="true" selection-start-line="122" selection-start-column="1" selection-end-line="122" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cobabot/ExampleSPARQLDL.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -630,7 +604,27 @@
     <entry file="file://$PROJECT_DIR$/src/cobabot/CobaBOT.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cobabot/StringParserForSPARQL_DL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="43" column="34" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cobabot/Example_Local.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="29" column="57" lean-forward="true" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
