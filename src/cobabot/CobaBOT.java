@@ -43,13 +43,6 @@ public class CobaBOT {
         AIMLProcessor.extension = new PCAIMLProcessorExtension();
         mainFunction(args);
     }
-
-    public void runBot(String[] args){
-        MagicStrings.setRootPath();
-
-        AIMLProcessor.extension = new PCAIMLProcessorExtension();
-        mainFunction(args);
-    }
     
     public static void mainFunction(final String[] args) {
         //String botName = "alice2";
@@ -205,7 +198,7 @@ public class CobaBOT {
                             Scanner scanner = new Scanner(responseBot);
                                 String line = scanner.nextLine();
                                     if (line.contains("INI COMPUTER") ) {
-                                        System.out.println("BISA!!!!");
+                                        Example_Local.querySPARQL_DL(responseBot);
                                     }
                             response = newFixedLengthResponse(responseBot);
                             //System.out.println("running /Bot");
@@ -261,9 +254,4 @@ public class CobaBOT {
             }
         }
     }
-
-
-
-
-
 }

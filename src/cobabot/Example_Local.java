@@ -22,36 +22,18 @@ import java.io.File;
 
 
 /**
- * This basic examples show how to load an ontology, to initialize the SPARQL-DL query engine
- * as well as to execute some simple queries.
- * We use the OWL wine ontology for demonstration and the built-in StructuralReasoner as sample
- * reasoning system.
- * In case you use any other reasoning engine make sure you have the respective jars within your
- * classpath (note that you have to provide the resp. ReasonerFactory in this case).
- *
- * @author Mario Volke
- * @author Thorsten Liebig
+ * @author Farrel
+ * @author Fizikri
  */
 public class Example_Local
 {
     private static QueryEngine engine;
 
     /**
-     * @param args
+     * @param stringAIMLResult
      */
-    public static void main(String[] args)
+    public static void querySPARQL_DL(String stringAIMLResult)
     {
-        String str = "INI COMPUTER OFFICE MU\n" +
-                "<list>\n" +
-                "    <item>CPU-LowVoltage</item> <br/>\n" +
-                "    <item>HardDrive-LowVoltage and HardDrive-LowNoise and HardDrive-FastBoot</item> <br/>\n" +
-                "    <item>DEFAULT</item> <br/>\n" +
-                "    <item>DEFAULT</item> <br/>\n" +
-                "    <item>ComputerCooling-Overclockable</item> <br/>\n" +
-                "    <item>VideoCard-LowVoltage</item> <br/>\n" +
-                "    <item>DEFAULT</item>\n" +
-                "</list>";
-
 //        Logger.getRootLogger().setLevel(Level.OFF);
 
         try {
@@ -64,7 +46,7 @@ public class Example_Local
             reasoner.precomputeInferences(InferenceType.CLASS_ASSERTIONS, InferenceType.OBJECT_PROPERTY_ASSERTIONS);
             engine = QueryEngine.create(manager, reasoner, true);
 
-            processQuery(StringParserForSPARQL_DL.function(str).toString());
+            processQuery(StringParserForSPARQL_DL.function(stringAIMLResult).toString());
         }
         catch(UnsupportedOperationException exception) {
             System.out.println("Unsupported reasoner operation.");

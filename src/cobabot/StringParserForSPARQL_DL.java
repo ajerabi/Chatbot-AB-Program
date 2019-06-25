@@ -46,8 +46,7 @@ public class StringParserForSPARQL_DL {
                     .append(componentType)
                     .append("), \n")
                     .append("PropertyValue(?Component, myOnto:hasFeature, myOnto:")
-                    .append(featurePropertyValue)
-                    .append(")").append("}");
+                    .append(featurePropertyValue);
             if(index++ == newList.size() - 1){
                 strQueryWhere.append(")").append("}");
             } else {
