@@ -111,10 +111,11 @@ public class CobaBOT {
             TestAB.testChat(bot, doWrites, MagicBooleans.trace_mode);
         }
         else if (action.equals("webservice")) {
-            bot.writeAIMLIFFiles();
+            convert(bot, "aiml2csv");
             new WebService();
         }else if (action.equals("jojo")) {
-            bot.writeAIMLIFFiles();
+            convert(bot, "aiml2csv");
+            //bot.writeAIMLIFFiles();
             //tambahkan method writeAIMLIFFiles(); pada object bot
             final boolean doWrites = false;
             TestAB.testChat(bot, doWrites, MagicBooleans.trace_mode);
@@ -205,7 +206,9 @@ public class CobaBOT {
                             String[] splitMessageHuman = message.split("\\s");
                             for (String w:splitMessageHuman) {
                                 System.out.println(w);
+
                             }
+
                             /*
                             System.out.println("---------------Bot Response-------------");
                             String[] splitMessageBot = responseBot.split("\\s");
@@ -250,5 +253,9 @@ public class CobaBOT {
             }
         }
     }
-    
+
+
+
+
+
 }
