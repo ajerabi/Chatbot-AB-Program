@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ce6bd93-7721-457f-a381-9fdd3452df1a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/edu_stanford_protege_de_derivo_sparqldlapi_2_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/owlapi_3_2_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bots/super/sets/.idea/sets.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bots/super/sets/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cobabot/ExampleSPARQLDL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CobaBOT.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CobaBOT.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bots/super/aimlif/update.aiml.csv" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aimlif/update.aiml.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CobaBOT/cobabot/CobaBOT$WebService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CobaBOT/cobabot/CobaBOT$WebService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CobaBOT/cobabot/CobaBOT.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CobaBOT/cobabot/CobaBOT.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cobabot/CobaBOT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cobabot/CobaBOT.java" afterDir="false" />
-    </list>
+    <list default="true" id="4ce6bd93-7721-457f-a381-9fdd3452df1a" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,8 +32,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cobabot/CobaBOT.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="501">
+              <caret line="261" lean-forward="true" selection-start-line="261" selection-end-line="261" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -267,7 +255,7 @@
       <workItem from="1561270786416" duration="3730000" />
       <workItem from="1561294256499" duration="3169000" />
       <workItem from="1561348744057" duration="4693000" />
-      <workItem from="1561462070994" duration="1287000" />
+      <workItem from="1561462070994" duration="1695000" />
     </task>
     <task id="LOCAL-00001" summary="Menampilkan message dari User dan Bot">
       <created>1560778695973</created>
@@ -280,7 +268,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80826000" />
+    <option name="totallyTimeSpent" value="81234000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -511,8 +499,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cobabot/CobaBOT.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="501">
+          <caret line="261" lean-forward="true" selection-start-line="261" selection-end-line="261" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
