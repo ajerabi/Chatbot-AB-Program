@@ -8,6 +8,7 @@ package cobabot;
 import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 
 import org.alicebot.ab.AB;
 import org.alicebot.ab.AIMLProcessor;
@@ -199,6 +200,13 @@ public class CobaBOT {
                             //System.out.println("AHHA : "+data +"ad: "+anno);
                             String responseBot = chatSession.multisentenceRespond(message);
                             System.out.println("Pesan BOT: "+responseBot);
+
+                            // Membuat kondisi ketika response bot adalah akhir response
+                            Scanner scanner = new Scanner(responseBot);
+                                String line = scanner.nextLine();
+                                    if (line.contains("INI COMPUTER") ) {
+                                        System.out.println("BISA!!!!");
+                                    }
                             response = newFixedLengthResponse(responseBot);
                             //System.out.println("running /Bot");
                             //SPLIT STRING//
