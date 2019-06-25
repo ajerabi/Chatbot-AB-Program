@@ -20,8 +20,8 @@
 <template>Apakah anda menginginkan komponen dengan fitur Low Noise? Semua; Sebagian; Tidak
 <think>
     <set name="LowVoltage">SEMUA</set>
-    <set name="PROCESSOR_LV">PROCESSOR-LOWVOLTAGE</set>
-    <set name="HARDDRIVE_LV">HARDDRIVE-LOWVOLTAGE</set>
+    <set name="PROCESSOR_LV">CPU-LowVoltage</set>
+    <set name="HARDDRIVE_LV">HardDrive-LowVoltage</set>
 </think></template>
 </category></topic>
 
@@ -34,7 +34,7 @@
 <category><pattern>YA</pattern><that>APAKAH ANDA MENGINGINKAN PROCESSOR DENGAN FITUR LOW VOLTAGE QUESTION MARK YA SEMICOLON TIDAK</that>
 <template>Apakah anda menginginkan Hard Drive dengan fitur Low Voltage? Ya; Tidak
 <think>
-    <set name="PROCESSOR_LV">PROCESSOR-LOWVOLTAGE</set>
+    <set name="PROCESSOR_LV">CPU-LowVoltage</set>
 </think></template>
 </category></topic>
 
@@ -52,7 +52,7 @@
 <category><pattern>YA</pattern><that>APAKAH ANDA MENGINGINKAN HARD DRIVE DENGAN FITUR LOW VOLTAGE QUESTION MARK YA SEMICOLON TIDAK</that>
 <template>Apakah anda menginginkan komponen dengan fitur Low Noise? Semua; Sebagian; Tidak
 <think>
-    <set name="HARDDRIVE_LV">HARDDRIVE-LOWVOLTAGE</set>
+    <set name="HARDDRIVE_LV">HardDrive-LowVoltage</set>
 </think></template>
 </category></topic>
 
@@ -71,9 +71,9 @@
 <template>OFFICE BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil
 <think>
     <set name="LowNoise">SEMUA</set>
-    <set name="HARDDRIVE_LN">HARDDRIVE-LOWNOISE</set>
-    <set name="COOLER_LN">COOLER-LOWNOISE</set>
-    <set name="VIDEOCARD_LN">VIDEOCARD-LOWNOISE</set>
+    <set name="HARDDRIVE_LN">HardDrive-LowNoise</set>
+    <set name="COOLER_LN">ComputerCooling-LowNoise</set>
+    <set name="VIDEOCARD_LN">VideoCard-LowNoise</set>
 </think></template>
 </category></topic>
 
@@ -86,7 +86,7 @@
 <category><pattern>YA</pattern><that>APAKAH ANDA MENGINGINKAN HARD DRIVE DENGAN FITUR LOW NOISE QUESTION MARK YA SEMICOLON TIDAK</that>
 <template>Apakah anda menginginkan Cooler dengan fitur Low Noise? Ya; Tidak
 <think>
-    <set name="HARDDRIVE_LN">HARDDRIVE-LOWNOISE</set>
+    <set name="HARDDRIVE_LN">HardDrive-LowNoise</set>
 </think></template>
 </category></topic>
 
@@ -99,7 +99,7 @@
 <category><pattern>YA</pattern><that>APAKAH ANDA MENGINGINKAN COOLER DENGAN FITUR LOW NOISE QUESTION MARK YA SEMICOLON TIDAK</that>
 <template>Apakah anda menginginkan Video Card dengan fitur Low Noise? Ya; Tidak
 <think>
-    <set name="COOLER_LN">COOLER-LOWNOISE</set>
+    <set name="COOLER_LN">ComputerCooling-LowNoise</set>
 </think></template>
 </category></topic>
 
@@ -112,7 +112,7 @@
 <category><pattern>YA</pattern><that>APAKAH ANDA MENGINGINKAN VIDEO CARD DENGAN FITUR LOW NOISE QUESTION MARK YA SEMICOLON TIDAK</that>
 <template>OFFICE BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil
 <think>
-    <set name="VIDEOCARD_LN">VIDEOCARD-LOWNOISE</set>
+    <set name="VIDEOCARD_LN">VideoCard-LowNoise</set>
 </think></template>
 </category></topic>
 
