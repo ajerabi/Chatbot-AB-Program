@@ -145,14 +145,14 @@
 <li value="SEMUA">
 <list>
     <item><get name="PROCESSOR_LV"/></item> <br/>
-    <item><get name="HARDDRIVE_LV"/> <br/>
+    <item><get name="HARDDRIVE_LV"/></item><br/>
 </list>
 </li>
 </condition>
 <condition name="LowNoise">
 <li value="SEMUA">
 <list>
-    <item><get name="HARDDRIVE_LN"/> <br/>
+    <item><get name="HARDDRIVE_LN"/></item><br/>
 </list>
 </li>
 </condition>
