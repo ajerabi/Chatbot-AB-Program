@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ce6bd93-7721-457f-a381-9fdd3452df1a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="4ce6bd93-7721-457f-a381-9fdd3452df1a" name="Default Changelist" comment="SPARQL-DL and AIML integration complete (for feature only)">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bots/super/aiml/topic_Office.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aiml/topic_Office.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bots/super/aimlif/topic_DesainGrafis.aiml.csv" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aimlif/topic_DesainGrafis.aiml.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bots/super/aimlif/topic_Office.aiml.csv" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aimlif/topic_Office.aiml.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bots/super/aimlif/update.aiml.csv" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aimlif/update.aiml.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cobabot/Example_Local.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cobabot/Example_Local.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,20 +23,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cobabot/CobaBOT.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="195" lean-forward="true" selection-start-line="195" selection-end-line="195" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cobabot/Example_Local.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="74" column="10" selection-start-line="74" selection-start-column="10" selection-end-line="74" selection-end-column="10" />
+            <state relative-caret-position="340">
+              <caret line="244" lean-forward="true" selection-start-line="244" selection-end-line="244" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -52,8 +35,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cobabot/StringParserForSPARQL_DL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="23" column="43" lean-forward="true" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+            <state relative-caret-position="1128">
+              <caret line="50" column="54" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cobabot/Example_Local.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1296">
+              <caret line="70" column="34" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -62,40 +57,46 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/bots/super/aiml/topic_Office.aiml">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="155" column="7" lean-forward="true" selection-start-line="155" selection-start-column="7" selection-end-line="155" selection-end-column="7" />
+            <state relative-caret-position="240">
+              <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bots/super/aimlif/topic_Office.aiml.csv">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-51" />
+            <state relative-caret-position="336">
+              <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bots/super/aiml/topic_Usability.aiml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bots/super/aiml/topic_Office.aiml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+            </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bots/super/aiml/topic_DesainGrafis.aiml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2023">
+            <state relative-caret-position="2856">
               <caret line="119" column="47" selection-start-line="119" selection-start-column="47" selection-end-line="119" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bots/super/aiml/topic_AAAGaming.aiml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bots/super/aiml/topic_Usability.aiml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -103,7 +104,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="240">
               <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
             </state>
           </provider>
@@ -177,13 +178,13 @@
         <option value="$PROJECT_DIR$/src/cobabot/Anno.java" />
         <option value="$PROJECT_DIR$/src/cobabot/ExampleSPARQLDL.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/bots/super/aiml/topic_DesainGrafis.aiml" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/cobabot/StringParserForSPARQL_DL.java" />
         <option value="$PROJECT_DIR$/src/cobabot/CobaBOT.java" />
         <option value="$PROJECT_DIR$/src/cobabot/Example_Local.java" />
         <option value="$PROJECT_DIR$/bots/super/aiml/topic_Office.aiml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -204,7 +205,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -212,52 +213,11 @@
               <item name="Chatbot-AB-Program" type="b2602c69:ProjectViewProjectNode" />
               <item name="Chatbot-AB-Program" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Chatbot-AB-Program" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chatbot-AB-Program" type="462c0819:PsiDirectoryNode" />
-              <item name="bots" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Chatbot-AB-Program" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chatbot-AB-Program" type="462c0819:PsiDirectoryNode" />
-              <item name="bots" type="462c0819:PsiDirectoryNode" />
-              <item name="super" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Chatbot-AB-Program" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chatbot-AB-Program" type="462c0819:PsiDirectoryNode" />
-              <item name="bots" type="462c0819:PsiDirectoryNode" />
-              <item name="super" type="462c0819:PsiDirectoryNode" />
-              <item name="aiml" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Chatbot-AB-Program" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chatbot-AB-Program" type="462c0819:PsiDirectoryNode" />
-              <item name="bots" type="462c0819:PsiDirectoryNode" />
-              <item name="super" type="462c0819:PsiDirectoryNode" />
-              <item name="aimlif" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Chatbot-AB-Program" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chatbot-AB-Program" type="462c0819:PsiDirectoryNode" />
-              <item name="owl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Chatbot-AB-Program" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chatbot-AB-Program" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Chatbot-AB-Program" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chatbot-AB-Program" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cobabot" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -439,7 +399,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84718000" />
+    <option name="totallyTimeSpent" value="84992000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -454,7 +414,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49885583" visible="true" weight="0.26701966" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49885583" visible="true" weight="0.28366113" />
       <window_info id="Structure" order="1" sideWeight="0.5011442" side_tool="true" weight="0.15873016" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -464,16 +424,16 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3288364" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49920633" visible="true" weight="0.38297874" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49920633" weight="0.38297874" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32569557" />
+      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32569557" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3289689" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50079364" side_tool="true" weight="0.32565284" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50079364" side_tool="true" weight="0.21753794" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32715008" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -641,13 +601,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cobabot/CobaBOT.java" />
     <entry file="file://$PROJECT_DIR$/src/cobabot/ExampleSPARQLDL.java" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -658,7 +611,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bots/super/aiml/topic_DesainGrafis.aiml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2023">
+        <state relative-caret-position="2856">
           <caret line="119" column="47" selection-start-line="119" selection-start-column="47" selection-end-line="119" selection-end-column="47" />
         </state>
       </provider>
@@ -668,15 +621,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="240">
           <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cobabot/CobaBOT.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="195" lean-forward="true" selection-start-line="195" selection-end-line="195" />
+        <state relative-caret-position="340">
+          <caret line="244" lean-forward="true" selection-start-line="244" selection-end-line="244" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -685,15 +638,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bots/super/aiml/topic_Usability.aiml">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="432">
           <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cobabot/StringParserForSPARQL_DL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="23" column="43" lean-forward="true" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+        <state relative-caret-position="1128">
+          <caret line="50" column="54" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -702,8 +655,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cobabot/Example_Local.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="74" column="10" selection-start-line="74" selection-start-column="10" selection-end-line="74" selection-end-column="10" />
+        <state relative-caret-position="1296">
+          <caret line="70" column="34" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -717,8 +670,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bots/super/aiml/topic_Office.aiml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="155" column="7" lean-forward="true" selection-start-line="155" selection-start-column="7" selection-end-line="155" selection-end-column="7" />
+        <state relative-caret-position="168">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
         </state>
       </provider>
     </entry>
