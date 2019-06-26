@@ -47,6 +47,8 @@ public class StringParserForSPARQL_DL {
 
             if (!show.toString().contains("[") || !show.toString().contains("]")) {
                 performanceClassifications = show.toString();
+                dependantComponent(strQueryWhere, "Motherboard", performanceClassifications);
+                dependantComponent(strQueryWhere, "RAM", performanceClassifications);
             } else {
                 show = show.toString().substring(1, show.toString().lastIndexOf("]"));
                 componentType = show.toString().substring(0, show.toString().lastIndexOf(","));
@@ -88,5 +90,14 @@ public class StringParserForSPARQL_DL {
         System.out.println(strQuerySelect.append(strQueryWhere));
         scanner.close();
         return strQuerySelect.append(strQueryWhere);
+    }
+
+    public static void dependantComponent(StringBuilder strQueryWhere, String component, String performanceClassifications){
+        strQueryWhere.append(" WHERE {\n")
+                .append("Type(?Component, myOnto:")
+                .append(component)
+                .append("), \n")
+                .append("PropertyValue(?Component, myOnto:hasPerformanceClassification, myOnto:")
+                .append(performanceClassifications).append(")}").append("\nOR");
     }
 }
