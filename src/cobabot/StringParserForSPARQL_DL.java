@@ -45,35 +45,48 @@ public class StringParserForSPARQL_DL {
         int index = 0;
         for (Object show : newList.toArray()) {
 
-                if (!show.toString().contains("[") || !show.toString().contains("]")){
-                    performanceClassifications = show.toString();
-                } else {
-                    show = show.toString().substring(1, show.toString().lastIndexOf("]"));
-                    componentType = show.toString().substring(0, show.toString().lastIndexOf(","));
-                    featurePropertyValue = show.toString().substring(show.toString().lastIndexOf(" ") + 1);
-                    strQueryWhere.append(" WHERE {\n")
-                            .append("Type(?Component, myOnto:")
-                            .append(componentType)
-                            .append("), \n")
-                            .append("PropertyValue(?Component, myOnto:hasFeature, myOnto:")
-                            .append(featurePropertyValue);
-                    if (index++ == newList.size() - 2) {
-                        strQueryWhere.append("), \n")
-                                .append("PropertyValue(?Component, myOnto:hasPerformanceClassification, myOnto:")
-                                .append(performanceClassifications).append(")")
-                                .append("}");
+            if (!show.toString().contains("[") || !show.toString().contains("]")) {
+                performanceClassifications = show.toString();
+            } else {
+                show = show.toString().substring(1, show.toString().lastIndexOf("]"));
+                componentType = show.toString().substring(0, show.toString().lastIndexOf(","));
+                featurePropertyValue = show.toString().substring(show.toString().lastIndexOf(" ") + 1);
+                strQueryWhere.append(" WHERE {\n")
+                        .append("Type(?Component, myOnto:")
+                        .append(componentType)
+                        .append("), \n")
+                        .append("PropertyValue(?Component, myOnto:hasFeature, myOnto:")
+                        .append(featurePropertyValue);
+                boolean performancePropertyCondition =
+                        componentType.equals("CPU") || componentType.equals("VideoCard") || componentType.equals("RAM");
+                if (index++ == newList.size() - 2) {
+                    if (performancePropertyCondition) {
+                        strQueryWhere.append("), \n");
+                        strQueryWhere.append("PropertyValue(?Component, myOnto:hasPerformanceClassification, myOnto:")
+                                .append(performanceClassifications)
+                                .append(")");
                     } else {
-                        strQueryWhere.append("), \n")
-                                .append("PropertyValue(?Component, myOnto:hasPerformanceClassification, myOnto:")
-                                .append(performanceClassifications).append(")").append("}")
-                                .append("\nOR");
+                        strQueryWhere.append(")");
                     }
-                    System.out.println(index);
-                    System.out.println(newList.size() - 1);
+                    strQueryWhere.append("}");
+                } else {
+                    if (performancePropertyCondition) {
+                        strQueryWhere.append("), \n");
+                        strQueryWhere.append("PropertyValue(?Component, myOnto:hasPerformanceClassification, myOnto:")
+                                .append(performanceClassifications)
+                                .append(")");
+                    } else {
+                        strQueryWhere.append(")");
+                    }
+                    strQueryWhere.append("}")
+                            .append("\nOR");
                 }
+                System.out.println(index);
+                System.out.println(newList.size() - 1);
+            }
         }
-        scanner.close();
         System.out.println(strQuerySelect.append(strQueryWhere));
+        scanner.close();
         return strQuerySelect.append(strQueryWhere);
     }
 }
