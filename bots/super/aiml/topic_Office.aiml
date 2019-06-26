@@ -140,7 +140,7 @@
 
 <topic name="OFFICE">
 <category><pattern>COMPUTER SPECIFICATIONS</pattern>
-<template>INI COMPUTER <get name="usability"/> MU <br/>
+<template>INI COMPUTER <get name="usability"/> MU DENGAN FITUR <br/>
 <condition name="LowVoltage">
 <li value="SEMUA">
 <list>
@@ -156,6 +156,8 @@
 </list>
 </li>
 </condition>
+<br/>
+DENGAN KLASIFIKASI<br/> Entry-Level
 </template>
 </category></topic>
 

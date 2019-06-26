@@ -19,6 +19,7 @@ import org.semanticweb.owlapi.reasoner.OWLReasoner;
 import org.semanticweb.owlapi.reasoner.structural.StructuralReasonerFactory;
 
 import java.io.File;
+import java.util.Scanner;
 
 
 /**
@@ -87,6 +88,14 @@ public class Example_Local
                 else {
                     System.out.println("Results:");
                     System.out.print(result);
+
+//                    Scanner scanner = new Scanner(result.toString());
+//                    while (scanner.hasNextLine()){
+//                        String line = scanner.nextLine();
+//                        line = line.substring(line.lastIndexOf("#" + 1));
+//                        System.out.println(line);
+//                    }
+
                     System.out.println("-------------------------------------------------");
                     System.out.println("Size of result set: " + result.size());
                 }
