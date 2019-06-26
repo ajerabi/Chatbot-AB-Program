@@ -40,12 +40,19 @@
 
 <topic name="OFFICE">
 <category><pattern>TIDAK</pattern><that>APAKAH ANDA MENGINGINKAN PROCESSOR DENGAN FITUR LOW VOLTAGE QUESTION MARK YA SEMICOLON TIDAK</that>
-<template>Apakah anda menginginkan Hard Drive dengan fitur Low Voltage? Ya; Tidak</template>
+<template>Apakah anda menginginkan Hard Drive dengan fitur Low Voltage? Ya; Tidak
+<think>
+    <set name="PROCESSOR_LV">CPU-DEFAULT</set>
+</think></template>
 </category></topic>
 
 <topic name="OFFICE">
 <category><pattern>TIDAK</pattern><that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR LOW VOLTAGE QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
-<template>Apakah anda menginginkan komponen dengan fitur Low Noise? Semua; Sebagian; Tidak</template>
+<template>Apakah anda menginginkan komponen dengan fitur Low Noise? Semua; Sebagian; Tidak
+<think>
+    <set name="PROCESSOR_LV">CPU-DEFAULT</set>
+    <set name="HARDDRIVE_LV">HardDrive-DEFAULT</set>
+</think></template>
 </category></topic>
 
 <topic name="OFFICE">
@@ -123,21 +130,32 @@
 
 <topic name="OFFICE">
 <category><pattern>TIDAK</pattern><that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR LOW NOISE QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
-<template>OFFICE BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil</template>
+<template>OFFICE BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil
+<think>
+    <set name="HARDDRIVE_LN">DEFAULT</set>
+    <set name="COOLER_LN">DEFAULT</set>
+    <set name="VIDEOCARD_LN">DEFAULT</set>
+</think></template>
 </category></topic>
 
 <topic name="OFFICE">
 <category><pattern>COMPUTER SPECIFICATIONS</pattern>
-<template>INI COMPUTER <get name="usability"/> MU
+<template>INI COMPUTER <get name="usability"/> MU <br/>
+<condition name="LowVoltage">
+<li value="SEMUA">
 <list>
     <item><get name="PROCESSOR_LV"/></item> <br/>
-    <item><get name="HARDDRIVE_LV"/> and <get name="HARDDRIVE_LN"/></item> <br/>
-    <item><get name="MOTHERBOARD"/></item> <br/>
-    <item><get name="RAM"/></item> <br/>
-    <item><get name="COOLER_LN"/></item> <br/>
-    <item><get name="VIDEOCARD_LN"/></item> <br/>
-    <item><get name="SOUNDCARD"/></item>
+    <item><get name="HARDDRIVE_LV"/> <br/>
 </list>
+</li>
+</condition>
+<condition name="LowNoise">
+<li value="SEMUA">
+<list>
+    <item><get name="HARDDRIVE_LN"/> <br/>
+</list>
+</li>
+</condition>
 </template>
 </category></topic>
 
