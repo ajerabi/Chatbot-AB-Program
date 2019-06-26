@@ -5,6 +5,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * @author Fizikri
+ */
 public class StringParserForSPARQL_DL {
     public static StringBuilder function(String resultAIML) {
         String componentType = null;
@@ -21,14 +24,14 @@ public class StringParserForSPARQL_DL {
                 line.substring(0, 0);
             } else if (!"INI COMPUTER OFFICE MU".equals(line)) {
                 line = line.substring(10, line.lastIndexOf("</item>"));
-                if (line.contains("and")) {
+                if (line.contains("and") && !line.contains("DEFAULT")) {
                     String[] temp = line.split("and ");
                     for (String data : temp) {
                         List<String> list = Arrays.asList(data.trim().split("-"));
                         newList.add(list.toString());
                     }
                 }
-                if (!line.equals("DEFAULT") && !line.contains("and")) {
+                if (!line.contains("DEFAULT") && !line.contains("and")) {
                     List<String> list = Arrays.asList(line.split("-"));
                     newList.add(list.toString());
                 }

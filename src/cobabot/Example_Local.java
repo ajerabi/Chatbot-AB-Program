@@ -39,7 +39,7 @@ public class Example_Local
         try {
             OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
 
-            OWLOntology ont = manager.loadOntologyFromOntologyDocument(new File("G:\\Github KoTA 204\\Chatbot-AB-Program\\owl\\system-unit-of-desktop-computer-inferred.owl"));
+            OWLOntology ont = manager.loadOntologyFromOntologyDocument(new File(".\\owl\\system-unit-of-desktop-computer-inferred.owl"));
 
             StructuralReasonerFactory factory = new StructuralReasonerFactory();
             OWLReasoner reasoner = factory.createReasoner(ont);
