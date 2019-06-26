@@ -32,10 +32,13 @@ public class Example_Local
 
     /**
      * @param stringAIMLResult
+     * @return
      */
-    public static void querySPARQL_DL(String stringAIMLResult)
+    public static Scanner querySPARQL_DL(String stringAIMLResult)
     {
 //        Logger.getRootLogger().setLevel(Level.OFF);
+
+        Scanner result_scan = null;
 
         try {
             OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
@@ -47,7 +50,7 @@ public class Example_Local
             reasoner.precomputeInferences(InferenceType.CLASS_ASSERTIONS, InferenceType.OBJECT_PROPERTY_ASSERTIONS);
             engine = QueryEngine.create(manager, reasoner, true);
 
-            processQuery(StringParserForSPARQL_DL.function(stringAIMLResult).toString());
+            result_scan = processQuery(StringParserForSPARQL_DL.function(stringAIMLResult).toString());
         }
         catch(UnsupportedOperationException exception) {
             System.out.println("Unsupported reasoner operation.");
@@ -55,9 +58,10 @@ public class Example_Local
         catch(OWLOntologyCreationException e) {
             System.out.println("Could not load the wine ontology: " + e.getMessage());
         }
+        return result_scan;
     }
 
-    private static void processQuery(String q)
+    private static Scanner processQuery(String q)
     {
         try {
             long startTime = System.currentTimeMillis();
@@ -89,15 +93,17 @@ public class Example_Local
                     System.out.println("Results:");
 //                    System.out.print(result);
                     Scanner scanner = new Scanner(result.toString());
-                    while (scanner.hasNextLine()){
+                    /*while (scanner.hasNextLine()){
                         String line = scanner.nextLine();
                         line = line.substring(line.lastIndexOf("#" ) + 1);
                         line = line.replace("_", " ");
                         System.out.println(line);
-                    }
+                    }*/
 
                     System.out.println("-------------------------------------------------");
                     System.out.println("Size of result set: " + result.size());
+
+                    return scanner;
                 }
             }
 
@@ -110,5 +116,6 @@ public class Example_Local
         catch(QueryEngineException e) {
             System.out.println("Query engine error: " + e);
         }
+        return null;
     }
 }

@@ -196,11 +196,23 @@ public class CobaBOT {
 
                             // Membuat kondisi ketika response bot adalah akhir response
                             Scanner scanner = new Scanner(responseBot);
-                                String line = scanner.nextLine();
-                                    if (line.contains("INI COMPUTER") ) {
-                                        Example_Local.querySPARQL_DL(responseBot);
-                                    }
-                            response = newFixedLengthResponse(responseBot);
+                            String line = scanner.nextLine();
+                            StringBuilder specifications = new StringBuilder("");
+                            if (line.contains("INI COMPUTER") ) {
+                                Scanner result = Example_Local.querySPARQL_DL(responseBot);
+                                while (result.hasNextLine()) {
+                                    line = result.nextLine();
+                                    line = line.substring(line.lastIndexOf("#") + 1);
+                                    line = line.replace("_", " ");
+                                    System.out.println(line);
+                                    specifications.append(line+" <br/>");
+                                    System.out.println(specifications);
+
+                                }
+                                response = newFixedLengthResponse(specifications.toString());
+                            }else{
+                                response = newFixedLengthResponse(responseBot);
+                            }
                             //System.out.println("running /Bot");
                             //SPLIT STRING//
                             System.out.println("---------------Human Response------------------");
