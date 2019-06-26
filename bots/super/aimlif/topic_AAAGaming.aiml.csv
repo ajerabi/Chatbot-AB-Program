@@ -1,8 +1,0 @@
-0,AAA GAMING,JENIS GAME COLON AAA GAMING SEMICOLON CASUAL GAMING,GAMING,Komponen Low Voltage Semua Sebagian Tidak,topic_AAAGaming.aiml
-0,SEMUA,KOMPONEN LOW VOLTAGE SEMUA SEBAGIAN TIDAK,GAMING,Processor Low Voltage Ya Tidak#Newline<think>#Newline    <set name="LowVoltage">SEMUA</set>#Newline    <set name="PROCESSOR">PROCESSOR-LOWVOLTAGE</set>#Newline    <set name="HARDDRIVE">HARDDRIVE-LOWVOLTAGE</set>#Newline    <set name="MOTHERBOARD">MOTHERBOARD-LOWVOLTAGE</set>#Newline    <set name="RAM">RAM-LOWVOLTAGE</set>#Newline    <set name="COOLER">COOLER-LOWVOLTAGE</set>#Newline    <set name="VIDEOCARD">VIDEOCARD-LOWVOLTAGE</set>#Newline    <set name="SOUNDCARD">SOUNDCARD-LOWVOLTAGE</set>#Newline</think>,topic_AAAGaming.aiml
-0,SEBAGIAN,KOMPONEN LOW VOLTAGE SEMUA SEBAGIAN TIDAK,GAMING,Processor Low Voltage Ya Tidak <think><set name="LowVoltage">SEBAGIAN</set></think>,topic_AAAGaming.aiml
-0,TIDAK,KOMPONEN LOW VOLTAGE SEMUA SEBAGIAN TIDAK,GAMING,Processor Low Voltage Ya Tidak,topic_AAAGaming.aiml
-0,YA,PROCESSOR LOW VOLTAGE YA TIDAK,GAMING,Hard Drive Low Voltage Ya Tidak <think><set name="PROCESSOR">PROCESSOR-LOWVOLTAGE</set></think>,topic_AAAGaming.aiml
-0,TIDAK,PROCESSOR LOW VOLTAGE YA TIDAK,GAMING,Hard Drive Low Voltage Ya Tidak <think><set name="PROCESSOR">NONE</set></think>,topic_AAAGaming.aiml
-0,YA,HARD DRIVE LOW VOLTAGE YA TIDAK,GAMING,Komponen Over Clocking Ya Tidak <think><set name="HARDDRIVE">HARDDRIVE-LOWVOLTAGE</set></think>,topic_AAAGaming.aiml
-0,TIDAK,HARD DRIVE LOW VOLTAGE YA TIDAK,GAMING,Komponen Over Clocking Ya Tidak <think><set name="HARDDRIVE">NONE</set></think>,topic_AAAGaming.aiml
