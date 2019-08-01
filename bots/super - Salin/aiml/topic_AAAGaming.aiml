@@ -176,7 +176,7 @@
     <!--ALL NON OVERCLOCK-->
     <topic name="GAMING">
         <category><pattern>TIDAK</pattern><that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR OVERCLOCK QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
-            <template><set name="IndexQusetion">Apakah anda menginginkan komponen dengan fitur Low Noise? Semua; Sebagian; Tidak</set>
+            <template>Apakah anda menginginkan komponen dengan fitur Low Noise? Semua; Sebagian; Tidak
                 <think>
                     <set name="PROCESSOR_LV">CPU-DEFAULT</set>
                     <set name="HARDDRIVE_LV">HardDrive-DEFAULT</set>
@@ -188,7 +188,7 @@
 
     <topic name="GAMING">
         <category><pattern>SEMUA</pattern><that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR LOW NOISE QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
-            <template><set name="IndexQusetion">GAMING BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil</set>
+            <template>GAMING BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil
                 <think>
                     <set name="LowNoise">SEMUA</set>
                     <set name="HARDDRIVE_LN">HardDrive-LowNoise</set>
@@ -199,12 +199,12 @@
 
     <topic name="GAMING">
         <category><pattern>SEBAGIAN</pattern><that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR LOW NOISE QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
-            <template><set name="IndexQusetion">Apakah anda menginginkan Hard Drive dengan fitur Low Noise? Ya; Tidak</set></template>
+            <template>Apakah anda menginginkan Hard Drive dengan fitur Low Noise? Ya; Tidak</template>
         </category></topic>
 
     <topic name="GAMING">
         <category><pattern>YA</pattern><that>APAKAH ANDA MENGINGINKAN HARD DRIVE DENGAN FITUR LOW NOISE QUESTION MARK YA SEMICOLON TIDAK</that>
-            <template><set name="IndexQusetion">Apakah anda menginginkan Cooler dengan fitur Low Noise? Ya; Tidak</set>
+            <template>Apakah anda menginginkan Cooler dengan fitur Low Noise? Ya; Tidak
                 <think>
                     <set name="HARDDRIVE_LN">HardDrive-LowNoise</set>
                 </think></template>
@@ -212,12 +212,12 @@
 
     <topic name="GAMING">
         <category><pattern>TIDAK</pattern><that>APAKAH ANDA MENGINGINKAN HARD DRIVE DENGAN FITUR LOW NOISE QUESTION MARK YA SEMICOLON TIDAK</that>
-            <template><set name="IndexQusetion">Apakah anda menginginkan Cooler dengan fitur Low Noise? Ya; Tidak</set></template>
+            <template>Apakah anda menginginkan Cooler dengan fitur Low Noise? Ya; Tidak</template>
         </category></topic>
 
     <topic name="GAMING">
         <category><pattern>YA</pattern><that>APAKAH ANDA MENGINGINKAN COOLER DENGAN FITUR LOW NOISE QUESTION MARK YA SEMICOLON TIDAK</that>
-            <template><set name="IndexQusetion">Apakah anda menginginkan Video Card dengan fitur Low Noise? Ya; Tidak</set>
+            <template>Apakah anda menginginkan Video Card dengan fitur Low Noise? Ya; Tidak
                 <think>
                     <set name="COOLER_LN">ComputerCooling-LowNoise</set>
                 </think></template>
@@ -225,12 +225,12 @@
 
     <topic name="GAMING">
         <category><pattern>TIDAK</pattern><that>APAKAH ANDA MENGINGINKAN COOLER DENGAN FITUR LOW NOISE QUESTION MARK YA SEMICOLON TIDAK</that>
-            <template><set name="IndexQusetion">Apakah anda menginginkan Video Card dengan fitur Low Noise? Ya; Tidak</set></template>
+            <template>Apakah anda menginginkan Video Card dengan fitur Low Noise? Ya; Tidak</template>
         </category></topic>
 
     <topic name="GAMING">
         <category><pattern>YA</pattern><that>APAKAH ANDA MENGINGINKAN VIDEO CARD DENGAN FITUR LOW NOISE QUESTION MARK YA SEMICOLON TIDAK</that>
-            <template><set name="IndexQusetion">GAMING BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil</set>
+            <template>GAMING BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil
                 <think>
                     <set name="VIDEOCARD_LN">VideoCard-LowNoise</set>
                 </think></template>
@@ -238,12 +238,12 @@
 
     <topic name="GAMING">
         <category><pattern>TIDAK</pattern><that>APAKAH ANDA MENGINGINKAN VIDEO CARD DENGAN FITUR LOW NOISE QUESTION MARK YA SEMICOLON TIDAK</that>
-            <template><set name="IndexQusetion">GAMING BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil</set></template>
+            <template>GAMING BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil</template>
         </category></topic>
 
     <topic name="GAMING">
         <category><pattern>TIDAK</pattern><that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR LOW NOISE QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
-            <template><set name="IndexQusetion">GAMING BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil</set>
+            <template>GAMING BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil
                 <think>
                     <set name="HARDDRIVE_LN">DEFAULT</set>
                     <set name="COOLER_LN">DEFAULT</set>
@@ -253,7 +253,7 @@
 
 <topic name="GAMING">
 <category><pattern>COMPUTER SPECIFICATIONS</pattern>
-<template><think><set name="IndexQusetion">unknown</set></think>INI COMPUTER <get name="usability"/> MU DENGAN FITUR <br/>
+<template>INI COMPUTER <get name="usability"/> MU DENGAN FITUR <br/>
 <condition name="LowVoltage">
 <li value="SEMUA">
 <list>

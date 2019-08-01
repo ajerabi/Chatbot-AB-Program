@@ -1,0 +1,102 @@
+Chassis
+SmallFormFactory
+Mini dash Tower
+Mid dash Tower
+Full dash Tower
+Motherboard dash Intel
+Intel dash MicroATX
+Intel dash MiniITX
+Intel dash EATX
+Intel dash ATX
+Motherboard dash AMD
+AMD dash MiniITX
+AMD dash MicroATX
+AMD dash EATX
+AMD dash ATX
+CPU
+CPU dash AMD
+ThreadripperSeries
+RyzenSeries
+RyzenSuffixGE
+Ryzen7SuffixGE
+Ryzen3SuffixGE
+Ryzen5SuffixGE
+RyzenNonSuffix
+Ryzen7
+Ryzen3
+Ryzen5
+RyzenSuffixE
+Ryzen5SuffixE
+Ryzen7SuffixE
+Ryzen3SuffixE
+RyzenSuffixX
+Ryzen7SuffixX
+Ryzen5SuffixX
+Ryzen3SuffixX
+RyzenSuffixG
+Ryzen5SuffixG
+Ryzen3SuffixG
+Ryzen7SuffixG
+A dash Series
+A dash SeriesNonSuffix
+A dash SeriesSuffixE
+CPU dash Intel
+CeleronOrPentiumSeries
+CeleronOrPentiumNonSuffix
+CeleronOrPentiumSuffixT
+I dash Series
+I dash SeriesSuffixK
+i9SuffixK
+i5SuffixK
+i3SuffixK
+i7SuffixK
+I dash SeriesNonSuffix
+i3
+i5
+i7
+I dash SeriesSuffixT
+i3SuffixT
+i7SuffixT
+i5SuffixT
+PowerSupply
+VideoCard
+VideoCard dash Nvidia
+GTX16Series
+GTX10Series
+GTX1080TiOrTitanXp
+GT1030OrGTX1050OrGTX1050Ti
+GTX1070OrGTX1070TiOrGTX1080
+GTX1060
+RTX20Series
+RTX2060OrRTX2070OrRTX2080
+RTX2080TiOrTitanRTX
+VideoCard dash AMD
+RX500Series
+RX570OrRX580OrRX590
+RX540OrRX550OrRX560
+RXVegaOrVIISeries
+HardDrive
+SolidStateDrive
+SSDCompute
+SSDLE
+SSDGaming
+HardDiskDrive
+HDDGaming
+HDDCompute
+HDDLE
+RAM
+RAMNormal
+RAMLP
+SoundCard
+ComputerCooling
+WaterCooler
+KitWaterCooler
+KitWaterCoolerSuffixL
+KitWaterCoolerSuffixP
+KitWaterCoolerSuffixX
+KitWaterCoolerSuffixS
+AiOWaterCooler
+AirCooler
+KitWaterCoolerSuffixX
+KitWaterCoolerSuffixP
+SystemUnitOfDesktopComputer

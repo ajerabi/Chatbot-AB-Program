@@ -133,26 +133,26 @@
 
 <topic name="DESAIN">
 <category>
-<pattern>COMPUTER SPECIFICATIONS</pattern>
-<template>INI COMPUTER <get name="usability"/> MU DENGAN FITUR<br/>
-<condition name="LowVoltage">
-<li value="SEMUA">
-<list>
-    <item><get name="PROCESSOR_LV"/></item><br/>
-    <item><get name="HARDDRIVE_LV"/></item><br/>
-</list>
-</li>
-</condition>
-<condition name="LowNoise">
-<li value="SEMUA">
-<list>
-    <item><get name="HARDDRIVE_LN"/></item><br/>
-    <item><get name="VIDEOCARD_LN"/></item><br/>
-</list>
-</li>
-</condition>
-<br/>
-DENGAN KLASIFIKASI<br/> Mainstream
+    <pattern>COMPUTER SPECIFICATIONS</pattern>
+    <template>INI COMPUTER <get name="usability"/> MU DENGAN FITUR<br/>
+        <condition name="LowVoltage">
+            <li value="SEMUA">
+                <list>
+                    <item><get name="PROCESSOR_LV"/></item> <br/>
+                    <item><get name="HARDDRIVE_LV"/></item><br/>
+                </list>
+            </li>
+        </condition>
+        <condition name="LowNoise">
+            <li value="SEMUA">
+                <list>
+                    <item><get name="HARDDRIVE_LN"/></item><br/>
+                    <item><get name="VIDEOCARD_LN"/></item><br/>
+                </list>
+            </li>
+        </condition>
+        <br/>
+        DENGAN KLASIFIKASI<br/> Mainstream
 </template>
 </category>
 </topic>

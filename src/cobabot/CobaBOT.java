@@ -55,6 +55,7 @@ public class CobaBOT {
         String action = "webservice";
         //String action = "aiml2csv";
         //  String action = "jojo";
+
         System.out.println(MagicStrings.program_name_version);
         for (final String s : args) {
             // System.out.println(s);
