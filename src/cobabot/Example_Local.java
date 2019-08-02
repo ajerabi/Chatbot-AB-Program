@@ -43,6 +43,7 @@ public class Example_Local
         try {
             OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
 
+//            OWLOntology ont = manager.loadOntologyFromOntologyDocument(new File(".\\owl\\system-unit-of-desktop-computer-delvin-inferred-v2.owl"));
             OWLOntology ont = manager.loadOntologyFromOntologyDocument(new File(".\\owl\\system-unit-of-desktop-computer-inferred.owl"));
 
             StructuralReasonerFactory factory = new StructuralReasonerFactory();

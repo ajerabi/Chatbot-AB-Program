@@ -92,7 +92,7 @@ public class StringParserForSPARQL_DL {
         return strQuerySelect.append(strQueryWhere);
     }
 
-    public static void dependantComponent(StringBuilder strQueryWhere, String component, String performanceClassifications){
+    private static void dependantComponent(StringBuilder strQueryWhere, String component, String performanceClassifications){
         strQueryWhere.append(" WHERE {\n")
                 .append("Type(?Component, myOnto:")
                 .append(component)
@@ -100,4 +100,5 @@ public class StringParserForSPARQL_DL {
                 .append("PropertyValue(?Component, myOnto:hasPerformanceClassification, myOnto:")
                 .append(performanceClassifications).append(")}").append("\nOR");
     }
+
 }
