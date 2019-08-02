@@ -68,9 +68,41 @@
     <category>
         <pattern>OK</pattern>
         <that>Saya tidak mengerti</that>
-        <template><get name="IndexQusetion"/></template>
+        <template>
+            <condition name="IndexQusetion">
+                <li value="unknown">
+                    Saya tidak mengerti.
+                </li>
+                <li>
+                    <get name="IndexQusetion"/>
+                    <think>
+                        <set name="AQusetion">unknown</set>
+                    </think>
+                </li>
+            </condition>
+        </template>
     </category>
 
+    <category>
+        <pattern>BAIK</pattern>
+        <that>Saya tidak mengerti</that>
+        <template><srai>OK</srai></template>
+    </category>
+    <category>
+        <pattern>OKE</pattern>
+        <that>Saya tidak mengerti</that>
+        <template><srai>OK</srai></template>
+    </category>
+    <category>
+        <pattern>SIP</pattern>
+        <that>Saya tidak mengerti</that>
+        <template><srai>OK</srai></template>
+    </category>
+    <category>
+        <pattern>SIAP</pattern>
+        <that>Saya tidak mengerti</that>
+        <template><srai>OK</srai></template>
+    </category>
 
     <category><pattern>APA FITUR <set>component</set></pattern>
         <template>
@@ -164,6 +196,7 @@
             </condition>
             <get var="result"/></template>
     </category>
+
 
 
 </aiml>

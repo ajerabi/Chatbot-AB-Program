@@ -52,8 +52,8 @@ public class CobaBOT {
         MagicBooleans.jp_tokenize = false;
         MagicBooleans.trace_mode = true;
         //String action = "chat";
-        //String action = "webservice";
-        String action = "aiml2csv";
+        String action = "webservice";
+        //String action = "aiml2csv";
         //String action = "jojo";
 
         System.out.println(MagicStrings.program_name_version);
@@ -191,7 +191,6 @@ public class CobaBOT {
                             session.parseBody(data);
                             String message = session.getParms().get("message");
                             System.out.println("Pesan Manusia: "+message);
-                            //System.out.println("AHHA : "+data +"ad: "+anno);
                             String responseBot = chatSession.multisentenceRespond(message);
                             System.out.println("Pesan BOT: "+responseBot);
 

@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ce6bd93-7721-457f-a381-9fdd3452df1a" name="Default Changelist" comment="topic gaming">
-      <change afterPath="$PROJECT_DIR$/owl/system-unit-of-desktop-computer-delvin-inferred-v2.owl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="4ce6bd93-7721-457f-a381-9fdd3452df1a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cobabot/Example_Local.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cobabot/Example_Local.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cobabot/StringParserForSPARQL_DL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cobabot/StringParserForSPARQL_DL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bots/super/aiml/topic_AAAGaming.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aiml/topic_AAAGaming.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bots/super/aiml/triple.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aiml/triple.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bots/super/aimlif/topic_AAAGaming.aiml.csv" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aimlif/topic_AAAGaming.aiml.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bots/super/aimlif/triple.aiml.csv" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aimlif/triple.aiml.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bots/super/aimlif/update.aiml.csv" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aimlif/update.aiml.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cobabot/CobaBOT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cobabot/CobaBOT.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +52,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="http.proxy" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
