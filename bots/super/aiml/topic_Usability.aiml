@@ -20,7 +20,7 @@
     <!--
     <template>Comp-Bot <set name="topic">Komputer</set> akan membantu
      -->
-    <template>Komputer yang disediakan : GAMING; DESAIN; OFFICE
+    <template><set name="IndexQusetion">Komputer yang disediakan : GAMING; DESAIN; OFFICE</set>
     <think>
             <set name="PROCESSOR">DEFAULT</set>
             <set name="HARDDRIVE">DEFAULT</set>
@@ -37,7 +37,7 @@
 <topic name="KOMPUTER">
 <category>
     <pattern>*</pattern>
-    <template>Komputer yang disediakan : GAMING; DESAIN; OFFICE</template>
+    <template><set name="IndexQusetion">Komputer yang disediakan : GAMING; DESAIN; OFFICE</set></template>
 </category>
 </topic>
 
@@ -48,7 +48,7 @@
 <category>
     <pattern>GAMING</pattern>
     <that>KOMPUTER YANG DISEDIAKAN COLON GAMING SEMICOLON DESAIN SEMICOLON OFFICE</that>
-    <template>Jenis Game : AAA Gaming; Casual Gaming
+    <template><set name="IndexQusetion">Jenis Game : AAA Gaming; Casual Gaming</set>
         <think>
             <set name="usability">GAMING</set>
             <set name="topic">GAMING</set>
@@ -58,7 +58,7 @@
 <category>
     <pattern>DESAIN</pattern>
     <that>KOMPUTER YANG DISEDIAKAN COLON GAMING SEMICOLON DESAIN SEMICOLON OFFICE</that>
-    <template>Jenis Desain : Desain Grafis; 3D Desain
+    <template><set name="IndexQusetion">Jenis Desain : Desain Grafis; 3D Desain</set>
         <think>
             <set name="usability">DESAIN</set>
             <set name="topic">DESAIN</set>
@@ -68,7 +68,7 @@
 <category>
     <pattern>OFFICE</pattern>
     <that>KOMPUTER YANG DISEDIAKAN COLON GAMING SEMICOLON DESAIN SEMICOLON OFFICE</that>
-    <template>Apakah anda menginginkan komponen dengan fitur Low Voltage? Semua; Sebagian; Tidak
+    <template><set name="IndexQusetion">Apakah anda menginginkan komponen dengan fitur Low Voltage? Semua; Sebagian; Tidak</set>
         <think>
             <set name="usability">OFFICE</set>
             <set name="topic">OFFICE</set>

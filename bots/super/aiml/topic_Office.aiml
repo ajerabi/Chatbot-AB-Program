@@ -17,7 +17,7 @@
 <!-- For more information see http://www.alicebot.org -->
 <topic name="OFFICE">
 <category><pattern>SEMUA</pattern><that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR LOW VOLTAGE QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
-<template>Apakah anda menginginkan komponen dengan fitur Low Noise? Semua; Sebagian; Tidak
+<template><set name="IndexQusetion">Apakah anda menginginkan komponen dengan fitur Low Noise? Semua; Sebagian; Tidak</set>
 <think>
     <set name="LowVoltage">SEMUA</set>
     <set name="PROCESSOR_LV">CPU-LowVoltage</set>
@@ -27,12 +27,12 @@
 
 <topic name="OFFICE">
 <category><pattern>SEBAGIAN</pattern><that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR LOW VOLTAGE QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
-<template>Apakah anda menginginkan Processor dengan fitur Low Voltage? Ya; Tidak</template>
+<template><set name="IndexQusetion">Apakah anda menginginkan Processor dengan fitur Low Voltage? Ya; Tidak</set></template>
 </category></topic>
 
 <topic name="OFFICE">
 <category><pattern>YA</pattern><that>APAKAH ANDA MENGINGINKAN PROCESSOR DENGAN FITUR LOW VOLTAGE QUESTION MARK YA SEMICOLON TIDAK</that>
-<template>Apakah anda menginginkan Hard Drive dengan fitur Low Voltage? Ya; Tidak
+<template><set name="IndexQusetion">Apakah anda menginginkan Hard Drive dengan fitur Low Voltage? Ya; Tidak</set>
 <think>
     <set name="PROCESSOR">LowVoltage</set>
     <set name="PROCESSOR_LV">CPU-LowVoltage</set>
@@ -41,7 +41,7 @@
 
 <topic name="OFFICE">
 <category><pattern>TIDAK</pattern><that>APAKAH ANDA MENGINGINKAN PROCESSOR DENGAN FITUR LOW VOLTAGE QUESTION MARK YA SEMICOLON TIDAK</that>
-<template>Apakah anda menginginkan Hard Drive dengan fitur Low Voltage? Ya; Tidak
+<template><set name="IndexQusetion">Apakah anda menginginkan Hard Drive dengan fitur Low Voltage? Ya; Tidak</set>
 <think>
     <set name="PROCESSOR_LV">CPU-DEFAULT</set>
 </think></template>
@@ -49,7 +49,7 @@
 
 <topic name="OFFICE">
 <category><pattern>TIDAK</pattern><that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR LOW VOLTAGE QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
-<template>Apakah anda menginginkan komponen dengan fitur Low Noise? Semua; Sebagian; Tidak
+<template><set name="IndexQusetion">Apakah anda menginginkan komponen dengan fitur Low Noise? Semua; Sebagian; Tidak</set>
 <think>
     <set name="PROCESSOR_LV">CPU-DEFAULT</set>
     <set name="HARDDRIVE_LV">HardDrive-DEFAULT</set>
@@ -58,7 +58,7 @@
 
 <topic name="OFFICE">
 <category><pattern>YA</pattern><that>APAKAH ANDA MENGINGINKAN HARD DRIVE DENGAN FITUR LOW VOLTAGE QUESTION MARK YA SEMICOLON TIDAK</that>
-<template>Apakah anda menginginkan komponen dengan fitur Low Noise? Semua; Sebagian; Tidak
+<template><set name="IndexQusetion">Apakah anda menginginkan komponen dengan fitur Low Noise? Semua; Sebagian; Tidak</set>
 <think>
     <set name="HARDDRIVE">LowVoltage</set>
     <set name="HARDDRIVE_LV">HardDrive-LowVoltage</set>
@@ -67,7 +67,7 @@
 
 <topic name="OFFICE">
 <category><pattern>TIDAK</pattern><that>APAKAH ANDA MENGINGINKAN HARD DRIVE DENGAN FITUR LOW VOLTAGE QUESTION MARK YA SEMICOLON TIDAK</that>
-<template>Apakah anda menginginkan komponen dengan fitur Low Noise? Semua; Sebagian; Tidak
+<template><set name="IndexQusetion">Apakah anda menginginkan komponen dengan fitur Low Noise? Semua; Sebagian; Tidak</set>
 <think>
     <set name="HARDDRIVE_LV">HardDrive-DEFAULT</set>
 </think></template>
@@ -75,7 +75,7 @@
 
 <topic name="OFFICE">
 <category><pattern>TIDAK</pattern><that>APAKAH ANDA MENGIGINKAN KOMPONEN DENGAN FITUR LOW VOLTAGE QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
-<template>Apakah anda menginginkan komponen dengan fitur Low Noise? Semua; Sebagian; Tidak
+<template><set name="IndexQusetion">Apakah anda menginginkan komponen dengan fitur Low Noise? Semua; Sebagian; Tidak</set>
 <think>
     <set name="PROCESSOR_LV">CPU-DEFAULT</set>
     <set name="HARDDRIVE_LV">HardDrive-DEFAULT</set>
@@ -84,7 +84,7 @@
 
 <topic name="OFFICE">
 <category><pattern>SEMUA</pattern><that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR LOW NOISE QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
-<template>OFFICE BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil
+<template><set name="IndexQusetion">OFFICE BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil</set>
 <think>
     <set name="LowNoise">SEMUA</set>
     <set name="HARDDRIVE_LN">HardDrive-LowNoise</set>
@@ -95,12 +95,12 @@
 
 <topic name="OFFICE">
 <category><pattern>SEBAGIAN</pattern><that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR LOW NOISE QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
-<template>Apakah anda menginginkan Hard Drive dengan fitur Low Noise? Ya; Tidak</template>
+<template><set name="IndexQusetion">Apakah anda menginginkan Hard Drive dengan fitur Low Noise? Ya; Tidak</set></template>
 </category></topic>
 
 <topic name="OFFICE">
 <category><pattern>YA</pattern><that>APAKAH ANDA MENGINGINKAN HARD DRIVE DENGAN FITUR LOW NOISE QUESTION MARK YA SEMICOLON TIDAK</that>
-<template>Apakah anda menginginkan Cooler dengan fitur Low Noise? Ya; Tidak
+<template><set name="IndexQusetion">Apakah anda menginginkan Cooler dengan fitur Low Noise? Ya; Tidak</set>
 <think>
     <set name="HARDDRIVE">LowNoise</set>
     <set name="HARDDRIVE_LN">HardDrive-LowNoise</set>
@@ -109,7 +109,7 @@
 
 <topic name="OFFICE">
 <category><pattern>TIDAK</pattern><that>APAKAH ANDA MENGINGINKAN HARD DRIVE DENGAN FITUR LOW NOISE QUESTION MARK YA SEMICOLON TIDAK</that>
-<template>Apakah anda menginginkan Cooler dengan fitur Low Noise? Ya; Tidak
+<template><set name="IndexQusetion">Apakah anda menginginkan Cooler dengan fitur Low Noise? Ya; Tidak</set>
 <think>
     <set name="HARDDRIVE_LN">HardDrive-DEFAULT</set>
 </think></template>
@@ -117,7 +117,7 @@
 
 <topic name="OFFICE">
 <category><pattern>YA</pattern><that>APAKAH ANDA MENGINGINKAN COOLER DENGAN FITUR LOW NOISE QUESTION MARK YA SEMICOLON TIDAK</that>
-<template>Apakah anda menginginkan Video Card dengan fitur Low Noise? Ya; Tidak
+<template><set name="IndexQusetion">Apakah anda menginginkan Video Card dengan fitur Low Noise? Ya; Tidak</set>
 <think>
     <set name="COOLER">LowNoise</set>
     <set name="COOLER_LN">ComputerCooling-LowNoise</set>
@@ -126,7 +126,7 @@
 
 <topic name="OFFICE">
 <category><pattern>TIDAK</pattern><that>APAKAH ANDA MENGINGINKAN COOLER DENGAN FITUR LOW NOISE QUESTION MARK YA SEMICOLON TIDAK</that>
-<template>Apakah anda menginginkan Video Card dengan fitur Low Noise? Ya; Tidak
+<template><set name="IndexQusetion">Apakah anda menginginkan Video Card dengan fitur Low Noise? Ya; Tidak</set>
 <think>
     <set name="COOLER_LN">ComputerCooling-DEFAULT</set>
 </think></template>
@@ -134,7 +134,7 @@
 
 <topic name="OFFICE">
 <category><pattern>YA</pattern><that>APAKAH ANDA MENGINGINKAN VIDEO CARD DENGAN FITUR LOW NOISE QUESTION MARK YA SEMICOLON TIDAK</that>
-<template>OFFICE BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil
+<template><set name="IndexQusetion">OFFICE BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil</set>
 <think>
     <set name="VIDEOCARD">LowNoise</set>
     <set name="VIDEOCARD_LN">VideoCard-LowNoise</set>
@@ -143,7 +143,7 @@
 
 <topic name="OFFICE">
 <category><pattern>TIDAK</pattern><that>APAKAH ANDA MENGINGINKAN VIDEO CARD DENGAN FITUR LOW NOISE QUESTION MARK YA SEMICOLON TIDAK</that>
-<template>OFFICE BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil
+<template><set name="IndexQusetion">OFFICE BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil</set>
 <think>
     <set name="VIDEOCARD_LN">VideoCard-DEFAULT</set>
 </think></template>
@@ -151,7 +151,7 @@
 
 <topic name="OFFICE">
 <category><pattern>TIDAK</pattern><that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR LOW NOISE QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
-<template>OFFICE BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil
+<template><set name="IndexQusetion">OFFICE BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil</set>
 <think>
     <set name="HARDDRIVE_LN">HardDrive-DEFAULT</set>
     <set name="COOLER_LN">ComputerCooling-DEFAULT</set>

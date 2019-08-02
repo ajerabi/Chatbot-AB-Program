@@ -32,6 +32,11 @@
     </category>
 
     <category>
+        <pattern>APA ITU LOW VOLTAGE</pattern>
+        <template>komponen dengan rendah daya</template>
+    </category>
+
+    <category>
         <pattern>KIRA</pattern>
         <template>KARU RU RU <get name="AQusetion"/></template>
     </category>
@@ -159,5 +164,6 @@
             </condition>
             <get var="result"/></template>
     </category>
+
 
 </aiml>
