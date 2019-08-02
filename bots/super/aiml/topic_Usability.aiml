@@ -22,6 +22,7 @@
      -->
     <template><set name="IndexQusetion">Komputer yang disediakan : GAMING; DESAIN; OFFICE</set>
     <think>
+
             <set name="PROCESSOR">DEFAULT</set>
             <set name="HARDDRIVE">DEFAULT</set>
             <set name="MOTHERBOARD">DEFAULT</set>
@@ -48,7 +49,7 @@
 <category>
     <pattern>GAMING</pattern>
     <that>KOMPUTER YANG DISEDIAKAN COLON GAMING SEMICOLON DESAIN SEMICOLON OFFICE</that>
-    <template><set name="IndexQusetion">Jenis Game : AAA Gaming; Casual Gaming</set>
+    <template><set name="IndexQusetion">Jenis Game : AAA Gaming; Casual Gaming; Online Gaming</set>
         <think>
             <set name="usability">GAMING</set>
             <set name="topic">GAMING</set>

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+<!-- File: topic_Office.aiml -->
+<!-- Author: Dr. Richard S. Wallace -->
+<!-- Last modified: Juni 08, 2019 -->
+<!--  -->
+<!-- This AIML file is part of the SUPER 0.0.4 chat bot knowledge base. -->
+<!--  -->
+<!-- The SUPER brain is Copyright &copy; 2019 by ALICE AI Foundation. -->
+<!--  -->
+<!-- The SUPER brain is released under the terms of the GNU Lesser General -->
+<!-- Public License, as published by the Free Software Foundation. -->
+<!--  -->
+<!-- This file is distributed WITHOUT ANY WARRANTY; without even the  -->
+<!-- implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   -->
+<!--  -->
+<!-- For more information see http://www.alicebot.org -->
+<topic name="GAMING">
+    <category><pattern>CASUAL GAMING</pattern><that>JENIS GAME COLON AAA GAMING SEMICOLON CASUAL GAMING SEMICOLON ONLINE GAMING</that>
+        <template><set name="IndexQusetion">Apakah anda menginginkan komponen dengan fitur Low Voltage? Semua; Sebagian; Tidak</set>
+             <think>
+                 <set name="topic">CASUAL GAMING</set>
+             </think>
+        </template>
+    </category>
+</topic>
+
+     <!--LOW VOLTAGE-->
+
+     <!--ALL LOW VOLTAGE-->
+         <topic name="CASUAL GAMING">
+             <category><pattern>SEMUA</pattern><that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR LOW VOLTAGE QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
+                 <template><set name="IndexQusetion">Apakah anda menginginkan komponen dengan fitur Overclock? Semua; Sebagian; Tidak</set>
+                     <think>
+                         <set name="LowVoltage">SEMUA</set>
+                         <set name="PROCESSOR_LV">CPU-LowVoltage</set>
+                         <set name="HARDDRIVE_LV">HardDrive-LowVoltage</set>
+                             <!--
+                             <set name="MOTHERBOARD_LV">Motherboard-LowVoltage</set>
+                             <set name="RAM_LV">RAM-LowVoltage</set>
+                             <set name="COOLER_LV">Cooler-LowVoltage</set>
+                             <set name="VIDEOCARD_LV">Videocard-LowVoltage</set>
+                             <set name="SOUNDCARD_LV">Soundcard-LowVoltage</set>
+                             -->
+                     </think>
+                 </template>
+             </category>
+         </topic>
+
+
+         <topic name="CASUAL GAMING">
+             <category><pattern>SEBAGIAN</pattern><that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR LOW VOLTAGE QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
+                 <template><set name="IndexQusetion">Apakah anda menginginkan Processor dengan fitur Low Voltage? Ya; Tidak</set></template>
+             </category>
+         </topic>
+
+     <!--PROCESSOR LOW VOLTAGE-->
+         <topic name="CASUAL GAMING">
+             <category><pattern>YA</pattern><that>APAKAH ANDA MENGINGINKAN PROCESSOR DENGAN FITUR LOW VOLTAGE QUESTION MARK YA SEMICOLON TIDAK</that>
+                 <template><set name="IndexQusetion">Apakah anda menginginkan Hard Drive dengan fitur Low Voltage? Ya; Tidak</set>
+                     <think>
+                         <set name="PROCESSOR_LV">CPU-LowVoltage</set>
+                     </think></template>
+             </category>
+         </topic>
+
+     <!--PROCESSOR NON LOW VOLTAGE-->
+         <topic name="CASUAL GAMING">
+             <category><pattern>TIDAK</pattern><that>APAKAH ANDA MENGINGINKAN PROCESSOR DENGAN FITUR LOW VOLTAGE QUESTION MARK YA SEMICOLON TIDAK</that>
+                 <template><set name="IndexQusetion">Apakah anda menginginkan Hard Drive dengan fitur Low Voltage? Ya; Tidak</set>
+                     <think>
+                         <set name="PROCESSOR_LV">CPU-DEFAULT</set>
+                     </think>
+                 </template>
+             </category>
+         </topic>
+
+     <!--ALL NON LOW VOLTAGE-->
+         <topic name="CASUAL GAMING">
+             <category><pattern>TIDAK</pattern><that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR LOW VOLTAGE QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
+                 <template><set name="IndexQusetion">Apakah anda menginginkan komponen dengan fitur Overclock? Semua; Sebagian; Tidak</set>
+                     <think>
+                         <set name="PROCESSOR_LV">CPU-DEFAULT</set>
+                         <set name="HARDDRIVE_LV">HardDrive-DEFAULT</set>
+                     </think>
+                 </template>
+             </category>
+         </topic>
+
+     <!--HARDDRIVE LOW VOLTAGE-->
+         <topic name="CASUAL GAMING">
+             <category><pattern>YA</pattern><that>APAKAH ANDA MENGINGINKAN HARD DRIVE DENGAN FITUR LOW VOLTAGE QUESTION MARK YA SEMICOLON TIDAK</that>
+                 <template><set name="IndexQusetion">Apakah anda menginginkan komponen dengan fitur Overclock? Semua; Sebagian; Tidak</set>
+                     <think>
+                         <set name="HARDDRIVE_LV">HardDrive-LowVoltage</set>
+                     </think>
+                 </template>
+             </category>
+         </topic>
+
+     <!--HARDDRIVE NON LOW VOLTAGE-->
+         <topic name="CASUAL GAMING">
+             <category><pattern>TIDAK</pattern><that>APAKAH ANDA MENGINGINKAN HARD DRIVE DENGAN FITUR LOW VOLTAGE QUESTION MARK YA SEMICOLON TIDAK</that>
+                 <template><set name="IndexQusetion">Apakah anda menginginkan komponen dengan fitur Overclock? Semua; Sebagian; Tidak</set>
+                     <think>
+                         <set name="HARDDRIVE_LV">HardDrive-DEFAULT</set>
+                     </think>
+                 </template>
+             </category>
+         </topic>
+
+     <!--ALL NON LOW VOLTAGE-->
+         <topic name="CASUAL GAMING">
+             <category><pattern>TIDAK</pattern><that>APAKAH ANDA MENGIGINKAN KOMPONEN DENGAN FITUR LOW VOLTAGE QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
+                 <template><set name="IndexQusetion">Apakah anda menginginkan komponen dengan fitur Overclock? Semua; Sebagian; Tidak</set>
+                     <think>
+                         <set name="PROCESSOR_LV">CPU-DEFAULT</set>
+                         <set name="HARDDRIVE_LV">HardDrive-DEFAULT</set>
+                     </think>
+                 </template>
+             </category>
+         </topic>
+     <!--END LOW VOLTAGE-->
+
+     <!--OVERCLOCK-->
+         <!--ALL OVERCLOCK-->
+             <topic name="CASUAL GAMING">
+                 <category><pattern>SEMUA</pattern><that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR OVERCLOCK QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
+                     <template><set name="IndexQusetion">Apakah anda menginginkan komponen dengan fitur Low Noise? Semua; Sebagian; Tidak</set>
+                         <think>
+                             <set name="Overclock">SEMUA</set>
+                             <condition name="PROCESSOR_LV">
+                                 <li value="CPU-LowVoltage">
+                                     <set name="PROCESSOR_OC">CPU-DEFAULT</set>
+                                 </li>
+                                 <li>
+                                     <set name="PROCESSOR_OC">CPU-Overclockable</set>
+                                 </li>
+                             </condition>
+                             <set name="VIDEOCARD_OC">VideoCard-Overclockable</set>
+                             <!--
+                             <set name="RAM_OC">RAM-Overclock</set>
+                             -->
+                         </think></template>
+                 </category>
+             </topic>
+
+             <topic name="CASUAL GAMING">
+                 <category><pattern>SEBAGIAN</pattern><that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR OVERCLOCK QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
+                     <template><set name="IndexQusetion">Apakah anda menginginkan Processor dengan fitur Overclock? Ya; Tidak</set></template>
+                 </category>
+             </topic>
+
+             <!--PROCESSOR OVERCLOCK-->
+             <topic name="CASUAL GAMING">
+                 <category><pattern>YA</pattern><that>APAKAH ANDA MENGINGINKAN PROCESSOR DENGAN FITUR OVERCLOCK QUESTION MARK YA SEMICOLON TIDAK</that>
+                     <template><set name="IndexQusetion">Apakah anda menginginkan Videocard dengan fitur Overclock? Ya; Tidak</set>
+                         <think>
+                             <set name="PROCESSOR_OC">CPU-Overclockable</set>
+                         </think></template>
+                 </category>
+             </topic>
+
+             <!--PROCESSOR NON OVERCLOCK-->
+             <topic name="CASUAL GAMING">
+                 <category><pattern>TIDAK</pattern><that>APAKAH ANDA MENGINGINKAN PROCESSOR DENGAN FITUR OVERCLOCK QUESTION MARK YA SEMICOLON TIDAK</that>
+                     <template><set name="IndexQusetion">Apakah anda menginginkan Videocard dengan fitur Overclock? Ya; Tidak</set>
+                         <think>
+                             <set name="PROCESSOR_OC">CPU-DEFAULT</set>
+                         </think></template>
+                 </category>
+             </topic>
+
+             <!--VIDEOCARD OVERCLOCK-->
+             <topic name="CASUAL GAMING">
+                 <category><pattern>YA</pattern><that>APAKAH ANDA MENGINGINKAN VIDEOCARD DENGAN FITUR OVERCLOCK QUESTION MARK YA SEMICOLON TIDAK</that>
+                     <template><set name="IndexQusetion">Apakah anda menginginkan komponen dengan fitur Low Noise? Semua; Sebagian; Tidak</set>
+                         <think>
+                             <set name="VIDEOCARD_OC">VideoCard-Overclockable</set>
+                         </think></template>
+                 </category>
+             </topic>
+
+             <!--VIDEOCARD NON OVERCLOCK-->
+             <topic name="CASUAL GAMING">
+                 <category><pattern>TIDAK</pattern><that>APAKAH ANDA MENGINGINKAN VIDEOCARD DENGAN FITUR OVERCLOCK QUESTION MARK YA SEMICOLON TIDAK</that>
+                     <template><set name="IndexQusetion">Apakah anda menginginkan komponen dengan fitur Low Noise? Semua; Sebagian; Tidak</set>
+                         <think>
+                             <set name="VIDEOCARD_OC">VideoCard-DEFAULT</set>
+                         </think></template>
+                 </category>
+             </topic>
+
+             <!--ALL NON OVERCLOCK-->
+             <topic name="CASUAL GAMING">
+                 <category><pattern>TIDAK</pattern><that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR OVERCLOCK QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
+                     <template><set name="IndexQusetion">Apakah anda menginginkan komponen dengan fitur Low Noise? Semua; Sebagian; Tidak</set>
+                         <think>
+                             <set name="PROCESSOR_LV">CPU-DEFAULT</set>
+                             <set name="HARDDRIVE_LV">HardDrive-DEFAULT</set>
+                         </think></template>
+                 </category>
+             </topic>
+
+             <!--END OVERCLOCK-->
+
+             <topic name="CASUAL GAMING">
+                 <category><pattern>SEMUA</pattern><that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR LOW NOISE QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
+                     <template><set name="IndexQusetion">CASUAL GAMING BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil</set>
+                         <think>
+                             <set name="LowNoise">SEMUA</set>
+                             <set name="HARDDRIVE_LN">HardDrive-LowNoise</set>
+                             <set name="COOLER_LN">ComputerCooling-LowNoise</set>
+                             <set name="VIDEOCARD_LN">VideoCard-LowNoise</set>
+                         </think></template>
+                 </category></topic>
+
+             <topic name="CASUAL GAMING">
+                 <category><pattern>SEBAGIAN</pattern><that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR LOW NOISE QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
+                     <template><set name="IndexQusetion">Apakah anda menginginkan Hard Drive dengan fitur Low Noise? Ya; Tidak</set></template>
+                 </category></topic>
+
+             <topic name="CASUAL GAMING">
+                 <category><pattern>YA</pattern><that>APAKAH ANDA MENGINGINKAN HARD DRIVE DENGAN FITUR LOW NOISE QUESTION MARK YA SEMICOLON TIDAK</that>
+                     <template><set name="IndexQusetion">Apakah anda menginginkan Cooler dengan fitur Low Noise? Ya; Tidak</set>
+                         <think>
+                             <set name="HARDDRIVE_LN">HardDrive-LowNoise</set>
+                         </think></template>
+                 </category></topic>
+
+             <topic name="CASUAL GAMING">
+                 <category><pattern>TIDAK</pattern><that>APAKAH ANDA MENGINGINKAN HARD DRIVE DENGAN FITUR LOW NOISE QUESTION MARK YA SEMICOLON TIDAK</that>
+                     <template><set name="IndexQusetion">Apakah anda menginginkan Cooler dengan fitur Low Noise? Ya; Tidak</set></template>
+                 </category></topic>
+
+             <topic name="CASUAL GAMING">
+                 <category><pattern>YA</pattern><that>APAKAH ANDA MENGINGINKAN COOLER DENGAN FITUR LOW NOISE QUESTION MARK YA SEMICOLON TIDAK</that>
+                     <template><set name="IndexQusetion">Apakah anda menginginkan Video Card dengan fitur Low Noise? Ya; Tidak</set>
+                         <think>
+                             <set name="COOLER_LN">ComputerCooling-LowNoise</set>
+                         </think></template>
+                 </category></topic>
+
+             <topic name="CASUAL GAMING">
+                 <category><pattern>TIDAK</pattern><that>APAKAH ANDA MENGINGINKAN COOLER DENGAN FITUR LOW NOISE QUESTION MARK YA SEMICOLON TIDAK</that>
+                     <template><set name="IndexQusetion">Apakah anda menginginkan Video Card dengan fitur Low Noise? Ya; Tidak</set></template>
+                 </category></topic>
+
+             <topic name="CASUAL GAMING">
+                 <category><pattern>YA</pattern><that>APAKAH ANDA MENGINGINKAN VIDEO CARD DENGAN FITUR LOW NOISE QUESTION MARK YA SEMICOLON TIDAK</that>
+                     <template><set name="IndexQusetion">CASUAL GAMING BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil</set>
+                         <think>
+                             <set name="VIDEOCARD_LN">VideoCard-LowNoise</set>
+                         </think></template>
+                 </category></topic>
+
+             <topic name="CASUAL GAMING">
+                 <category><pattern>TIDAK</pattern><that>APAKAH ANDA MENGINGINKAN VIDEO CARD DENGAN FITUR LOW NOISE QUESTION MARK YA SEMICOLON TIDAK</that>
+                     <template><set name="IndexQusetion">CASUAL GAMING BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil</set></template>
+                 </category></topic>
+
+    <topic name="CASUAL GAMING">
+        <category><pattern>TIDAK</pattern><that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR LOW NOISE QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
+        <template><set name="IndexQusetion">CASUAL GAMING BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil</set>
+            <think>
+                <set name="HARDDRIVE_LN">DEFAULT</set>
+                <set name="COOLER_LN">DEFAULT</set>
+                <set name="VIDEOCARD_LN">DEFAULT</set>
+            </think></template>
+    </category></topic>
+
+    <topic name="CASUAL GAMING">
+        <category><pattern>COMPUTER SPECIFICATIONS</pattern>
+        <template><think><set name="IndexQusetion">unknown</set></think>INI COMPUTER <get name="jenis"/> MU DENGAN FITUR <br/>
+        <condition name="LowVoltage">
+            <li value="SEMUA">
+                <list>
+                    <item><get name="PROCESSOR_LV"/></item><br/>
+                    <item><get name="HARDDRIVE_LV"/></item><br/>
+                </list>
+            </li>
+            <li>
+                <list>
+                    <item><get name="PROCESSOR_LV"/></item><br/>
+                    <item><get name="HARDDRIVE_LV"/></item><br/>
+                </list>
+            </li>
+        </condition>
+        <condition name="Overclock">
+            <li value="SEMUA">
+                <list>
+                    <item><get name="PROCESSOR_OC"/></item><br/>
+                    <item><get name="VIDEOCARD_OC"/></item><br/>
+                </list>
+            </li>
+            <li>
+                <list>
+                    <item><get name="PROCESSOR_OC"/></item><br/>
+                    <item><get name="VIDEOCARD_OC"/></item><br/>
+                </list>
+            </li>
+        </condition>
+        <condition name="LowNoise">
+            <li value="SEMUA">
+                <list>
+                    <item><get name="HARDDRIVE_LN"/></item><br/>
+                </list>
+            </li>
+        </condition>
+<br/>
+DENGAN KLASIFIKASI<br/> High-EndDesktop
+</template>
+</category></topic>
+</aiml>
