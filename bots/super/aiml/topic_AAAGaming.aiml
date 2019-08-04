@@ -742,10 +742,10 @@
         </category></topic>
 
     <!--COMPUTER SPECIFICATION RAM-->
-    <topic name="GAMING">
+    <topic name="ONLINE GAMING">
         <category>
             <pattern>COMPUTER SPECIFICATIONS RAM</pattern>
-            <template>
+            <template><think><set name="IndexQusetion">unknown</set></think>INI KOMPONEN RAM <get name="jenis"/> MU <br/>
                 <condition name="RAM_RGB">
                     <li value="RAM-RGB">
                         <list>
@@ -758,7 +758,7 @@
                         </list>
                     </li>
                 </condition>
-                DENGAN KLASIFIKASI<br/> High-EndDesktop
+                DENGAN KLASIFIKASI<br/> Enthusiast
                 <br/>
                 DENGAN UKURAN<br/> <get name="CHASSIS"/>
                 <br/>
@@ -770,10 +770,10 @@
     </topic>
 
     <!--COMPUTER SPECIFICATION CHASSIS-->
-    <topic name="GAMING">
+    <topic name="ONLINE GAMING">
         <category>
             <pattern>COMPUTER SPECIFICATIONS CHASSIS</pattern>
-            <template>
+            <template><think><set name="IndexQusetion">unknown</set></think>INI KOMPONEN CHASSIS <get name="jenis"/> MU <br/>
                 <condition name="CHASSIS_RGB">
                     <li value="Chassis-RGB">
                         <list>
@@ -786,7 +786,7 @@
                         </list>
                     </li>
                 </condition>
-                DENGAN KLASIFIKASI<br/> High-EndDesktop
+                DENGAN KLASIFIKASI<br/> Enthusiast
                 <br/>
                 DENGAN UKURAN<br/> <get name="CHASSIS"/>
                 <br/>
@@ -798,10 +798,10 @@
     </topic>
 
     <!--COMPUTER SPECIFICATION MOTHERBOARD-->
-    <topic name="GAMING">
+    <topic name="ONLINE GAMING">
         <category>
             <pattern>COMPUTER SPECIFICATIONS MOTHERBOARD</pattern>
-            <template>
+            <template><think><set name="IndexQusetion">unknown</set></think>INI KOMPONEN MOTHERBOARD <get name="jenis"/> MU <br/>
                 <condition name="MOTHERBOARD_RGB">
                     <li value="Motherboard-RGB">
                         <list>
@@ -814,7 +814,7 @@
                         </list>
                     </li>
                 </condition>
-                DENGAN KLASIFIKASI<br/> High-EndDesktop
+                DENGAN KLASIFIKASI<br/> Enthusiast
                 <br/>
                 DENGAN UKURAN<br/> <get name="CHASSIS"/>
                 <br/>
@@ -826,10 +826,10 @@
     </topic>
 
     <!--COMPUTER SPECIFICATION CPU-->
-    <topic name="GAMING">
+    <topic name="ONLINE GAMING">
         <category>
             <pattern>COMPUTER SPECIFICATIONS CPU</pattern>
-            <template>
+            <template><think><set name="IndexQusetion">unknown</set></think>INI KOMPONEN CPU <get name="jenis"/> MU <br/>
                 <condition name="PROCESSOR_OC">
                     <li value="CPU-DEFAULT">
                         <condition name="PROCESSOR_LV">
@@ -864,7 +864,7 @@
                         </condition>
                     </li>
                 </condition>
-                DENGAN KLASIFIKASI<br/> High-EndDesktop
+                DENGAN KLASIFIKASI<br/> Enthusiast
                 <br/>
                 DENGAN UKURAN<br/> <get name="CHASSIS"/>
                 <br/>
@@ -876,15 +876,15 @@
     </topic>
 
     <!--COMPUTER SPECIFICATION HARDDRIVE-->
-    <topic name="GAMING">
+    <topic name="ONLINE GAMING">
         <category>
             <pattern>COMPUTER SPECIFICATIONS HARDDRIVE</pattern>
-            <template>
+            <template><think><set name="IndexQusetion">unknown</set></think>INI KOMPONEN HARDDRIVE <get name="jenis"/> MU <br/>
                 <list>
                     <item><get name="HARDDRIVE_LV"/></item><br/>
                     <item><get name="HARDDRIVE_LN"/></item><br/>
                 </list>
-                DENGAN KLASIFIKASI<br/> High-EndDesktop
+                DENGAN KLASIFIKASI<br/> Enthusiast
                 <br/>
                 DENGAN UKURAN<br/> <get name="CHASSIS"/>
                 <br/>
@@ -896,10 +896,10 @@
     </topic>
 
     <!--COMPUTER SPECIFICATION COMPUTER COOLING-->
-    <topic name="GAMING">
+    <topic name="ONLINE GAMING">
         <category>
             <pattern>COMPUTER SPECIFICATIONS COMPUTER COOLING</pattern>
-            <template>
+            <template><think><set name="IndexQusetion">unknown</set></think>INI KOMPONEN COMPUTER COOLING <get name="jenis"/> MU <br/>
                 <condition name="COOLER_RGB">
                     <li value="ComputerCooling-RGB">
                         <list>
@@ -914,7 +914,7 @@
                         </list>
                     </li>
                 </condition>
-                DENGAN KLASIFIKASI<br/> High-EndDesktop
+                DENGAN KLASIFIKASI<br/> Enthusiast
                 <br/>
                 DENGAN UKURAN<br/> <get name="CHASSIS"/>
                 <br/>
@@ -926,10 +926,10 @@
     </topic>
 
     <!--COMPUTER SPECIFICATION VIDEOCARD-->
-    <topic name="GAMING">
+    <topic name="ONLINE GAMING">
         <category>
             <pattern>COMPUTER SPECIFICATIONS VIDEOCARD</pattern>
-            <template>
+            <template><think><set name="IndexQusetion">unknown</set></think>INI KOMPONEN VIDEOCARD <get name="jenis"/> MU <br/>
                 <condition name="VIDEOCARD_RGB">
                     <li value="VideoCard-RGB">
                         <list>
@@ -945,7 +945,7 @@
                         </list>
                     </li>
                 </condition>
-                DENGAN KLASIFIKASI<br/> High-EndDesktop
+                DENGAN KLASIFIKASI<br/> Enthusiast
                 <br/>
                 DENGAN UKURAN<br/> <get name="CHASSIS"/>
                 <br/>
@@ -955,5 +955,6 @@
             </template>
         </category>
     </topic>
+
 
 </aiml>
