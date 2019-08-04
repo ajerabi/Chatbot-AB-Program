@@ -17,9 +17,6 @@
 <!-- For more information see http://www.alicebot.org -->
 <category>
     <pattern>AKU INGIN MEMBUAT SEBUAH KOMPUTER</pattern>
-    <!--
-    <template>Comp-Bot <set name="topic">Komputer</set> akan membantu
-     -->
     <template><set name="IndexQusetion">Komputer yang disediakan : GAMING; DESAIN; OFFICE</set>
     <think>
 

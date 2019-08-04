@@ -480,7 +480,7 @@
     </topic>
 
     <!--COMPUTER SPECIFICATION RAM-->
-    <topic name="ONLINE GAMING">
+    <topic name="DESAIN VIDEO">
         <category>
             <pattern>COMPUTER SPECIFICATIONS RAM</pattern>
             <template><think><set name="IndexQusetion">unknown</set></think>INI KOMPONEN RAM <get name="jenis"/> MU <br/>
@@ -508,7 +508,7 @@
     </topic>
 
     <!--COMPUTER SPECIFICATION CHASSIS-->
-    <topic name="ONLINE GAMING">
+    <topic name="DESAIN VIDEO">
         <category>
             <pattern>COMPUTER SPECIFICATIONS CHASSIS</pattern>
             <template><think><set name="IndexQusetion">unknown</set></think>INI KOMPONEN CHASSIS <get name="jenis"/> MU <br/>
@@ -536,7 +536,7 @@
     </topic>
 
     <!--COMPUTER SPECIFICATION MOTHERBOARD-->
-    <topic name="ONLINE GAMING">
+    <topic name="DESAIN VIDEO">
         <category>
             <pattern>COMPUTER SPECIFICATIONS MOTHERBOARD</pattern>
             <template><think><set name="IndexQusetion">unknown</set></think>INI KOMPONEN MOTHERBOARD <get name="jenis"/> MU <br/>
@@ -564,7 +564,7 @@
     </topic>
 
     <!--COMPUTER SPECIFICATION CPU-->
-    <topic name="ONLINE GAMING">
+    <topic name="DESAIN VIDEO">
         <category>
             <pattern>COMPUTER SPECIFICATIONS CPU</pattern>
             <template><think><set name="IndexQusetion">unknown</set></think>INI KOMPONEN CPU <get name="jenis"/> MU <br/>
@@ -614,7 +614,7 @@
     </topic>
 
     <!--COMPUTER SPECIFICATION HARDDRIVE-->
-    <topic name="ONLINE GAMING">
+    <topic name="DESAIN VIDEO">
         <category>
             <pattern>COMPUTER SPECIFICATIONS HARDDRIVE</pattern>
             <template><think><set name="IndexQusetion">unknown</set></think>INI KOMPONEN HARDDRIVE <get name="jenis"/> MU <br/>
@@ -634,7 +634,7 @@
     </topic>
 
     <!--COMPUTER SPECIFICATION COMPUTER COOLING-->
-    <topic name="ONLINE GAMING">
+    <topic name="DESAIN VIDEO">
         <category>
             <pattern>COMPUTER SPECIFICATIONS COMPUTER COOLING</pattern>
             <template><think><set name="IndexQusetion">unknown</set></think>INI KOMPONEN COMPUTER COOLING <get name="jenis"/> MU <br/>
@@ -664,7 +664,7 @@
     </topic>
 
     <!--COMPUTER SPECIFICATION VIDEOCARD-->
-    <topic name="ONLINE GAMING">
+    <topic name="DESAIN VIDEO">
         <category>
             <pattern>COMPUTER SPECIFICATIONS VIDEOCARD</pattern>
             <template><think><set name="IndexQusetion">unknown</set></think>INI KOMPONEN VIDEOCARD <get name="jenis"/> MU <br/>
