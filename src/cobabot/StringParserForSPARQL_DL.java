@@ -210,7 +210,7 @@ public class StringParserForSPARQL_DL {
 
     private static void dependantComponentChassis(StringBuilder strQueryWhere, String chassisSize) {
         strQueryWhere.append(" WHERE {\n")
-                .append("Type(?TempComponent, myOnto:")
+                .append("Type(?Component, myOnto:")
                 .append(chassisSize)
                 .append(")}");
     }
