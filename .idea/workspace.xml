@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ce6bd93-7721-457f-a381-9fdd3452df1a" name="Default Changelist" comment="topic gaming">
-      <change afterPath="$PROJECT_DIR$/bots/super/aiml/topic_DesainAudio.aiml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bots/super/aiml/topic_DesainVideo.aiml" afterDir="false" />
+    <list default="true" id="4ce6bd93-7721-457f-a381-9fdd3452df1a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bots/super/aiml/topic_AAAGaming.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aiml/topic_AAAGaming.aiml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bots/super/aiml/topic_CasualGaming.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aiml/topic_CasualGaming.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bots/super/aiml/topic_DesainAudio.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aiml/topic_DesainAudio.aiml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bots/super/aiml/topic_DesainGrafis.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aiml/topic_DesainGrafis.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bots/super/aiml/topic_DesainVideo.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aiml/topic_DesainVideo.aiml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bots/super/aiml/topic_Office.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aiml/topic_Office.aiml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bots/super/aiml/topic_OnlineGaming.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aiml/topic_OnlineGaming.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bots/super/aiml/topic_Usability.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aiml/topic_Usability.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bots/super/aimlif/topic_AAAGaming.aiml.csv" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aimlif/topic_AAAGaming.aiml.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bots/super/aimlif/topic_DesainGrafis.aiml.csv" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aimlif/topic_DesainGrafis.aiml.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bots/super/aimlif/topic_Office.aiml.csv" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aimlif/topic_Office.aiml.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bots/super/aimlif/topic_Usability.aiml.csv" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aimlif/topic_Usability.aiml.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bots/super/aimlif/update.aiml.csv" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aimlif/update.aiml.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cobabot/StringParserForSPARQL_DL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cobabot/StringParserForSPARQL_DL.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -231,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1561572527254</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Semua Jenis Pengunaan dan tambahan Ukuran Chassis">
+      <created>1564879572346</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1564879572346</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -278,7 +291,8 @@
     <MESSAGE value="Add sparql-dl maven dependency, combine sparql-dl program" />
     <MESSAGE value="Perubahan value di predicate topic_office &amp; topic_desain" />
     <MESSAGE value="topic gaming" />
-    <option name="LAST_COMMIT_MESSAGE" value="topic gaming" />
+    <MESSAGE value="Semua Jenis Pengunaan dan tambahan Ukuran Chassis" />
+    <option name="LAST_COMMIT_MESSAGE" value="Semua Jenis Pengunaan dan tambahan Ukuran Chassis" />
   </component>
   <component name="masterDetails">
     <states>

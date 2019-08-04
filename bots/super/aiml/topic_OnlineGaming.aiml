@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
-<!-- File: topic_Office.aiml -->
-<!-- Author: Dr. Richard S. Wallace -->
-<!-- Last modified: Juni 08, 2019 -->
-<!--  -->
-<!-- This AIML file is part of the SUPER 0.0.4 chat bot knowledge base. -->
-<!--  -->
-<!-- The SUPER brain is Copyright &copy; 2019 by ALICE AI Foundation. -->
-<!--  -->
-<!-- The SUPER brain is released under the terms of the GNU Lesser General -->
-<!-- Public License, as published by the Free Software Foundation. -->
-<!--  -->
-<!-- This file is distributed WITHOUT ANY WARRANTY; without even the  -->
-<!-- implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   -->
-<!--  -->
-<!-- For more information see http://www.alicebot.org -->
+    <!-- File: topic_Office.aiml -->
+    <!-- Author: Dr. Richard S. Wallace -->
+    <!-- Last modified: Juni 08, 2019 -->
+    <!--  -->
+    <!-- This AIML file is part of the SUPER 0.0.4 chat bot knowledge base. -->
+    <!--  -->
+    <!-- The SUPER brain is Copyright &copy; 2019 by ALICE AI Foundation. -->
+    <!--  -->
+    <!-- The SUPER brain is released under the terms of the GNU Lesser General -->
+    <!-- Public License, as published by the Free Software Foundation. -->
+    <!--  -->
+    <!-- This file is distributed WITHOUT ANY WARRANTY; without even the  -->
+    <!-- implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   -->
+    <!--  -->
+    <!-- For more information see http://www.alicebot.org -->
     <topic name="GAMING">
         <category>
             <pattern>ONLINE GAMING</pattern>
@@ -235,7 +235,7 @@
             </template>
         </category>
     </topic>
-    
+
     <!--PROCESSOR OVERCLOCK-->
     <topic name="ONLINE GAMING">
         <category>
@@ -334,7 +334,7 @@
             </template>
         </category>
     </topic>
-    
+
     <!--SEBAGIAN LOW NOISE-->
     <topic name="ONLINE GAMING">
         <category>
@@ -419,7 +419,7 @@
             <pattern>SEMUA</pattern>
             <that>APAKAH ANDA MENGINGINKAN KOMPONEN YANG MEMILIKI LAMPU LED RGB QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
             <template>
-                <set name="IndexQusetion">ONLINE GAMING BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil</set>
+                <set name="IndexQusetion">Manufaktur apa yang anda inginkan untuk CPU komputer anda? AMD; Intel</set>
                 <think>
                     <set name="RGB">SEMUA</set>
                     <set name="CHASSIS_RGB">Chassis-RGB</set>
@@ -438,7 +438,7 @@
             <pattern>TIDAK</pattern>
             <that>APAKAH ANDA MENGINGINKAN KOMPONEN YANG MEMILIKI LAMPU LED RGB QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
             <template>
-                <set name="IndexQusetion">ONLINE GAMING BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil</set>
+                <set name="IndexQusetion">Manufaktur apa yang anda inginkan untuk CPU komputer anda? AMD; Intel</set>
                 <think>
                     <set name="CHASSIS_RGB">Chassis-DEFAULT</set>
                     <set name="MOTHERBOARD_RGB">Motherboard-DEFAULT</set>
@@ -602,7 +602,7 @@
             <pattern>YA</pattern>
             <that>APAKAH ANDA MENGINGINKAN VIDEOCARD YANG MEMILIKI LAMPU LED RGB QUESTION MARK YA SEMICOLON TIDAK</that>
             <template>
-                <set name="IndexQusetion">ONLINE GAMING BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil</set>
+                <set name="IndexQusetion">Manufaktur apa yang anda inginkan untuk CPU komputer anda? AMD; Intel</set>
                 <think>
                     <set name="RGB">SEBAGIAN</set>
                     <set name="VIDEOCARD_RGB">VideoCard-RGB</set>
@@ -617,7 +617,7 @@
             <pattern>TIDAK</pattern>
             <that>APAKAH ANDA MENGINGINKAN VIDEOCARD YANG MEMILIKI LAMPU LED RGB QUESTION MARK YA SEMICOLON TIDAK</that>
             <template>
-                <set name="IndexQusetion">ONLINE GAMING BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil</set>
+                <set name="IndexQusetion">Manufaktur apa yang anda inginkan untuk CPU komputer anda? AMD; Intel</set>
                 <think>
                     <set name="RGB">SEBAGIAN</set>
                     <set name="VIDEOCARD_RGB">VideoCard-DEFAULT</set>
@@ -628,79 +628,351 @@
 
     <!--END FEATURE RGB -->
 
+    <!--MANUFAKTUR-->
+    <topic name="ONLINE GAMING">
+        <category>
+            <pattern>AMD</pattern>
+            <that>MANUFAKTUR APA YANG ANDA INGINKAN UNTUK CPU KOMPUTER ANDA QUESTION MARK AMD SEMICOLON INTEL</that>
+            <template>
+                <set name="IndexQusetion">ONLINE GAMING BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil</set>
+                <think>
+                    <set name="MANUFAKTUR">AMD</set>
+                </think>
+            </template>
+        </category>
+    </topic>
 
     <topic name="ONLINE GAMING">
-<category><pattern>COMPUTER SPECIFICATIONS</pattern>
-<template><think><set name="IndexQusetion">unknown</set></think>INI COMPUTER <get name="jenis"/> MU DENGAN FITUR <br/>
-<condition name="LowVoltage">
-<li value="SEMUA">
-<list>
-    <item><get name="PROCESSOR_LV"/></item><br/>
-    <item><get name="HARDDRIVE_LV"/></item><br/>
-</list>
-</li>
-<li>
-<list>
-    <item><get name="PROCESSOR_LV"/></item><br/>
-    <item><get name="HARDDRIVE_LV"/></item><br/>
-</list>
-</li>
-</condition>
-<condition name="Overclock">
-<li value="SEMUA">
-<list>
-    <item><get name="PROCESSOR_OC"/></item><br/>
-    <item><get name="VIDEOCARD_OC"/></item><br/>
-</list>
-</li>
-<li>
-<list>
-    <item><get name="PROCESSOR_OC"/></item><br/>
-    <item><get name="VIDEOCARD_OC"/></item><br/>
-</list>
-</li>
-</condition>
-<condition name="LowNoise">
-<li value="SEMUA">
-<list>
-    <item><get name="HARDDRIVE_LN"/></item><br/>
-    <item><get name="COOLER_LN"/></item><br/>
-    <item><get name="VIDEOCARD_LN"/></item><br/>
-</list>
-</li>
-<li>
-<list>
-    <item><get name="HARDDRIVE_LN"/></item><br/>
-    <item><get name="COOLER_LN"/></item><br/>
-    <item><get name="VIDEOCARD_LN"/></item><br/>
-</list>
-</li>
-</condition>
-<condition name="RGB">
-<li value="SEMUA">
-<list>
-    <item><get name="CHASSIS_RGB"/></item><br/>
-    <item><get name="MOTHERBOARD_RGB"/></item><br/>
-    <item><get name="RAM_RGB"/></item><br/>
-    <item><get name="COOLER_RGB"/></item><br/>
-    <item><get name="VIDEOCARD_RGB"/></item><br/>
-</list>
-</li>
-<li>
-<list>
-    <item><get name="CHASSIS_RGB"/></item><br/>
-    <item><get name="MOTHERBOARD_RGB"/></item><br/>
-    <item><get name="RAM_RGB"/></item><br/>
-    <item><get name="COOLER_RGB"/></item><br/>
-    <item><get name="VIDEOCARD_RGB"/></item><br/>
-</list>
-</li>
-</condition>
-<br/>
-DENGAN KLASIFIKASI<br/> Enthusiast
-<br/>
-DENGAN UKURAN<br/> <get name="CHASSIS"/>
-</template>
-</category></topic>
+        <category>
+            <pattern>INTEL</pattern>
+            <that>MANUFAKTUR APA YANG ANDA INGINKAN UNTUK CPU KOMPUTER ANDA QUESTION MARK AMD SEMICOLON INTEL</that>
+            <template>
+                <set name="IndexQusetion">ONLINE GAMING BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil</set>
+                <think>
+                    <set name="MANUFAKTUR">INTEL</set>
+                </think>
+            </template>
+        </category>
+    </topic>
+    <!--END MANUFAKTUR-->
+
+
+    <topic name="ONLINE GAMING">
+        <category><pattern>COMPUTER SPECIFICATIONS</pattern>
+            <template><think><set name="IndexQusetion">unknown</set></think>INI COMPUTER <get name="jenis"/> MU DENGAN FITUR <br/>
+                <condition name="LowVoltage">
+                    <li value="SEMUA">
+                        <list>
+                            <item><get name="PROCESSOR_LV"/></item><br/>
+                            <item><get name="HARDDRIVE_LV"/></item><br/>
+                        </list>
+                    </li>
+                    <li>
+                        <list>
+                            <item><get name="PROCESSOR_LV"/></item><br/>
+                            <item><get name="HARDDRIVE_LV"/></item><br/>
+                        </list>
+                    </li>
+                </condition>
+                <condition name="Overclock">
+                    <li value="SEMUA">
+                        <list>
+                            <item><get name="PROCESSOR_OC"/></item><br/>
+                            <item><get name="VIDEOCARD_OC"/></item><br/>
+                        </list>
+                    </li>
+                    <li>
+                        <list>
+                            <item><get name="PROCESSOR_OC"/></item><br/>
+                            <item><get name="VIDEOCARD_OC"/></item><br/>
+                        </list>
+                    </li>
+                </condition>
+                <condition name="LowNoise">
+                    <li value="SEMUA">
+                        <list>
+                            <item><get name="HARDDRIVE_LN"/></item><br/>
+                            <item><get name="COOLER_LN"/></item><br/>
+                            <item><get name="VIDEOCARD_LN"/></item><br/>
+                        </list>
+                    </li>
+                    <li>
+                        <list>
+                            <item><get name="HARDDRIVE_LN"/></item><br/>
+                            <item><get name="COOLER_LN"/></item><br/>
+                            <item><get name="VIDEOCARD_LN"/></item><br/>
+                        </list>
+                    </li>
+                </condition>
+                <condition name="RGB">
+                    <li value="SEMUA">
+                        <list>
+                            <item><get name="CHASSIS_RGB"/></item><br/>
+                            <item><get name="MOTHERBOARD_RGB"/></item><br/>
+                            <item><get name="RAM_RGB"/></item><br/>
+                            <item><get name="COOLER_RGB"/></item><br/>
+                            <item><get name="VIDEOCARD_RGB"/></item><br/>
+                        </list>
+                    </li>
+                    <li>
+                        <list>
+                            <item><get name="CHASSIS_RGB"/></item><br/>
+                            <item><get name="MOTHERBOARD_RGB"/></item><br/>
+                            <item><get name="RAM_RGB"/></item><br/>
+                            <item><get name="COOLER_RGB"/></item><br/>
+                            <item><get name="VIDEOCARD_RGB"/></item><br/>
+                        </list>
+                    </li>
+                </condition>
+                <condition name="PROCESSOR_OC">
+                    <li value="CPU-DEFAULT">
+                        <condition name="PROCESSOR_LV">
+                            <li value="CPU-DEFAULT">
+                                <list>
+                                    <item>CPU-Integreted</item><br/>
+                                </list>
+                            </li>
+                            <li>
+                            </li>
+                        </condition>
+                    </li>
+                    <li>
+                        <condition name="PROCESSOR_LV">
+                            <li value="CPU-DEFAULT">
+                                <list>
+                                    <item>CPU-Integreted</item><br/>
+                                </list>
+                            </li>
+                            <li>
+                            </li>
+                        </condition>
+                    </li>
+                </condition>
+                <br/>
+                DENGAN KLASIFIKASI<br/> Enthusiast
+                <br/>
+                DENGAN UKURAN<br/> <get name="CHASSIS"/>
+                <br/>
+                DENGAN MANUFAKTUR<br/> <get name="MANUFAKTUR"/>
+            </template>
+        </category></topic>
+
+    <!--COMPUTER SPECIFICATION RAM-->
+    <topic name="ONLINE GAMING">
+        <category>
+            <pattern>COMPUTER SPECIFICATIONS RAM</pattern>
+            <template>
+                <condition name="RAM_RGB">
+                    <li value="RAM-RGB">
+                        <list>
+                            <item><get name="RAM_RGB"/></item><br/>
+                        </list>
+                    </li>
+                    <li>
+                        <list>
+                            <item>RAM-DEFAULT</item><br/>
+                        </list>
+                    </li>
+                </condition>
+                DENGAN KLASIFIKASI<br/> Enthusiast
+                <br/>
+                DENGAN UKURAN<br/> <get name="CHASSIS"/>
+                <br/>
+                DENGAN MANUFAKTUR<br/> <get name="MANUFAKTUR"/>
+                <br/>
+                KOMPONEN<br/> RAM
+            </template>
+        </category>
+    </topic>
+
+    <!--COMPUTER SPECIFICATION CHASSIS-->
+    <topic name="ONLINE GAMING">
+        <category>
+            <pattern>COMPUTER SPECIFICATIONS CHASSIS</pattern>
+            <template>
+                <condition name="CHASSIS_RGB">
+                    <li value="Chassis-RGB">
+                        <list>
+                            <item><get name="CHASSIS_RGB"/></item><br/>
+                        </list>
+                    </li>
+                    <li>
+                        <list>
+                            <item>Chassis-DEFAULT</item><br/>
+                        </list>
+                    </li>
+                </condition>
+                DENGAN KLASIFIKASI<br/> Enthusiast
+                <br/>
+                DENGAN UKURAN<br/> <get name="CHASSIS"/>
+                <br/>
+                DENGAN MANUFAKTUR<br/> <get name="MANUFAKTUR"/>
+                <br/>
+                KOMPONEN<br/> Chassis
+            </template>
+        </category>
+    </topic>
+
+    <!--COMPUTER SPECIFICATION MOTHERBOARD-->
+    <topic name="ONLINE GAMING">
+        <category>
+            <pattern>COMPUTER SPECIFICATIONS MOTHERBOARD</pattern>
+            <template>
+                <condition name="MOTHERBOARD_RGB">
+                    <li value="Motherboard-RGB">
+                        <list>
+                            <item><get name="MOTHERBOARD_RGB"/></item><br/>
+                        </list>
+                    </li>
+                    <li>
+                        <list>
+                            <item>Motherboard-DEFAULT</item><br/>
+                        </list>
+                    </li>
+                </condition>
+                DENGAN KLASIFIKASI<br/> Enthusiast
+                <br/>
+                DENGAN UKURAN<br/> <get name="CHASSIS"/>
+                <br/>
+                DENGAN MANUFAKTUR<br/> <get name="MANUFAKTUR"/>
+                <br/>
+                KOMPONEN<br/> Motherboard
+            </template>
+        </category>
+    </topic>
+
+    <!--COMPUTER SPECIFICATION CPU-->
+    <topic name="ONLINE GAMING">
+        <category>
+            <pattern>COMPUTER SPECIFICATIONS CPU</pattern>
+            <template>
+                <condition name="PROCESSOR_OC">
+                    <li value="CPU-DEFAULT">
+                        <condition name="PROCESSOR_LV">
+                            <li value="CPU-DEFAULT">
+                                <list>
+                                    <item>CPU-Integreted</item><br/>
+                                </list>
+                            </li>
+                            <li>
+                                <list>
+                                    <item><get name="PROCESSOR_LV"/></item><br/>
+                                </list>
+                            </li>
+                        </condition>
+                    </li>
+                    <li>
+                        <list>
+                            <item><get name="PROCESSOR_OC"/></item><br/>
+                        </list>
+                        <condition name="PROCESSOR_LV">
+                            <li value="CPU-DEFAULT">
+                                <list>
+                                    <item>CPU-Integreted</item><br/>
+                                    <item><get name="PROCESSOR_LV"/></item><br/>
+                                </list>
+                            </li>
+                            <li>
+                                <list>
+                                    <item><get name="PROCESSOR_LV"/></item><br/>
+                                </list>
+                            </li>
+                        </condition>
+                    </li>
+                </condition>
+                DENGAN KLASIFIKASI<br/> Enthusiast
+                <br/>
+                DENGAN UKURAN<br/> <get name="CHASSIS"/>
+                <br/>
+                DENGAN MANUFAKTUR<br/> <get name="MANUFAKTUR"/>
+                <br/>
+                KOMPONEN<br/> CPU
+            </template>
+        </category>
+    </topic>
+
+    <!--COMPUTER SPECIFICATION HARDDRIVE-->
+    <topic name="ONLINE GAMING">
+        <category>
+            <pattern>COMPUTER SPECIFICATIONS HARDDRIVE</pattern>
+            <template>
+                <list>
+                    <item><get name="HARDDRIVE_LV"/></item><br/>
+                    <item><get name="HARDDRIVE_LN"/></item><br/>
+                </list>
+                DENGAN KLASIFIKASI<br/> Enthusiast
+                <br/>
+                DENGAN UKURAN<br/> <get name="CHASSIS"/>
+                <br/>
+                DENGAN MANUFAKTUR<br/> <get name="MANUFAKTUR"/>
+                <br/>
+                KOMPONEN<br/> HardDrive
+            </template>
+        </category>
+    </topic>
+
+    <!--COMPUTER SPECIFICATION COMPUTER COOLING-->
+    <topic name="ONLINE GAMING">
+        <category>
+            <pattern>COMPUTER SPECIFICATIONS COMPUTER COOLING</pattern>
+            <template>
+                <condition name="COOLER_RGB">
+                    <li value="ComputerCooling-RGB">
+                        <list>
+                            <item><get name="COOLER_RGB"/></item><br/>
+                            <item><get name="COOLER_LN"/></item><br/>
+                        </list>
+                    </li>
+                    <li>
+                        <list>
+                            <item>ComputerCooling-DEFAULT</item><br/>
+                            <item><get name="COOLER_LN"/></item><br/>
+                        </list>
+                    </li>
+                </condition>
+                DENGAN KLASIFIKASI<br/> Enthusiast
+                <br/>
+                DENGAN UKURAN<br/> <get name="CHASSIS"/>
+                <br/>
+                DENGAN MANUFAKTUR<br/> <get name="MANUFAKTUR"/>
+                <br/>
+                KOMPONEN<br/> ComputerCooling
+            </template>
+        </category>
+    </topic>
+
+    <!--COMPUTER SPECIFICATION VIDEOCARD-->
+    <topic name="ONLINE GAMING">
+        <category>
+            <pattern>COMPUTER SPECIFICATIONS VIDEOCARD</pattern>
+            <template>
+                <condition name="VIDEOCARD_RGB">
+                    <li value="VideoCard-RGB">
+                        <list>
+                            <item><get name="VIDEOCARD_RGB"/></item><br/>
+                            <item><get name="VIDEOCARD_LN"/></item><br/>
+                            <item><get name="VIDEOCARD_OC"/></item><br/>
+                        </list>
+                    </li>
+                    <li>
+                        <list>
+                            <item><get name="VIDEOCARD_LN"/></item><br/>
+                            <item><get name="VIDEOCARD_OC"/></item><br/>
+                        </list>
+                    </li>
+                </condition>
+                DENGAN KLASIFIKASI<br/> Enthusiast
+                <br/>
+                DENGAN UKURAN<br/> <get name="CHASSIS"/>
+                <br/>
+                DENGAN MANUFAKTUR<br/> <get name="MANUFAKTUR"/>
+                <br/>
+                KOMPONEN<br/> VideoCard
+            </template>
+        </category>
+    </topic>
+
+
+
 </aiml>
 

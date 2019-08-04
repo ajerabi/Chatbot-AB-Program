@@ -24,7 +24,7 @@ public class StringParserForSPARQL_DL {
             if (line.equals("<list>") || line.equals("</list>") || line.equals("<br/>")) {
                 line.substring(0, 0);
             } else if (line.contains("<item>")) {
-                line = line.substring(10, line.lastIndexOf("</item>"));
+                line = line.substring(line.lastIndexOf("<item>")+6, line.lastIndexOf("</item>"));
                 if (line.contains("and") && !line.contains("DEFAULT")) {
                     String[] temp = line.split("and ");
                     for (String data : temp) {
