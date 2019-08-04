@@ -53,7 +53,7 @@ public class CobaBOT {
         MagicBooleans.trace_mode = true;
         //String action = "chat";
         String action = "webservice";
-        //String action = "aiml2csv";
+//        String action = "aiml2csv";
         //String action = "jojo";
 
         System.out.println(MagicStrings.program_name_version);
@@ -198,7 +198,7 @@ public class CobaBOT {
                             Scanner scanner = new Scanner(responseBot);
                             String line = scanner.nextLine();
                             StringBuilder specifications = new StringBuilder("");
-                            if (line.contains("INI COMPUTER") ) {
+                            if (line.contains("INI KOMPONEN") ) {
                                 Scanner result = Example_Local.querySPARQL_DL(responseBot);
                                 while (result.hasNextLine()) {
                                     line = result.nextLine();
