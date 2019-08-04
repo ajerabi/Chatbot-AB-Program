@@ -40,7 +40,8 @@
             <template><set name="IndexQusetion">Apakah anda menginginkan komponen dengan fitur Low Voltage? Semua; Sebagian; Tidak</set>
                 <think>
                     <set name="CHASSIS">SmallFormFactory</set>
-                </think></template>
+                </think>
+            </template>
         </category>
     </topic>
 
@@ -51,7 +52,8 @@
             <template><set name="IndexQusetion">Apakah anda menginginkan komponen dengan fitur Low Voltage? Semua; Sebagian; Tidak</set>
                 <think>
                     <set name="CHASSIS">Mini-Tower</set>
-                </think></template>
+                </think>
+            </template>
         </category>
     </topic>
 
@@ -62,7 +64,8 @@
             <template><set name="IndexQusetion">Apakah anda menginginkan komponen dengan fitur Low Voltage? Semua; Sebagian; Tidak</set>
                 <think>
                     <set name="CHASSIS">Mid-Tower</set>
-                </think></template>
+                </think>
+            </template>
         </category>
     </topic>
 
@@ -73,7 +76,8 @@
             <template><set name="IndexQusetion">Apakah anda menginginkan komponen dengan fitur Low Voltage? Semua; Sebagian; Tidak</set>
                 <think>
                     <set name="CHASSIS">Full-Tower</set>
-                </think></template>
+                </think>
+            </template>
         </category>
     </topic>
     <!-- END USABILITY dan UKURAN-->
@@ -97,7 +101,8 @@
                     <set name="VIDEOCARD_LV">Videocard-LowVoltage</set>
                     <set name="SOUNDCARD_LV">Soundcard-LowVoltage</set>
                     -->
-                </think></template>
+                </think>
+            </template>
         </category>
     </topic>
 
@@ -110,8 +115,10 @@
                 <think>
                     <set name="PROCESSOR_LV">CPU-DEFAULT</set>
                     <set name="HARDDRIVE_LV">HardDrive-DEFAULT</set>
-                </think></template>
-        </category></topic>
+                </think>
+            </template>
+        </category>
+    </topic>
 
     <!--SEGABIAN LOW VOLTAGE-->
     <topic name="GAMING">
@@ -119,7 +126,8 @@
             <pattern>SEBAGIAN</pattern>
             <that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR LOW VOLTAGE QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
             <template><set name="IndexQusetion">Apakah anda menginginkan Processor dengan fitur Low Voltage? Ya; Tidak</set></template>
-        </category></topic>
+        </category>
+    </topic>
 
     <!--PROCESSOR LOW VOLTAGE-->
     <topic name="GAMING">
@@ -129,8 +137,10 @@
             <template><set name="IndexQusetion">Apakah anda menginginkan Hard Drive dengan fitur Low Voltage? Ya; Tidak</set>
                 <think>
                     <set name="PROCESSOR_LV">CPU-LowVoltage</set>
-                </think></template>
-        </category></topic>
+                </think>
+            </template>
+        </category>
+    </topic>
 
     <!--PROCESSOR NON LOW VOLTAGE-->
     <topic name="GAMING">
@@ -140,8 +150,10 @@
             <template><set name="IndexQusetion">Apakah anda menginginkan Hard Drive dengan fitur Low Voltage? Ya; Tidak</set>
                 <think>
                     <set name="PROCESSOR_LV">CPU-DEFAULT</set>
-                </think></template>
-        </category></topic>
+                </think>
+            </template>
+        </category>
+    </topic>
 
     <!--HARDDRIVE LOW VOLTAGE-->
     <topic name="GAMING">
@@ -151,8 +163,10 @@
             <template><set name="IndexQusetion">Apakah anda menginginkan komponen dengan fitur Overclock? Semua; Sebagian; Tidak</set>
                 <think>
                     <set name="HARDDRIVE_LV">HardDrive-LowVoltage</set>
-                </think></template>
-        </category></topic>
+                </think>
+            </template>
+        </category>
+    </topic>
 
     <!--HARDDRIVE NON LOW VOLTAGE-->
     <topic name="GAMING">
@@ -162,8 +176,10 @@
             <template><set name="IndexQusetion">Apakah anda menginginkan komponen dengan fitur Overclock? Semua; Sebagian; Tidak</set>
                 <think>
                     <set name="HARDDRIVE_LV">HardDrive-DEFAULT</set>
-                </think></template>
-        </category></topic>
+                </think>
+            </template>
+        </category>
+    </topic>
 
     <!--ALL NON LOW VOLTAGE-->
     <topic name="GAMING">
@@ -174,8 +190,10 @@
                 <think>
                     <set name="PROCESSOR_LV">CPU-DEFAULT</set>
                     <set name="HARDDRIVE_LV">HardDrive-DEFAULT</set>
-                </think></template>
-        </category></topic>
+                </think>
+            </template>
+        </category>
+    </topic>
 
     <!--END LOW VOLTAGE-->
 
@@ -200,7 +218,8 @@
                     <!--
                     <set name="RAM_OC">RAM-Overclock</set>
                     -->
-                </think></template>
+                </think>
+            </template>
         </category>
     </topic>
 
@@ -231,7 +250,8 @@
             <template><set name="IndexQusetion">Apakah anda menginginkan Videocard dengan fitur Overclock? Ya; Tidak</set>
                 <think>
                     <set name="PROCESSOR_OC">CPU-Overclockable</set>
-                </think></template>
+                </think>
+            </template>
         </category>
     </topic>
 
@@ -243,7 +263,8 @@
             <template><set name="IndexQusetion">Apakah anda menginginkan Videocard dengan fitur Overclock? Ya; Tidak</set>
                 <think>
                     <set name="PROCESSOR_OC">CPU-DEFAULT</set>
-                </think></template>
+                </think>
+            </template>
         </category>
     </topic>
 
@@ -255,7 +276,8 @@
             <template><set name="IndexQusetion">Apakah anda menginginkan komponen dengan fitur Low Noise? Semua; Sebagian; Tidak</set>
                 <think>
                     <set name="VIDEOCARD_OC">VideoCard-Overclockable</set>
-                </think></template>
+                </think>
+            </template>
         </category>
     </topic>
 
@@ -267,7 +289,8 @@
             <template><set name="IndexQusetion">Apakah anda menginginkan komponen dengan fitur Low Noise? Semua; Sebagian; Tidak</set>
                 <think>
                     <set name="VIDEOCARD_OC">VideoCard-DEFAULT</set>
-                </think></template>
+                </think>
+            </template>
         </category>
     </topic>
 
@@ -278,9 +301,10 @@
             <that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR OVERCLOCK QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
             <template><set name="IndexQusetion">Apakah anda menginginkan komponen dengan fitur Low Noise? Semua; Sebagian; Tidak</set>
                 <think>
-                    <set name="PROCESSOR_LV">CPU-DEFAULT</set>
-                    <set name="HARDDRIVE_LV">HardDrive-DEFAULT</set>
-                </think></template>
+                    <set name="PROCESSOR_OC">CPU-DEFAULT</set>
+                    <set name="VIDEOCARD_OC">VideoCard-DEFAULT</set>
+                </think>
+            </template>
         </category>
     </topic>
 
@@ -298,7 +322,8 @@
                     <set name="HARDDRIVE_LN">HardDrive-LowNoise</set>
                     <set name="COOLER_LN">ComputerCooling-LowNoise</set>
                     <set name="VIDEOCARD_LN">VideoCard-LowNoise</set>
-                </think></template>
+                </think>
+            </template>
         </category>
     </topic>
 
@@ -312,7 +337,8 @@
                     <set name="HARDDRIVE_LN">HardDrive-DEFAULT</set>
                     <set name="COOLER_LN">ComputerCooling-DEFAULT</set>
                     <set name="VIDEOCARD_LN">VideoCard-DEFAULT</set>
-                </think></template>
+                </think>
+            </template>
         </category>
     </topic>
 
@@ -333,7 +359,8 @@
             <template><set name="IndexQusetion">Apakah anda menginginkan Cooler dengan fitur Low Noise? Ya; Tidak</set>
                 <think>
                     <set name="HARDDRIVE_LN">HardDrive-LowNoise</set>
-                </think></template>
+                </think>
+            </template>
         </category>
     </topic>
 
@@ -354,7 +381,8 @@
             <template><set name="IndexQusetion">Apakah anda menginginkan Video Card dengan fitur Low Noise? Ya; Tidak</set>
                 <think>
                     <set name="COOLER_LN">ComputerCooling-LowNoise</set>
-                </think></template>
+                </think>
+            </template>
         </category>
     </topic>
 
@@ -375,7 +403,8 @@
             <template><set name="IndexQusetion">Apakah anda menginginkan komponen yang memiliki lampu LED RGB? Semua; Sebagian; Tidak</set>
                 <think>
                     <set name="VIDEOCARD_LN">VideoCard-LowNoise</set>
-                </think></template>
+                </think>
+            </template>
         </category>
     </topic>
 

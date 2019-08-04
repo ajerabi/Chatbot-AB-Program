@@ -59,7 +59,7 @@
 <category>
     <pattern>DESAIN</pattern>
     <that>KOMPUTER YANG DISEDIAKAN COLON GAMING SEMICOLON DESAIN SEMICOLON OFFICE</that>
-    <template><set name="IndexQusetion">Jenis Desain : Desain Grafis; 3D Desain</set>
+    <template><set name="IndexQusetion">Jenis Desain : Desain Grafis; Desain Video; Desain Audio</set>
         <think>
             <set name="usability">DESAIN</set>
             <set name="topic">DESAIN</set>
@@ -69,7 +69,7 @@
 <category>
     <pattern>OFFICE</pattern>
     <that>KOMPUTER YANG DISEDIAKAN COLON GAMING SEMICOLON DESAIN SEMICOLON OFFICE</that>
-    <template><set name="IndexQusetion">Apakah anda menginginkan komponen dengan fitur Low Voltage? Semua; Sebagian; Tidak</set>
+    <template><set name="IndexQusetion">Ukuran apa yang anda inginkan untuk unit sistem komputer anda? Kecil; Sedang; Besar; Sangat Besar</set>
         <think>
             <set name="usability">OFFICE</set>
             <set name="topic">OFFICE</set>

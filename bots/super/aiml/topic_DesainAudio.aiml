@@ -17,18 +17,18 @@
 <!-- For more information see http://www.alicebot.org -->
     <topic name="DESAIN">
         <category>
-            <pattern>DESAIN GRAFIS</pattern>
+            <pattern>DESAIN AUDIO</pattern>
             <that>JENIS DESAIN COLON DESAIN GRAFIS SEMICOLON DESAIN VIDEO SEMICOLON DESAIN AUDIO</that>
             <template><set name="IndexQusetion">Ukuran apa yang anda inginkan untuk unit sistem komputer anda? Kecil; Sedang; Besar; Sangat Besar</set>
                 <think>
-                    <set name="topic">DESAIN GRAFIS</set>
+                    <set name="topic">DESAIN AUDIO</set>
                 </think>
             </template>
         </category>
     </topic>
 
     <!--UKURAN-->
-    <topic name="DESAIN GRAFIS">
+    <topic name="DESAIN AUDIO">
         <category>
             <pattern>KECIL</pattern>
             <that>UKURAN APA YANG ANDA INGINKAN UNTUK UNIT SISTEM KOMPUTER ANDA QUESTION MARK KECIL SEMICOLON SEDANG SEMICOLON BESAR SEMICOLON SANGAT BESAR</that>
@@ -40,7 +40,7 @@
         </category>
     </topic>
 
-    <topic name="DESAIN GRAFIS">
+    <topic name="DESAIN AUDIO">
         <category>
             <pattern>SEDANG</pattern>
             <that>UKURAN APA YANG ANDA INGINKAN UNTUK UNIT SISTEM KOMPUTER ANDA QUESTION MARK KECIL SEMICOLON SEDANG SEMICOLON BESAR SEMICOLON SANGAT BESAR</that>
@@ -52,7 +52,7 @@
         </category>
     </topic>
 
-    <topic name="DESAIN GRAFIS">
+    <topic name="DESAIN AUDIO">
         <category>
             <pattern>BESAR</pattern>
             <that>UKURAN APA YANG ANDA INGINKAN UNTUK UNIT SISTEM KOMPUTER ANDA QUESTION MARK KECIL SEMICOLON SEDANG SEMICOLON BESAR SEMICOLON SANGAT BESAR</that>
@@ -64,7 +64,7 @@
         </category>
     </topic>
 
-    <topic name="DESAIN GRAFIS">
+    <topic name="DESAIN AUDIO">
         <category>
             <pattern>SANGAT BESAR</pattern>
             <that>UKURAN APA YANG ANDA INGINKAN UNTUK UNIT SISTEM KOMPUTER ANDA QUESTION MARK KECIL SEMICOLON SEDANG SEMICOLON BESAR SEMICOLON SANGAT BESAR</that>
@@ -79,7 +79,7 @@
 
     <!--LOW VOLTAGE-->
     <!--ALL LOW VOLTAGE-->
-    <topic name="DESAIN GRAFIS">
+    <topic name="DESAIN AUDIO">
         <category>
             <pattern>SEMUA</pattern>
             <that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR LOW VOLTAGE QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
@@ -94,7 +94,7 @@
     </topic>
 
     <!--SEBAGIAN LOW VOLTAGE-->
-    <topic name="DESAIN GRAFIS">
+    <topic name="DESAIN AUDIO">
         <category>
             <pattern>SEBAGIAN</pattern>
             <that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR LOW VOLTAGE QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
@@ -103,7 +103,7 @@
     </topic>
 
     <!--ALL NON LOW VOLTAGE-->
-    <topic name="DESAIN GRAFIS">
+    <topic name="DESAIN AUDIO">
         <category>
             <pattern>TIDAK</pattern>
             <that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR LOW VOLTAGE QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
@@ -112,7 +112,7 @@
     </topic>
 
     <!--PROCESSOR LOW VOLTAGE-->
-    <topic name="DESAIN GRAFIS">
+    <topic name="DESAIN AUDIO">
         <category>
             <pattern>YA</pattern>
             <that>APAKAH ANDA MENGINGINKAN PROCESSOR DENGAN FITUR LOW VOLTAGE QUESTION MARK YA SEMICOLON TIDAK</that>
@@ -125,7 +125,7 @@
     </topic>
 
     <!--PROCESSOR NON LOW VOLTAGE-->
-    <topic name="DESAIN GRAFIS">
+    <topic name="DESAIN AUDIO">
         <category>
             <pattern>TIDAK</pattern>
             <that>APAKAH ANDA MENGINGINKAN PROCESSOR DENGAN FITUR LOW VOLTAGE QUESTION MARK YA SEMICOLON TIDAK</that>
@@ -134,7 +134,7 @@
     </topic>
 
     <!--HARDDRIVE LOW VOLTAGE-->
-    <topic name="DESAIN GRAFIS">
+    <topic name="DESAIN AUDIO">
         <category>
             <pattern>YA</pattern>
             <that>APAKAH ANDA MENGINGINKAN HARD DRIVE DENGAN FITUR LOW VOLTAGE QUESTION MARK YA SEMICOLON TIDAK</that>
@@ -147,7 +147,7 @@
     </topic>
 
     <!--HARDDRIVE NON LOW VOLTAGE-->
-    <topic name="DESAIN GRAFIS">
+    <topic name="DESAIN AUDIO">
         <category>
             <pattern>TIDAK</pattern>
             <that>APAKAH ANDA MENGINGINKAN HARD DRIVE DENGAN FITUR LOW VOLTAGE QUESTION MARK YA SEMICOLON TIDAK</that>
@@ -156,7 +156,7 @@
     </topic>
 
     <!--ALL NON LOW VOLTAGE-->
-    <topic name="DESAIN GRAFIS">
+    <topic name="DESAIN AUDIO">
         <category>
             <pattern>TIDAK</pattern>
             <that>APAKAH ANDA MENGIGINKAN KOMPONEN DENGAN FITUR LOW VOLTAGE QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
@@ -169,11 +169,11 @@
     <!--LOW NOISE-->
 
     <!--ALL LOW NOISE-->
-    <topic name="DESAIN GRAFIS">
+    <topic name="DESAIN AUDIO">
         <category>
             <pattern>SEMUA</pattern>
             <that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR LOW NOISE QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
-            <template><set name="IndexQusetion">DESAIN GRAFIS BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil</set>
+            <template><set name="IndexQusetion">DESAIN AUDIO BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil</set>
                 <think>
                     <set name="LowNoise">SEMUA</set>
                     <set name="HARDDRIVE_LN">HardDrive-LowNoise</set>
@@ -185,7 +185,7 @@
     </topic>
 
     <!--SEBAGIAN LOW NOISE-->
-    <topic name="DESAIN GRAFIS">
+    <topic name="DESAIN AUDIO">
         <category>
             <pattern>SEBAGIAN</pattern>
             <that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR LOW NOISE QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
@@ -194,7 +194,7 @@
     </topic>
 
     <!--HARDDRIVE LOW NOISE-->
-    <topic name="DESAIN GRAFIS">
+    <topic name="DESAIN AUDIO">
         <category>
             <pattern>YA</pattern>
             <that>APAKAH ANDA MENGINGINKAN HARD DRIVE DENGAN FITUR LOW NOISE QUESTION MARK YA SEMICOLON TIDAK</that>
@@ -207,7 +207,7 @@
     </topic>
 
     <!--HARDDRIVE NON LOW NOISE-->
-    <topic name="DESAIN GRAFIS">
+    <topic name="DESAIN AUDIO">
         <category>
             <pattern>TIDAK</pattern>
             <that>APAKAH ANDA MENGINGINKAN HARD DRIVE DENGAN FITUR LOW NOISE QUESTION MARK YA SEMICOLON TIDAK</that>
@@ -216,7 +216,7 @@
     </topic>
 
     <!--COOLER LOW NOISE-->
-    <topic name="DESAIN GRAFIS">
+    <topic name="DESAIN AUDIO">
         <category>
             <pattern>YA</pattern>
             <that>APAKAH ANDA MENGINGINKAN COOLER DENGAN FITUR LOW NOISE QUESTION MARK YA SEMICOLON TIDAK</that>
@@ -228,7 +228,7 @@
     </topic>
 
     <!--COOLER NON LOW NOISE-->
-    <topic name="DESAIN GRAFIS">
+    <topic name="DESAIN AUDIO">
         <category>
             <pattern>TIDAK</pattern>
             <that>APAKAH ANDA MENGINGINKAN COOLER DENGAN FITUR LOW NOISE QUESTION MARK YA SEMICOLON TIDAK</that>
@@ -237,11 +237,11 @@
     </topic>
 
     <!--VIDEOCARD LOW NOISE-->
-    <topic name="DESAIN GRAFIS">
+    <topic name="DESAIN AUDIO">
         <category>
             <pattern>YA</pattern>
             <that>APAKAH ANDA MENGINGINKAN VIDEO CARD DENGAN FITUR LOW NOISE QUESTION MARK YA SEMICOLON TIDAK</that>
-            <template><set name="IndexQusetion">DESAIN GRAFIS BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil</set>
+            <template><set name="IndexQusetion">DESAIN AUDIO BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil</set>
                 <think>
                     <set name="VIDEOCARD_LN">VideoCard-LowNoise</set>
                 </think></template>
@@ -249,25 +249,25 @@
     </topic>
 
     <!--VIDEOCARD NON LOW NOISE-->
-    <topic name="DESAIN GRAFIS">
+    <topic name="DESAIN AUDIO">
         <category>
             <pattern>TIDAK</pattern>
             <that>APAKAH ANDA MENGINGINKAN VIDEO CARD DENGAN FITUR LOW NOISE QUESTION MARK YA SEMICOLON TIDAK</that>
-            <template><set name="IndexQusetion">DESAIN GRAFIS BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil</set></template>
+            <template><set name="IndexQusetion">DESAIN AUDIO BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil</set></template>
         </category>
     </topic>
 
     <!--ALL NON LOW NOISE-->
-    <topic name="DESAIN GRAFIS">
+    <topic name="DESAIN AUDIO">
         <category>
             <pattern>TIDAK</pattern>
             <that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR LOW NOISE QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
-            <template><set name="IndexQusetion">DESAIN GRAFIS BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil</set></template>
+            <template><set name="IndexQusetion">DESAIN AUDIO BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil</set></template>
         </category>
     </topic>
     <!--END LOW NOISE-->
 
-<topic name="DESAIN GRAFIS">
+<topic name="DESAIN AUDIO">
 <category>
 <pattern>COMPUTER SPECIFICATIONS</pattern>
 <template>INI COMPUTER <get name="usability"/> MU DENGAN FITUR<br/>
@@ -302,7 +302,7 @@
 </li>
 </condition>
 <br/>
-DENGAN KLASIFIKASI<br/> Mainstream
+DENGAN KLASIFIKASI<br/> Enthusiast
 <br/>
 DENGAN UKURAN<br/> <get name="CHASSIS"/>
 </template>
@@ -320,3 +320,4 @@ DENGAN UKURAN<br/> <get name="CHASSIS"/>
 </category></topic>
 -->
 </aiml>
+

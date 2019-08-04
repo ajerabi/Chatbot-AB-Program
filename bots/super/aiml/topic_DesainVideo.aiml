@@ -15,20 +15,20 @@
 <!-- implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   -->
 <!--  -->
 <!-- For more information see http://www.alicebot.org -->
-    <topic name="GAMING">
+    <topic name="DESAIN">
         <category>
-            <pattern>CASUAL GAMING</pattern>
-            <that>JENIS GAME COLON AAA GAMING SEMICOLON CASUAL GAMING SEMICOLON ONLINE GAMING</that>
+            <pattern>DESAIN VIDEO</pattern>
+            <that>JENIS DESAIN COLON DESAIN GRAFIS SEMICOLON DESAIN VIDEO SEMICOLON DESAIN AUDIO</that>
             <template><set name="IndexQusetion">Ukuran apa yang anda inginkan untuk unit sistem komputer anda? Kecil; Sedang; Besar; Sangat Besar</set>
                 <think>
-                    <set name="topic">CASUAL GAMING</set>
+                    <set name="topic">DESAIN VIDEO</set>
                 </think>
             </template>
         </category>
     </topic>
 
     <!--UKURAN-->
-    <topic name="CASUAL GAMING">
+    <topic name="DESAIN VIDEO">
         <category>
             <pattern>KECIL</pattern>
             <that>UKURAN APA YANG ANDA INGINKAN UNTUK UNIT SISTEM KOMPUTER ANDA QUESTION MARK KECIL SEMICOLON SEDANG SEMICOLON BESAR SEMICOLON SANGAT BESAR</that>
@@ -40,7 +40,7 @@
         </category>
     </topic>
 
-    <topic name="CASUAL GAMING">
+    <topic name="DESAIN VIDEO">
         <category>
             <pattern>SEDANG</pattern>
             <that>UKURAN APA YANG ANDA INGINKAN UNTUK UNIT SISTEM KOMPUTER ANDA QUESTION MARK KECIL SEMICOLON SEDANG SEMICOLON BESAR SEMICOLON SANGAT BESAR</that>
@@ -52,7 +52,7 @@
         </category>
     </topic>
 
-    <topic name="CASUAL GAMING">
+    <topic name="DESAIN VIDEO">
         <category>
             <pattern>BESAR</pattern>
             <that>UKURAN APA YANG ANDA INGINKAN UNTUK UNIT SISTEM KOMPUTER ANDA QUESTION MARK KECIL SEMICOLON SEDANG SEMICOLON BESAR SEMICOLON SANGAT BESAR</that>
@@ -64,7 +64,7 @@
         </category>
     </topic>
 
-    <topic name="CASUAL GAMING">
+    <topic name="DESAIN VIDEO">
         <category>
             <pattern>SANGAT BESAR</pattern>
             <that>UKURAN APA YANG ANDA INGINKAN UNTUK UNIT SISTEM KOMPUTER ANDA QUESTION MARK KECIL SEMICOLON SEDANG SEMICOLON BESAR SEMICOLON SANGAT BESAR</that>
@@ -80,7 +80,7 @@
     <!--LOW VOLTAGE-->
 
     <!--ALL LOW VOLTAGE-->
-    <topic name="CASUAL GAMING">
+    <topic name="DESAIN VIDEO">
         <category>
             <pattern>SEMUA</pattern>
             <that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR LOW VOLTAGE QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
@@ -103,7 +103,7 @@
 
 
     <!--SEBAGIAN LOW VOLTAGE-->
-    <topic name="CASUAL GAMING">
+    <topic name="DESAIN VIDEO">
         <category>
             <pattern>SEBAGIAN</pattern>
             <that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR LOW VOLTAGE QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
@@ -112,7 +112,7 @@
     </topic>
 
     <!--PROCESSOR LOW VOLTAGE-->
-    <topic name="CASUAL GAMING">
+    <topic name="DESAIN VIDEO">
         <category>
             <pattern>YA</pattern>
             <that>APAKAH ANDA MENGINGINKAN PROCESSOR DENGAN FITUR LOW VOLTAGE QUESTION MARK YA SEMICOLON TIDAK</that>
@@ -125,7 +125,7 @@
     </topic>
 
     <!--PROCESSOR NON LOW VOLTAGE-->
-    <topic name="CASUAL GAMING">
+    <topic name="DESAIN VIDEO">
         <category>
             <pattern>TIDAK</pattern>
             <that>APAKAH ANDA MENGINGINKAN PROCESSOR DENGAN FITUR LOW VOLTAGE QUESTION MARK YA SEMICOLON TIDAK</that>
@@ -138,7 +138,7 @@
     </topic>
 
     <!--ALL NON LOW VOLTAGE-->
-    <topic name="CASUAL GAMING">
+    <topic name="DESAIN VIDEO">
         <category>
             <pattern>TIDAK</pattern>
             <that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR LOW VOLTAGE QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
@@ -152,7 +152,7 @@
     </topic>
 
     <!--HARDDRIVE LOW VOLTAGE-->
-    <topic name="CASUAL GAMING">
+    <topic name="DESAIN VIDEO">
         <category>
             <pattern>YA</pattern>
             <that>APAKAH ANDA MENGINGINKAN HARD DRIVE DENGAN FITUR LOW VOLTAGE QUESTION MARK YA SEMICOLON TIDAK</that>
@@ -164,7 +164,7 @@
     </topic>
 
     <!--HARDDRIVE NON LOW VOLTAGE-->
-    <topic name="CASUAL GAMING">
+    <topic name="DESAIN VIDEO">
         <category>
             <pattern>TIDAK</pattern>
             <that>APAKAH ANDA MENGINGINKAN HARD DRIVE DENGAN FITUR LOW VOLTAGE QUESTION MARK YA SEMICOLON TIDAK</that>
@@ -177,7 +177,7 @@
     </topic>
 
     <!--ALL NON LOW VOLTAGE-->
-    <topic name="CASUAL GAMING">
+    <topic name="DESAIN VIDEO">
         <category>
             <pattern>TIDAK</pattern>
             <that>APAKAH ANDA MENGIGINKAN KOMPONEN DENGAN FITUR LOW VOLTAGE QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
@@ -193,21 +193,13 @@
 
     <!--OVERCLOCK-->
     <!--ALL OVERCLOCK-->
-    <topic name="CASUAL GAMING">
+    <topic name="DESAIN VIDEO">
         <category>
             <pattern>SEMUA</pattern>
             <that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR OVERCLOCK QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
             <template><set name="IndexQusetion">Apakah anda menginginkan komponen dengan fitur Low Noise? Semua; Sebagian; Tidak</set>
                 <think>
                     <set name="Overclock">SEMUA</set>
-                    <condition name="PROCESSOR_LV">
-                        <li value="CPU-LowVoltage">
-                            <set name="PROCESSOR_OC">CPU-DEFAULT</set>
-                        </li>
-                        <li>
-                            <set name="PROCESSOR_OC">CPU-Overclockable</set>
-                        </li>
-                    </condition>
                     <set name="VIDEOCARD_OC">VideoCard-Overclockable</set>
                     <!--
                     <set name="RAM_OC">RAM-Overclock</set>
@@ -218,52 +210,16 @@
     </topic>
 
     <!--SEBAGIAN OVERCLOCK-->
-    <topic name="CASUAL GAMING">
+    <topic name="DESAIN VIDEO">
         <category>
             <pattern>SEBAGIAN</pattern>
             <that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR OVERCLOCK QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
-            <template>
-                <condition name="PROCESSOR_LV">
-                    <li value="CPU-LowVoltage">
-                        <set name="IndexQusetion">Apakah anda menginginkan Videocard dengan fitur Overclock? Ya; Tidak</set>
-                    </li>
-                    <li>
-                        <set name="IndexQusetion">Apakah anda menginginkan Processor dengan fitur Overclock? Ya; Tidak</set>
-                    </li>
-                </condition>
-                <!--                <set name="IndexQusetion">Apakah anda menginginkan Processor dengan fitur Overclock? Ya; Tidak</set>-->
-            </template>
-        </category>
-    </topic>
-
-    <!--PROCESSOR OVERCLOCK-->
-    <topic name="CASUAL GAMING">
-        <category>
-            <pattern>YA</pattern>
-            <that>APAKAH ANDA MENGINGINKAN PROCESSOR DENGAN FITUR OVERCLOCK QUESTION MARK YA SEMICOLON TIDAK</that>
-            <template><set name="IndexQusetion">Apakah anda menginginkan Videocard dengan fitur Overclock? Ya; Tidak</set>
-                <think>
-                    <set name="PROCESSOR_OC">CPU-Overclockable</set>
-                </think>
-            </template>
-        </category>
-    </topic>
-
-    <!--PROCESSOR NON OVERCLOCK-->
-    <topic name="CASUAL GAMING">
-        <category>
-            <pattern>TIDAK</pattern>
-            <that>APAKAH ANDA MENGINGINKAN PROCESSOR DENGAN FITUR OVERCLOCK QUESTION MARK YA SEMICOLON TIDAK</that>
-            <template><set name="IndexQusetion">Apakah anda menginginkan Videocard dengan fitur Overclock? Ya; Tidak</set>
-                <think>
-                    <set name="PROCESSOR_OC">CPU-DEFAULT</set>
-                </think>
-            </template>
+            <template><set name="IndexQusetion">Apakah anda menginginkan Videocard dengan fitur Overclock? Ya; Tidak</set></template>
         </category>
     </topic>
 
     <!--VIDEOCARD OVERCLOCK-->
-    <topic name="CASUAL GAMING">
+    <topic name="DESAIN VIDEO">
         <category>
             <pattern>YA</pattern>
             <that>APAKAH ANDA MENGINGINKAN VIDEOCARD DENGAN FITUR OVERCLOCK QUESTION MARK YA SEMICOLON TIDAK</that>
@@ -276,7 +232,7 @@
     </topic>
 
     <!--VIDEOCARD NON OVERCLOCK-->
-    <topic name="CASUAL GAMING">
+    <topic name="DESAIN VIDEO">
         <category>
             <pattern>TIDAK</pattern>
             <that>APAKAH ANDA MENGINGINKAN VIDEOCARD DENGAN FITUR OVERCLOCK QUESTION MARK YA SEMICOLON TIDAK</that>
@@ -289,7 +245,7 @@
     </topic>
 
     <!--ALL NON OVERCLOCK-->
-    <topic name="CASUAL GAMING">
+    <topic name="DESAIN VIDEO">
         <category>
             <pattern>TIDAK</pattern>
             <that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR OVERCLOCK QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
@@ -305,11 +261,11 @@
 
     <!--LOW NOISE-->
     <!--ALL LOW NOISE-->
-    <topic name="CASUAL GAMING">
+    <topic name="DESAIN VIDEO">
         <category>
             <pattern>SEMUA</pattern>
             <that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR LOW NOISE QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
-            <template><set name="IndexQusetion">Apakah anda menginginkan komponen yang memiliki lampu LED RGB? Semua; Sebagian; Tidak</set>
+            <template><set name="IndexQusetion">DESAIN VIDEO BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil</set>
                 <think>
                     <set name="LowNoise">SEMUA</set>
                     <set name="HARDDRIVE_LN">HardDrive-LowNoise</set>
@@ -321,11 +277,11 @@
     </topic>
 
     <!--ALL NON LOW NOISE-->
-    <topic name="CASUAL GAMING">
+    <topic name="DESAIN VIDEO">
         <category>
             <pattern>TIDAK</pattern>
             <that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR LOW NOISE QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
-            <template><set name="IndexQusetion">Apakah anda menginginkan komponen yang memiliki lampu LED RGB? Semua; Sebagian; Tidak</set>
+            <template><set name="IndexQusetion">DESAIN VIDEO BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil</set>
                 <think>
                     <set name="HARDDRIVE_LN">DEFAULT</set>
                     <set name="COOLER_LN">DEFAULT</set>
@@ -336,7 +292,7 @@
     </topic>
 
     <!--SEBAGIAN LOW NOISE-->
-    <topic name="CASUAL GAMING">
+    <topic name="DESAIN VIDEO">
         <category>
             <pattern>SEBAGIAN</pattern>
             <that>APAKAH ANDA MENGINGINKAN KOMPONEN DENGAN FITUR LOW NOISE QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
@@ -345,7 +301,7 @@
     </topic>
 
     <!--HARDDRIVE LOW NOISE-->
-    <topic name="CASUAL GAMING">
+    <topic name="DESAIN VIDEO">
         <category>
             <pattern>YA</pattern>
             <that>APAKAH ANDA MENGINGINKAN HARD DRIVE DENGAN FITUR LOW NOISE QUESTION MARK YA SEMICOLON TIDAK</that>
@@ -358,7 +314,7 @@
     </topic>
 
     <!--HARDDRIVE NON LOW NOISE-->
-    <topic name="CASUAL GAMING">
+    <topic name="DESAIN VIDEO">
         <category>
             <pattern>TIDAK</pattern>
             <that>APAKAH ANDA MENGINGINKAN HARD DRIVE DENGAN FITUR LOW NOISE QUESTION MARK YA SEMICOLON TIDAK</that>
@@ -367,7 +323,7 @@
     </topic>
 
     <!--COMPUTER COOLING LOW NOISE-->
-    <topic name="CASUAL GAMING">
+    <topic name="DESAIN VIDEO">
         <category>
             <pattern>YA</pattern>
             <that>APAKAH ANDA MENGINGINKAN COOLER DENGAN FITUR LOW NOISE QUESTION MARK YA SEMICOLON TIDAK</that>
@@ -380,7 +336,7 @@
     </topic>
 
     <!--COMPUTER COOLING NON LOW NOISE-->
-    <topic name="CASUAL GAMING">
+    <topic name="DESAIN VIDEO">
         <category>
             <pattern>TIDAK</pattern>
             <that>APAKAH ANDA MENGINGINKAN COOLER DENGAN FITUR LOW NOISE QUESTION MARK YA SEMICOLON TIDAK</that>
@@ -389,11 +345,11 @@
     </topic>
 
     <!--VIDEOCARD LOW NOISE-->
-    <topic name="CASUAL GAMING">
+    <topic name="DESAIN VIDEO">
         <category>
             <pattern>YA</pattern>
             <that>APAKAH ANDA MENGINGINKAN VIDEO CARD DENGAN FITUR LOW NOISE QUESTION MARK YA SEMICOLON TIDAK</that>
-            <template><set name="IndexQusetion">Apakah anda menginginkan komponen yang memiliki lampu LED RGB? Semua; Sebagian; Tidak</set>
+            <template><set name="IndexQusetion">DESAIN VIDEO BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil</set>
                 <think>
                     <set name="VIDEOCARD_LN">VideoCard-LowNoise</set>
                 </think>
@@ -402,235 +358,19 @@
     </topic>
 
     <!--VIDEOCARD NON LOW NOISE-->
-    <topic name="CASUAL GAMING">
+    <topic name="DESAIN VIDEO">
         <category>
             <pattern>TIDAK</pattern>
             <that>APAKAH ANDA MENGINGINKAN VIDEO CARD DENGAN FITUR LOW NOISE QUESTION MARK YA SEMICOLON TIDAK</that>
-            <template><set name="IndexQusetion">Apakah anda menginginkan komponen yang memiliki lampu LED RGB? Semua; Sebagian; Tidak</set></template>
+            <template><set name="IndexQusetion">DESAIN VIDEO BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil</set></template>
         </category>
     </topic>
 
     <!--END LOW NOISE-->
 
-    <!-- FEATURE RGB -->
-    <!-- ALL RGB -->
-    <topic name="CASUAL GAMING">
-        <category>
-            <pattern>SEMUA</pattern>
-            <that>APAKAH ANDA MENGINGINKAN KOMPONEN YANG MEMILIKI LAMPU LED RGB QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
-            <template>
-                <set name="IndexQusetion">CASUAL GAMING BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil</set>
-                <think>
-                    <set name="RGB">SEMUA</set>
-                    <set name="CHASSIS_RGB">Chassis-RGB</set>
-                    <set name="MOTHERBOARD_RGB">Motherboard-RGB</set>
-                    <set name="RAM_RGB">RAM-RGB</set>
-                    <set name="COOLER_RGB">ComputerCooling-RGB</set>
-                    <set name="VIDEOCARD_RGB">VideoCard-RGB</set>
-                </think>
-            </template>
-        </category>
-    </topic>
-
-    <!-- ALL NON RGB -->
-    <topic name="CASUAL GAMING">
-        <category>
-            <pattern>TIDAK</pattern>
-            <that>APAKAH ANDA MENGINGINKAN KOMPONEN YANG MEMILIKI LAMPU LED RGB QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
-            <template>
-                <set name="IndexQusetion">CASUAL GAMING BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil</set>
-                <think>
-                    <set name="CHASSIS_RGB">Chassis-DEFAULT</set>
-                    <set name="MOTHERBOARD_RGB">Motherboard-DEFAULT</set>
-                    <set name="RAM_RGB">RAM-DEFAULT</set>
-                    <set name="COOLER_RGB">ComputerCooling-DEFAULT</set>
-                    <set name="VIDEOCARD_RGB">VideoCard-DEFAULT</set>
-                </think>
-            </template>
-        </category>
-    </topic>
-
-    <!-- SEBAGIAN RGB -->
-    <topic name="CASUAL GAMING">
-        <category>
-            <pattern>SEBAGIAN</pattern>
-            <that>APAKAH ANDA MENGINGINKAN KOMPONEN YANG MEMILIKI LAMPU LED RGB QUESTION MARK SEMUA SEMICOLON SEBAGIAN SEMICOLON TIDAK</that>
-            <template>
-                <set name="IndexQusetion">Apakah anda menginginkan Chassis yang memiliki lampu RGB? Ya; Tidak</set>
-            </template>
-        </category>
-    </topic>
-
-    <!-- CHASSIS RGB -->
-    <topic name="CASUAL GAMING">
-        <category>
-            <pattern>YA</pattern>
-            <that>APAKAH ANDA MENGINGINKAN CHASSIS YANG MEMILIKI LAMPU LED RGB QUESTION MARK YA SEMICOLON TIDAK</that>
-            <template>
-                <set name="IndexQusetion">Apakah anda menginginkan Motherboard yang memiliki lampu RGB? Ya; Tidak</set>
-                <think>
-                    <set name="RGB">SEBAGIAN</set>
-                    <set name="CHASSIS_RGB">Chassis-RGB</set>
-                </think>
-            </template>
-        </category>
-    </topic>
-
-    <!-- CHASSIS NON RGB -->
-    <topic name="CASUAL GAMING">
-        <category>
-            <pattern>TIDAK</pattern>
-            <that>APAKAH ANDA MENGINGINKAN CHASSIS YANG MEMILIKI LAMPU LED RGB QUESTION MARK YA SEMICOLON TIDAK</that>
-            <template>
-                <set name="IndexQusetion">Apakah anda menginginkan Motherboard yang memiliki lampu RGB? Ya; Tidak</set>
-                <think>
-                    <set name="RGB">SEBAGIAN</set>
-                    <set name="CHASSIS_RGB">Chassis-DEFAULT</set>
-                </think>
-            </template>
-        </category>
-    </topic>
-
-    <!-- MOTHERBOARD RGB -->
-    <topic name="CASUAL GAMING">
-        <category>
-            <pattern>YA</pattern>
-            <that>APAKAH ANDA MENGINGINKAN MOTHERBOARD YANG MEMILIKI LAMPU LED RGB QUESTION MARK YA SEMICOLON TIDAK</that>
-            <template>
-                <set name="IndexQusetion">Apakah anda menginginkan RAM yang memiliki lampu RGB? Ya; Tidak</set>
-                <think>
-                    <set name="RGB">SEBAGIAN</set>
-                    <set name="MOTHERBOARD_RGB">Motherboard-RGB</set>
-                </think>
-            </template>
-        </category>
-    </topic>
-
-    <!-- MOTHERBOARD NON RGB -->
-    <topic name="CASUAL GAMING">
-        <category>
-            <pattern>TIDAK</pattern>
-            <that>APAKAH ANDA MENGINGINKAN MOTHERBOARD YANG MEMILIKI LAMPU LED RGB QUESTION MARK YA SEMICOLON TIDAK</that>
-            <template>
-                <set name="IndexQusetion">Apakah anda menginginkan RAM yang memiliki lampu RGB? Ya; Tidak</set>
-                <think>
-                    <set name="RGB">SEBAGIAN</set>
-                    <set name="MOTHERBOARD_RGB">Motherboard-DEFAULT</set>
-                </think>
-            </template>
-        </category>
-    </topic>
-
-    <!-- RAM RGB -->
-    <topic name="CASUAL GAMING">
-        <category>
-            <pattern>YA</pattern>
-            <that>APAKAH ANDA MENGINGINKAN RAM YANG MEMILIKI LAMPU LED RGB QUESTION MARK YA SEMICOLON TIDAK</that>
-            <template>
-                <set name="IndexQusetion">Apakah anda menginginkan Cooler yang memiliki lampu RGB? Ya; Tidak</set>
-                <think>
-                    <set name="RGB">SEBAGIAN</set>
-                    <set name="RAM_RGB">RAM-RGB</set>
-                </think>
-            </template>
-        </category>
-    </topic>
-
-    <!-- RAM RGB -->
-    <topic name="CASUAL GAMING">
-        <category>
-            <pattern>YA</pattern>
-            <that>APAKAH ANDA MENGINGINKAN RAM YANG MEMILIKI LAMPU LED RGB QUESTION MARK YA SEMICOLON TIDAK</that>
-            <template>
-                <set name="IndexQusetion">Apakah anda menginginkan Cooler yang memiliki lampu RGB? Ya; Tidak</set>
-                <think>
-                    <set name="RGB">SEBAGIAN</set>
-                    <set name="RAM_RGB">RAM-RGB</set>
-                </think>
-            </template>
-        </category>
-    </topic>
-
-    <!-- RAM NON RGB -->
-    <topic name="CASUAL GAMING">
-        <category>
-            <pattern>TIDAK</pattern>
-            <that>APAKAH ANDA MENGINGINKAN RAM YANG MEMILIKI LAMPU LED RGB QUESTION MARK YA SEMICOLON TIDAK</that>
-            <template>
-                <set name="IndexQusetion">Apakah anda menginginkan Cooler yang memiliki lampu RGB? Ya; Tidak</set>
-                <think>
-                    <set name="RGB">SEBAGIAN</set>
-                    <set name="RAM_RGB">RAM-DEFAULT</set>
-                </think>
-            </template>
-        </category>
-    </topic>
-
-    <!-- COMPUTER COOLING RGB -->
-    <topic name="CASUAL GAMING">
-        <category>
-            <pattern>YA</pattern>
-            <that>APAKAH ANDA MENGINGINKAN COOLER YANG MEMILIKI LAMPU LED RGB QUESTION MARK YA SEMICOLON TIDAK</that>
-            <template>
-                <set name="IndexQusetion">Apakah anda menginginkan Videocard yang memiliki lampu RGB? Ya; Tidak</set>
-                <think>
-                    <set name="RGB">SEBAGIAN</set>
-                    <set name="COOLER_RGB">ComputerCooling-RGB</set>
-                </think>
-            </template>
-        </category>
-    </topic>
-
-    <!-- COMPUTER COOLING NON RGB -->
-    <topic name="CASUAL GAMING">
-        <category>
-            <pattern>TIDAK</pattern>
-            <that>APAKAH ANDA MENGINGINKAN COOLER YANG MEMILIKI LAMPU LED RGB QUESTION MARK YA SEMICOLON TIDAK</that>
-            <template>
-                <set name="IndexQusetion">Apakah anda menginginkan Videocard yang memiliki lampu RGB? Ya; Tidak</set>
-                <think>
-                    <set name="RGB">SEBAGIAN</set>
-                    <set name="COOLER_RGB">ComputerCooling-DEFAULT</set>
-                </think>
-            </template>
-        </category>
-    </topic>
-
-    <!-- VIDEOCARD RGB -->
-    <topic name="CASUAL GAMING">
-        <category>
-            <pattern>YA</pattern>
-            <that>APAKAH ANDA MENGINGINKAN VIDEOCARD YANG MEMILIKI LAMPU LED RGB QUESTION MARK YA SEMICOLON TIDAK</that>
-            <template>
-                <set name="IndexQusetion">CASUAL GAMING BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil</set>
-                <think>
-                    <set name="RGB">SEBAGIAN</set>
-                    <set name="VIDEOCARD_RGB">VideoCard-RGB</set>
-                </think>
-            </template>
-        </category>
-    </topic>
-
-    <!-- VIDEOCARD NON RGB -->
-    <topic name="CASUAL GAMING">
-        <category>
-            <pattern>TIDAK</pattern>
-            <that>APAKAH ANDA MENGINGINKAN VIDEOCARD YANG MEMILIKI LAMPU LED RGB QUESTION MARK YA SEMICOLON TIDAK</that>
-            <template>
-                <set name="IndexQusetion">CASUAL GAMING BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil</set>
-                <think>
-                    <set name="RGB">SEBAGIAN</set>
-                    <set name="VIDEOCARD_RGB">VideoCard-DEFAULT</set>
-                </think>
-            </template>
-        </category>
-    </topic>
-
-    <!--END FEATURE RGB -->
-
     
 
-<topic name="CASUAL GAMING">
+<topic name="DESAIN VIDEO">
 <category><pattern>COMPUTER SPECIFICATIONS</pattern>
 <template><think><set name="IndexQusetion">unknown</set></think>INI COMPUTER <get name="jenis"/> MU DENGAN FITUR <br/>
 <condition name="LowVoltage">
@@ -650,13 +390,11 @@
 <condition name="Overclock">
 <li value="SEMUA">
 <list>
-    <item><get name="PROCESSOR_OC"/></item><br/>
     <item><get name="VIDEOCARD_OC"/></item><br/>
 </list>
 </li>
 <li>
 <list>
-    <item><get name="PROCESSOR_OC"/></item><br/>
     <item><get name="VIDEOCARD_OC"/></item><br/>
 </list>
 </li>
@@ -677,28 +415,8 @@
 </list>
 </li>
 </condition>
-<condition name="RGB">
-<li value="SEMUA">
-<list>
-    <item><get name="CHASSIS_RGB"/></item><br/>
-    <item><get name="MOTHERBOARD_RGB"/></item><br/>
-    <item><get name="RAM_RGB"/></item><br/>
-    <item><get name="COOLER_RGB"/></item><br/>
-    <item><get name="VIDEOCARD_RGB"/></item><br/>
-</list>
-</li>
-<li>
-<list>
-    <item><get name="CHASSIS_RGB"/></item><br/>
-    <item><get name="MOTHERBOARD_RGB"/></item><br/>
-    <item><get name="RAM_RGB"/></item><br/>
-    <item><get name="COOLER_RGB"/></item><br/>
-    <item><get name="VIDEOCARD_RGB"/></item><br/>
-</list>
-</li>
-</condition>
 <br/>
-DENGAN KLASIFIKASI<br/> Entry-Level
+DENGAN KLASIFIKASI<br/> Enthusiast
 <br/>
 DENGAN UKURAN<br/> <get name="CHASSIS"/>
 </template>
