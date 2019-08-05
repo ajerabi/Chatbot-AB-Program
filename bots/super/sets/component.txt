@@ -9,6 +9,7 @@ Intel dash MiniITX
 Intel dash EATX
 Intel dash ATX
 Motherboard dash AMD
+Motherboard
 AMD dash MiniITX
 AMD dash MicroATX
 AMD dash EATX

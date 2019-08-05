@@ -53,7 +53,7 @@ public class CobaBOT {
         MagicBooleans.trace_mode = true;
         //String action = "chat";
         String action = "webservice";
-//        String action = "aiml2csv";
+        //String action = "aiml2csv";
         //String action = "jojo";
 
         System.out.println(MagicStrings.program_name_version);

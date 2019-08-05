@@ -20,4 +20,60 @@
         <pattern>BOLEH</pattern>
         <template><srai>SEMUA</srai></template>
     </category>
+
+    <category>
+        <pattern>IYA</pattern>
+        <template><srai>SEMUA</srai></template>
+    </category>
+
+    <category>
+        <pattern>BAIK</pattern>
+        <that>Saya tidak mengerti</that>
+        <template><srai>OK</srai></template>
+    </category>
+
+    <category>
+        <pattern>NGGA</pattern>
+        <template><srai>TIDAK</srai></template>
+    </category>
+
+    <category>
+        <pattern>NGGA MAU</pattern>
+        <template><srai>TIDAK</srai></template>
+    </category>
+
+    <category>
+        <pattern>NGGA PERLU</pattern>
+        <template><srai>TIDAK</srai></template>
+    </category>
+
+    <category>
+        <pattern>OKE</pattern>
+        <that>Saya tidak mengerti</that>
+        <template><srai>OK</srai></template>
+    </category>
+
+    <category>
+        <pattern>SIP</pattern>
+        <that>Saya tidak mengerti</that>
+        <template><srai>OK</srai></template>
+    </category>
+
+    <category>
+        <pattern>SIAP</pattern>
+        <that>Saya tidak mengerti</that>
+        <template><srai>OK</srai></template>
+    </category>
+
+    <category>
+        <pattern>MAKASIH</pattern>
+        <that>Saya tidak mengerti</that>
+        <template><srai>OK</srai></template>
+    </category>
+
+    <category>
+        <pattern>TERIMA MAKASIH</pattern>
+        <that>Saya tidak mengerti</that>
+        <template><srai>OK</srai></template>
+    </category>
 </aiml>

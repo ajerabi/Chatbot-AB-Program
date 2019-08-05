@@ -2,21 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ce6bd93-7721-457f-a381-9fdd3452df1a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/bots/super/sets/feature.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bots/super/aiml/topic_AAAGaming.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aiml/topic_AAAGaming.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bots/super/aiml/topic_CasualGaming.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aiml/topic_CasualGaming.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bots/super/aiml/topic_DesainAudio.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aiml/topic_DesainAudio.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bots/super/aiml/topic_DesainGrafis.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aiml/topic_DesainGrafis.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bots/super/aiml/topic_DesainVideo.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aiml/topic_DesainVideo.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bots/super/aiml/topic_Office.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aiml/topic_Office.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bots/super/aiml/topic_OnlineGaming.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aiml/topic_OnlineGaming.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bots/super/aiml/topic_Usability.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aiml/topic_Usability.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bots/super/aimlif/topic_AAAGaming.aiml.csv" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aimlif/topic_AAAGaming.aiml.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bots/super/aimlif/topic_DesainGrafis.aiml.csv" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aimlif/topic_DesainGrafis.aiml.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bots/super/aimlif/topic_Office.aiml.csv" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aimlif/topic_Office.aiml.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bots/super/aimlif/topic_Usability.aiml.csv" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aimlif/topic_Usability.aiml.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bots/super/aiml/srai.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aiml/srai.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bots/super/aiml/triple.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aiml/triple.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bots/super/aimlif/srai.aiml.csv" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aimlif/srai.aiml.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bots/super/aimlif/triple.aiml.csv" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aimlif/triple.aiml.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bots/super/aimlif/update.aiml.csv" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aimlif/update.aiml.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/owl/system-unit-of-desktop-computer-delvin-inferred-v2.owl" beforeDir="false" afterPath="$PROJECT_DIR$/owl/system-unit-of-desktop-computer-delvin-inferred-v2.owl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bots/super/config/triples.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/config/triples.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bots/super/sets/component.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/sets/component.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cobabot/CobaBOT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cobabot/CobaBOT.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +26,77 @@
   <component name="FavoritesManager">
     <favorites_list name="Chatbot-AB-Program - Mine" />
   </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bots/super/aiml/triple.aiml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1989">
+              <caret line="234" column="29" lean-forward="true" selection-start-line="234" selection-start-column="29" selection-end-line="234" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bots/super/sets/component.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1581">
+              <caret line="93" column="14" lean-forward="true" selection-start-line="93" selection-start-column="14" selection-end-line="93" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bots/super/sets/feature.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bots/super/config/triples.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="268" column="3" selection-start-line="268" selection-end-line="268" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bots/super/aiml/srai.aiml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="89">
+              <caret line="64" column="44" lean-forward="true" selection-start-line="64" selection-start-column="44" selection-end-line="64" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bots/super/aiml/topic_Office.aiml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-8194">
+              <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cobabot/CobaBOT.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#7098#7114#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -38,11 +105,99 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>motherboard</find>
+      <find>definition</find>
+      <find>hard</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/cobabot/CobaBOT.java" />
+        <option value="$PROJECT_DIR$/bots/super/sets/component.txt" />
+        <option value="$PROJECT_DIR$/bots/super/sets/feature.txt" />
+        <option value="$PROJECT_DIR$/bots/super/aiml/triple.aiml" />
+        <option value="$PROJECT_DIR$/bots/super/aiml/srai.aiml" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectId" id="1Ovq3RDi0zLQn0lPMqTZE2cjf6m" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Chatbot-AB-Program" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Chatbot-AB-Program" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Chatbot-AB-Program" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Chatbot-AB-Program" type="462c0819:PsiDirectoryNode" />
+              <item name="bots" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Chatbot-AB-Program" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Chatbot-AB-Program" type="462c0819:PsiDirectoryNode" />
+              <item name="bots" type="462c0819:PsiDirectoryNode" />
+              <item name="super" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Chatbot-AB-Program" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Chatbot-AB-Program" type="462c0819:PsiDirectoryNode" />
+              <item name="bots" type="462c0819:PsiDirectoryNode" />
+              <item name="super" type="462c0819:PsiDirectoryNode" />
+              <item name="aiml" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Chatbot-AB-Program" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Chatbot-AB-Program" type="462c0819:PsiDirectoryNode" />
+              <item name="bots" type="462c0819:PsiDirectoryNode" />
+              <item name="super" type="462c0819:PsiDirectoryNode" />
+              <item name="aimlif" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Chatbot-AB-Program" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Chatbot-AB-Program" type="462c0819:PsiDirectoryNode" />
+              <item name="bots" type="462c0819:PsiDirectoryNode" />
+              <item name="super" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Chatbot-AB-Program" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Chatbot-AB-Program" type="462c0819:PsiDirectoryNode" />
+              <item name="bots" type="462c0819:PsiDirectoryNode" />
+              <item name="super" type="462c0819:PsiDirectoryNode" />
+              <item name="sets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Chatbot-AB-Program" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Chatbot-AB-Program" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Chatbot-AB-Program" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Chatbot-AB-Program" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="cobabot" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="Downloaded.Files.Path.Enabled" value="true" />
@@ -284,6 +439,38 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24810892" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36824876" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289689" />
+      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout>
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -293,6 +480,12 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
@@ -323,6 +516,61 @@
     <MESSAGE value="Pengelompokan list komponen" />
     <MESSAGE value="&#10;BUG" />
     <option name="LAST_COMMIT_MESSAGE" value="&#10;BUG" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/bots/super/aiml/topic_Office.aiml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8194">
+          <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cobabot/CobaBOT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#7098#7114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bots/super/sets/component.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1581">
+          <caret line="93" column="14" lean-forward="true" selection-start-line="93" selection-start-column="14" selection-end-line="93" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bots/super/config/triples.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="268" column="3" selection-start-line="268" selection-end-line="268" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bots/super/sets/feature.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bots/super/aiml/triple.aiml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1989">
+          <caret line="234" column="29" lean-forward="true" selection-start-line="234" selection-start-column="29" selection-end-line="234" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bots/super/aiml/srai.aiml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="64" column="44" lean-forward="true" selection-start-line="64" selection-start-column="44" selection-end-line="64" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>

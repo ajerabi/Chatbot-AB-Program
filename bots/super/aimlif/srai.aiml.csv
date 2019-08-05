@@ -1,1 +1,11 @@
 0,BOLEH,*,*,<srai>SEMUA</srai>,srai.aiml
+0,IYA,*,*,<srai>SEMUA</srai>,srai.aiml
+0,BAIK,SAYA TIDAK MENGERTI,*,<srai>OK</srai>,srai.aiml
+0,NGGA,*,*,<srai>TIDAK</srai>,srai.aiml
+0,NGGA MAU,*,*,<srai>TIDAK</srai>,srai.aiml
+0,NGGA PERLU,*,*,<srai>TIDAK</srai>,srai.aiml
+0,OKE,SAYA TIDAK MENGERTI,*,<srai>OK</srai>,srai.aiml
+0,SIP,SAYA TIDAK MENGERTI,*,<srai>OK</srai>,srai.aiml
+0,SIAP,SAYA TIDAK MENGERTI,*,<srai>OK</srai>,srai.aiml
+0,MAKASIH,SAYA TIDAK MENGERTI,*,<srai>OK</srai>,srai.aiml
+0,TERIMA MAKASIH,SAYA TIDAK MENGERTI,*,<srai>OK</srai>,srai.aiml

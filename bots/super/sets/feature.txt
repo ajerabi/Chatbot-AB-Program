@@ -1,0 +1,9 @@
+LowNoise
+RayTracingTechnology
+Integrated
+MoreDurable
+FastTransferRate
+LowVoltage
+Overclockable
+FastBoot
+RGB
