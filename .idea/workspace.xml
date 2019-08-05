@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ce6bd93-7721-457f-a381-9fdd3452df1a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bots/super/aiml/topic_AAAGaming.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aiml/topic_AAAGaming.aiml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bots/super/aiml/topic_CasualGaming.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aiml/topic_CasualGaming.aiml" afterDir="false" />
@@ -11,12 +10,13 @@
       <change beforePath="$PROJECT_DIR$/bots/super/aiml/topic_DesainVideo.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aiml/topic_DesainVideo.aiml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bots/super/aiml/topic_Office.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aiml/topic_Office.aiml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bots/super/aiml/topic_OnlineGaming.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aiml/topic_OnlineGaming.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bots/super/aiml/topic_Usability.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aiml/topic_Usability.aiml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bots/super/aimlif/topic_AAAGaming.aiml.csv" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aimlif/topic_AAAGaming.aiml.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bots/super/aimlif/topic_DesainGrafis.aiml.csv" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aimlif/topic_DesainGrafis.aiml.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bots/super/aimlif/topic_Office.aiml.csv" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aimlif/topic_Office.aiml.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bots/super/aimlif/topic_Usability.aiml.csv" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aimlif/topic_Usability.aiml.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bots/super/aimlif/update.aiml.csv" beforeDir="false" afterPath="$PROJECT_DIR$/bots/super/aimlif/update.aiml.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cobabot/StringParserForSPARQL_DL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cobabot/StringParserForSPARQL_DL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/owl/system-unit-of-desktop-computer-delvin-inferred-v2.owl" beforeDir="false" afterPath="$PROJECT_DIR$/owl/system-unit-of-desktop-computer-delvin-inferred-v2.owl" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -244,7 +244,35 @@
       <option name="project" value="LOCAL" />
       <updated>1564879572346</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Pengelompokan list komponen">
+      <created>1564939317331</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1564939317331</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Pengelompokan list komponen">
+      <created>1564960622693</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1564960622693</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Pengelompokan list komponen">
+      <created>1564961596821</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1564961596821</updated>
+    </task>
+    <task id="LOCAL-00011" summary="&#10;BUG">
+      <created>1564963560294</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1564963560294</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView">
@@ -292,7 +320,9 @@
     <MESSAGE value="Perubahan value di predicate topic_office &amp; topic_desain" />
     <MESSAGE value="topic gaming" />
     <MESSAGE value="Semua Jenis Pengunaan dan tambahan Ukuran Chassis" />
-    <option name="LAST_COMMIT_MESSAGE" value="Semua Jenis Pengunaan dan tambahan Ukuran Chassis" />
+    <MESSAGE value="Pengelompokan list komponen" />
+    <MESSAGE value="&#10;BUG" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;BUG" />
   </component>
   <component name="masterDetails">
     <states>

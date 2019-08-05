@@ -649,7 +649,7 @@
             <template>
                 <set name="IndexQusetion">CASUAL GAMING BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil</set>
                 <think>
-                    <set name="MANUFAKTUR">INTEL</set>
+                    <set name="MANUFAKTUR">Intel</set>
                 </think>
             </template>
         </category>

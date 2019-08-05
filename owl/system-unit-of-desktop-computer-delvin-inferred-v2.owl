@@ -5899,6 +5899,7 @@
         <system-unit-of-desktop-computer:hasFeature rdf:resource="http://www.semanticweb.org/asusx450j/ontologies/2019/2/system-unit-of-desktop-computer#Integrated"/>
         <system-unit-of-desktop-computer:hasManufacturer rdf:resource="http://www.semanticweb.org/asusx450j/ontologies/2019/2/system-unit-of-desktop-computer#Intel"/>
         <system-unit-of-desktop-computer:hasPerformanceClassification rdf:resource="http://www.semanticweb.org/asusx450j/ontologies/2019/2/system-unit-of-desktop-computer#Enthusiast"/>
+        <system-unit-of-desktop-computer:hasPerformanceClassification rdf:resource="http://www.semanticweb.org/asusx450j/ontologies/2019/2/system-unit-of-desktop-computer#High-EndDesktop"/>
     </owl:NamedIndividual>
     
 
@@ -5916,6 +5917,7 @@
         <system-unit-of-desktop-computer:hasFeature rdf:resource="http://www.semanticweb.org/asusx450j/ontologies/2019/2/system-unit-of-desktop-computer#Overclockable"/>
         <system-unit-of-desktop-computer:hasManufacturer rdf:resource="http://www.semanticweb.org/asusx450j/ontologies/2019/2/system-unit-of-desktop-computer#Intel"/>
         <system-unit-of-desktop-computer:hasPerformanceClassification rdf:resource="http://www.semanticweb.org/asusx450j/ontologies/2019/2/system-unit-of-desktop-computer#Enthusiast"/>
+        <system-unit-of-desktop-computer:hasPerformanceClassification rdf:resource="http://www.semanticweb.org/asusx450j/ontologies/2019/2/system-unit-of-desktop-computer#High-EndDesktop"/>
     </owl:NamedIndividual>
     
 
@@ -5933,6 +5935,7 @@
         <system-unit-of-desktop-computer:hasFeature rdf:resource="http://www.semanticweb.org/asusx450j/ontologies/2019/2/system-unit-of-desktop-computer#LowVoltage"/>
         <system-unit-of-desktop-computer:hasManufacturer rdf:resource="http://www.semanticweb.org/asusx450j/ontologies/2019/2/system-unit-of-desktop-computer#Intel"/>
         <system-unit-of-desktop-computer:hasPerformanceClassification rdf:resource="http://www.semanticweb.org/asusx450j/ontologies/2019/2/system-unit-of-desktop-computer#Enthusiast"/>
+        <system-unit-of-desktop-computer:hasPerformanceClassification rdf:resource="http://www.semanticweb.org/asusx450j/ontologies/2019/2/system-unit-of-desktop-computer#High-EndDesktop"/>
     </owl:NamedIndividual>
     
 
@@ -6390,6 +6393,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asusx450j/ontologies/2019/2/system-unit-of-desktop-computer#GTX10Series"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asusx450j/ontologies/2019/2/system-unit-of-desktop-computer#VideoCard"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asusx450j/ontologies/2019/2/system-unit-of-desktop-computer#VideoCard-Nvidia"/>
+        <system-unit-of-desktop-computer:hasFeature rdf:resource="http://www.semanticweb.org/asusx450j/ontologies/2019/2/system-unit-of-desktop-computer#LowNoise"/>
         <system-unit-of-desktop-computer:hasFeature rdf:resource="http://www.semanticweb.org/asusx450j/ontologies/2019/2/system-unit-of-desktop-computer#Overclockable"/>
         <system-unit-of-desktop-computer:hasManufacturer rdf:resource="http://www.semanticweb.org/asusx450j/ontologies/2019/2/system-unit-of-desktop-computer#Nvidia"/>
         <system-unit-of-desktop-computer:hasPerformanceClassification rdf:resource="http://www.semanticweb.org/asusx450j/ontologies/2019/2/system-unit-of-desktop-computer#Mainstream"/>
@@ -9014,6 +9018,17 @@
         <system-unit-of-desktop-computer:hasFeature rdf:resource="http://www.semanticweb.org/asusx450j/ontologies/2019/2/system-unit-of-desktop-computer#SuperFastBoot"/>
         <system-unit-of-desktop-computer:hasFeature rdf:resource="http://www.semanticweb.org/asusx450j/ontologies/2019/2/system-unit-of-desktop-computer#SuperFastTransferRate"/>
         <system-unit-of-desktop-computer:hasManufacturer rdf:resource="http://www.semanticweb.org/asusx450j/ontologies/2019/2/system-unit-of-desktop-computer#WesternDigital"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asusx450j/ontologies/2019/6/system-unit-of-desktop-computer-inferred#Asus®VideoCard_GeForce_GTX_1060_STRIX -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asusx450j/ontologies/2019/6/system-unit-of-desktop-computer-inferred#Asus®VideoCard_GeForce_GTX_1060_STRIX">
+        <system-unit-of-desktop-computer:hasFeature rdf:resource="http://www.semanticweb.org/asusx450j/ontologies/2019/2/system-unit-of-desktop-computer#LowNoise"/>
+        <system-unit-of-desktop-computer:hasManufacturer rdf:resource="http://www.semanticweb.org/asusx450j/ontologies/2019/2/system-unit-of-desktop-computer#Nvidia"/>
+        <system-unit-of-desktop-computer:hasPerformanceClassification rdf:resource="http://www.semanticweb.org/asusx450j/ontologies/2019/2/system-unit-of-desktop-computer#Mainstream"/>
+        <system-unit-of-desktop-computer:hasVendor rdf:resource="http://www.semanticweb.org/asusx450j/ontologies/2019/2/system-unit-of-desktop-computer#Asus"/>
     </owl:NamedIndividual>
     
 

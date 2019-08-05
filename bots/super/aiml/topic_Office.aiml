@@ -315,7 +315,7 @@
             <template>
                 <set name="IndexQusetion">OFFICE BERHASIL DIBUAT. Ketikkan Computer Specifications untuk melihat hasil</set>
                 <think>
-                    <set name="MANUFAKTUR">INTEL</set>
+                    <set name="MANUFAKTUR">Intel</set>
                 </think>
             </template>
         </category>

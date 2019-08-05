@@ -18,8 +18,7 @@
 <category>
     <pattern>AKU INGIN MEMBUAT SEBUAH KOMPUTER</pattern>
     <template><set name="IndexQusetion">Komputer yang disediakan : GAMING; DESAIN; OFFICE</set>
-    <think>
-
+        <think>
             <set name="PROCESSOR">DEFAULT</set>
             <set name="HARDDRIVE">DEFAULT</set>
             <set name="MOTHERBOARD">DEFAULT</set>
@@ -28,6 +27,18 @@
             <set name="VIDEOCARD">DEFAULT</set>
             <set name="SOUNDCARD">DEFAULT</set>
             <set name="CHASSIS">DEFAULT</set>
+            <set name="PROCESSOR_LV">CPU-DEFAULT</set>
+            <set name="HARDDRIVE_LV">HardDrive-DEFAULT</set>
+            <set name="PROCESSOR_OC">CPU-DEFAULT</set>
+            <set name="VIDEOCARD_OC">VideoCard-DEFAULT</set>
+            <set name="HARDDRIVE_LN">HardDrive-DEFAULT</set>
+            <set name="COOLER_LN">ComputerCooling-DEFAULT</set>
+            <set name="VIDEOCARD_LN">VideoCard-DEFAULT</set>
+            <set name="CHASSIS_RGB">Chassis-DEFAULT</set>
+            <set name="MOTHERBOARD_RGB">Motherboard-DEFAULT</set>
+            <set name="RAM_RGB">RAM-DEFAULT</set>
+            <set name="COOLER_RGB">ComputerCooling-DEFAULT</set>
+            <set name="VIDEOCARD_RGB">VideoCard-DEFAULT</set>
         </think>
     </template>
 </category>
