@@ -181,15 +181,15 @@ public class StringParserForSPARQL_DL {
     private static void dependantComponentMotherboard(StringBuilder strQueryWhere, String chassisSize,
                                                       String performanceClassifications, String manufacturer) {
         strQueryWhere.append(" WHERE {\n")
-                .append("Type(?Component, myOnto:")
+                .append("Type(?Component3, myOnto:")
                 .append(chassisSize)
                 .append("), \n")
-                .append("PropertyValue(?Component, myOnto:compatibleWith, ?Component2")
+                .append("PropertyValue(?Component3, myOnto:compatibleWith, ?Component")
                 .append("), \n")
-                .append("PropertyValue(?Component2, myOnto:hasPerformanceClassification, myOnto:")
+                .append("PropertyValue(?Component, myOnto:hasPerformanceClassification, myOnto:")
                 .append(performanceClassifications)
                 .append("), \n")
-                .append("PropertyValue(?Component2, myOnto:hasManufacturer, myOnto:")
+                .append("PropertyValue(?Component, myOnto:hasManufacturer, myOnto:")
                 .append(manufacturer)
                 .append(")}");
     }
@@ -229,18 +229,18 @@ public class StringParserForSPARQL_DL {
     private static void dependantComponentMotherboardWithFeature(StringBuilder strQueryWhere, String chassisSize,
                                                                  String performanceClassifications, String manufacturer, String feature) {
         strQueryWhere.append(" WHERE {\n")
-                .append("Type(?Component, myOnto:")
+                .append("Type(?Component3, myOnto:")
                 .append(chassisSize)
                 .append("), \n")
-                .append("PropertyValue(?Component, myOnto:compatibleWith, ?Component2")
+                .append("PropertyValue(?Component3, myOnto:compatibleWith, ?Component")
                 .append("), \n")
-                .append("PropertyValue(?Component2, myOnto:hasPerformanceClassification, myOnto:")
+                .append("PropertyValue(?Component, myOnto:hasPerformanceClassification, myOnto:")
                 .append(performanceClassifications)
                 .append("), \n")
-                .append("PropertyValue(?Component2, myOnto:hasManufacturer, myOnto:")
+                .append("PropertyValue(?Component, myOnto:hasManufacturer, myOnto:")
                 .append(manufacturer)
                 .append("), \n")
-                .append("PropertyValue(?Component2, myOnto:hasFeature, myOnto:")
+                .append("PropertyValue(?Component, myOnto:hasFeature, myOnto:")
                 .append(feature);
     }
 }
