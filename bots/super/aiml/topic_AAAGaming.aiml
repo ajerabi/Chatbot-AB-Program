@@ -28,7 +28,7 @@
     <topic name="GAMING">
         <category>
             <pattern>AAA GAMING</pattern>
-            <that>JENIS GAME COLON AAA GAMING SEMICOLON CASUAL GAMING</that>
+            <that>JENIS GAME COLON AAA GAMING SEMICOLON CASUAL GAMING SEMICOLON ONLINE GAMING</that>
             <template><set name="IndexQusetion">Ukuran apa yang anda inginkan untuk unit sistem komputer anda? Kecil; Sedang; Besar; Sangat Besar</set></template>
         </category>
     </topic>
@@ -758,7 +758,7 @@
                         </list>
                     </li>
                 </condition>
-                DENGAN KLASIFIKASI<br/> High-EndDesktopK
+                DENGAN KLASIFIKASI<br/> High-EndDesktop
                 <br/>
                 DENGAN UKURAN<br/> <get name="CHASSIS"/>
                 <br/>
